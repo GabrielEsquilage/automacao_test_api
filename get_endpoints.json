@@ -1,0 +1,2818 @@
+[
+  {
+    "path": "/api/v1/unidade/{id}",
+    "operationId": "findById_4"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/grade",
+    "operationId": "findGradeByTurmaId"
+  },
+  {
+    "path": "/api/v1/tipo-disciplina/{id}",
+    "operationId": "getById_2"
+  },
+  {
+    "path": "/api/v1/tipo-atividade/{id}",
+    "operationId": "findById_22"
+  },
+  {
+    "path": "/api/v1/tema/{id}",
+    "operationId": "findById_24"
+  },
+  {
+    "path": "/api/v1/tcc/{id}",
+    "operationId": "findById_26"
+  },
+  {
+    "path": "/api/v1/requerimento/{id}",
+    "operationId": "findById_28"
+  },
+  {
+    "path": "/api/v1/repasse-geral/{id}/porcentagem",
+    "operationId": "buscarPorcentagemPorId"
+  },
+  {
+    "path": "/api/v1/repasse-geral/{id}/adicional",
+    "operationId": "buscarAdicionalPorId"
+  },
+  {
+    "path": "/api/v1/repasse-filial/{filialId}/{regraId}/porcentagem",
+    "operationId": "buscarPorcentagemPorId_1"
+  },
+  {
+    "path": "/api/v1/repasse-filial/{filialId}/{regraId}/adicional",
+    "operationId": "buscarAdicionalPorId_1"
+  },
+  {
+    "path": "/api/v1/plano-pagamento/{id}",
+    "operationId": "findById_36"
+  },
+  {
+    "path": "/api/v1/pessoa/{id}",
+    "operationId": "findById_37"
+  },
+  {
+    "path": "/api/v1/periodo-letivo/{id}",
+    "operationId": "findById_38"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor-rg/{id}",
+    "operationId": "getById_6"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor/{id}",
+    "operationId": "getById_7"
+  },
+  {
+    "path": "/api/v1/mantenedora/{id}",
+    "operationId": "findById_52"
+  },
+  {
+    "path": "/api/v1/grupo-repasse/{id}",
+    "operationId": "findById_56"
+  },
+  {
+    "path": "/api/v1/grupo-curso/{id}",
+    "operationId": "findById_57"
+  },
+  {
+    "path": "/api/v1/formulario-nps/{id}",
+    "operationId": "getById_9"
+  },
+  {
+    "path": "/api/v1/forma-oferta/{id}",
+    "operationId": "findById_62"
+  },
+  {
+    "path": "/api/v1/filial/{id}",
+    "operationId": "findById_63"
+  },
+  {
+    "path": "/api/v1/ementa",
+    "operationId": "listar_1"
+  },
+  {
+    "path": "/api/v1/edital/{id}",
+    "operationId": "findById_69"
+  },
+  {
+    "path": "/api/v1/disciplina/{id}",
+    "operationId": "findById_73"
+  },
+  {
+    "path": "/api/v1/departamento/{id}",
+    "operationId": "findById_74"
+  },
+  {
+    "path": "/api/v1/curso/{id}",
+    "operationId": "findById_76"
+  },
+  {
+    "path": "/api/v1/curriculo/{id}",
+    "operationId": "findById_77"
+  },
+  {
+    "path": "/api/v1/cupom/{id}",
+    "operationId": "getById_12"
+  },
+  {
+    "path": "/api/v1/cpa/{id}",
+    "operationId": "getById_13"
+  },
+  {
+    "path": "/api/v1/colaborador/{id}",
+    "operationId": "findById_78"
+  },
+  {
+    "path": "/api/v1/campanha/{id}",
+    "operationId": "findById_83"
+  },
+  {
+    "path": "/api/v1/aviso/{id}",
+    "operationId": "findById_85"
+  },
+  {
+    "path": "/api/v1/atividade-complementar/{id}",
+    "operationId": "findById_86"
+  },
+  {
+    "path": "/api/v1/agenda-evento/{id}",
+    "operationId": "findById_91"
+  },
+  {
+    "path": "/api/v1/admin/rbac/usuarios/{id}/permissoes",
+    "operationId": "getPermissoesDoUsuario"
+  },
+  {
+    "path": "/api/v1/usuario",
+    "operationId": "getAll_2"
+  },
+  {
+    "path": "/api/v1/usuario-perfil",
+    "operationId": "getAll_4"
+  },
+  {
+    "path": "/api/v1/usuario-funcionalidade",
+    "operationId": "getAll_5"
+  },
+  {
+    "path": "/api/v1/unidade",
+    "operationId": "getAll_6"
+  },
+  {
+    "path": "/api/v1/uf",
+    "operationId": "getAll_7"
+  },
+  {
+    "path": "/api/v1/tipo-feriado",
+    "operationId": "getAll_19"
+  },
+  {
+    "path": "/api/v1/tipo-evento",
+    "operationId": "getAll_20"
+  },
+  {
+    "path": "/api/v1/tipo-endereco",
+    "operationId": "getAll_21"
+  },
+  {
+    "path": "/api/v1/tipo-disciplina",
+    "operationId": "getAll_25"
+  },
+  {
+    "path": "/api/v1/tipo-atividade",
+    "operationId": "getAll_29"
+  },
+  {
+    "path": "/api/v1/tema",
+    "operationId": "getAll_31"
+  },
+  {
+    "path": "/api/v1/requerimento",
+    "operationId": "getAll_36"
+  },
+  {
+    "path": "/api/v1/regiao",
+    "operationId": "getAll_37"
+  },
+  {
+    "path": "/api/v1/raca",
+    "operationId": "getAll_39"
+  },
+  {
+    "path": "/api/v1/prova",
+    "operationId": "getAll_40"
+  },
+  {
+    "path": "/api/v1/polo",
+    "operationId": "getAll_42"
+  },
+  {
+    "path": "/api/v1/plano-pagamento",
+    "operationId": "getAllPage_2"
+  },
+  {
+    "path": "/api/v1/pessoa",
+    "operationId": "getAll_44"
+  },
+  {
+    "path": "/api/v1/periodo-letivo",
+    "operationId": "getAll_45"
+  },
+  {
+    "path": "/api/v1/perfil",
+    "operationId": "getAll_46"
+  },
+  {
+    "path": "/api/v1/perfil-funcionalidade",
+    "operationId": "getAll_47"
+  },
+  {
+    "path": "/api/v1/pais",
+    "operationId": "getAll_48"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor",
+    "operationId": "findAll_1"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor-rg",
+    "operationId": "findAll_2"
+  },
+  {
+    "path": "/api/v1/oferta",
+    "operationId": "getAll_49"
+  },
+  {
+    "path": "/api/v1/nivel-ensino",
+    "operationId": "getAll_50"
+  },
+  {
+    "path": "/api/v1/matricula-requerimento",
+    "operationId": "getAll_57"
+  },
+  {
+    "path": "/api/v1/matricula-disciplina",
+    "operationId": "getAll_58"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar",
+    "operationId": "getAll_59"
+  },
+  {
+    "path": "/api/v1/mantenedora",
+    "operationId": "getAll_61"
+  },
+  {
+    "path": "/api/v1/instituicao",
+    "operationId": "getAll_63"
+  },
+  {
+    "path": "/api/v1/idioma",
+    "operationId": "getAll_64"
+  },
+  {
+    "path": "/api/v1/grupo-repasse",
+    "operationId": "findAll_3"
+  },
+  {
+    "path": "/api/v1/grupo-curso",
+    "operationId": "findAll_4"
+  },
+  {
+    "path": "/api/v1/gestor",
+    "operationId": "getAll_65"
+  },
+  {
+    "path": "/api/v1/genero",
+    "operationId": "getAll_66"
+  },
+  {
+    "path": "/api/v1/funcionalidade",
+    "operationId": "getAll_67"
+  },
+  {
+    "path": "/api/v1/formulario-nps",
+    "operationId": "getAll_69"
+  },
+  {
+    "path": "/api/v1/forma-oferta",
+    "operationId": "getAll_70"
+  },
+  {
+    "path": "/api/v1/filial",
+    "operationId": "getAll_72"
+  },
+  {
+    "path": "/api/v1/feriado",
+    "operationId": "getAll_73"
+  },
+  {
+    "path": "/api/v1/estado-civil",
+    "operationId": "getAll_74"
+  },
+  {
+    "path": "/api/v1/escolaridade",
+    "operationId": "getAll_75"
+  },
+  {
+    "path": "/api/v1/endereco",
+    "operationId": "getAll_76"
+  },
+  {
+    "path": "/api/v1/edital",
+    "operationId": "getAll_78"
+  },
+  {
+    "path": "/api/v1/disciplina",
+    "operationId": "getAll_82"
+  },
+  {
+    "path": "/api/v1/departamento",
+    "operationId": "getAll_83"
+  },
+  {
+    "path": "/api/v1/deficiencia",
+    "operationId": "getAll_84"
+  },
+  {
+    "path": "/api/v1/curso",
+    "operationId": "getAll_85"
+  },
+  {
+    "path": "/api/v1/curriculo",
+    "operationId": "getAll_86"
+  },
+  {
+    "path": "/api/v1/cupom",
+    "operationId": "getAll_87"
+  },
+  {
+    "path": "/api/v1/cpa",
+    "operationId": "getAll_88"
+  },
+  {
+    "path": "/api/v1/configuracao-registro",
+    "operationId": "getAll_89"
+  },
+  {
+    "path": "/api/v1/colaborador",
+    "operationId": "getAll_91"
+  },
+  {
+    "path": "/api/v1/cidade",
+    "operationId": "getAll_93"
+  },
+  {
+    "path": "/api/v1/cargo",
+    "operationId": "getAll_94"
+  },
+  {
+    "path": "/api/v1/candidato",
+    "operationId": "getAll_95"
+  },
+  {
+    "path": "/api/v1/candidatoVestibularProva",
+    "operationId": "getAll_96"
+  },
+  {
+    "path": "/api/v1/candidatoProuni",
+    "operationId": "getAll_97"
+  },
+  {
+    "path": "/api/v1/candidatoFies",
+    "operationId": "getAll_98"
+  },
+  {
+    "path": "/api/v1/candidatoEnem",
+    "operationId": "getAll_99"
+  },
+  {
+    "path": "/api/v1/campanha",
+    "operationId": "getAll_101"
+  },
+  {
+    "path": "/api/v1/aviso",
+    "operationId": "findAll_6"
+  },
+  {
+    "path": "/api/v1/avaliacao",
+    "operationId": "getAll_103"
+  },
+  {
+    "path": "/api/v1/atividade",
+    "operationId": "getAll_104"
+  },
+  {
+    "path": "/api/v1/atividade-complementar",
+    "operationId": "getAll_105"
+  },
+  {
+    "path": "/api/v1/atendimento-external",
+    "operationId": "getAll_107"
+  },
+  {
+    "path": "/api/v1/agenda-evento",
+    "operationId": "getAll_110"
+  },
+  {
+    "path": "/api/v1/usuario/{id}",
+    "operationId": "findById_1"
+  },
+  {
+    "path": "/api/v1/usuario-perfil/{id}",
+    "operationId": "findById_2"
+  },
+  {
+    "path": "/api/v1/uf/{id}",
+    "operationId": "findById_5"
+  },
+  {
+    "path": "/api/v1/tipo-feriado/{id}",
+    "operationId": "findById_15"
+  },
+  {
+    "path": "/api/v1/tipo-evento/{id}",
+    "operationId": "getById_1"
+  },
+  {
+    "path": "/api/v1/tipo-endereco/{id}",
+    "operationId": "findById_16"
+  },
+  {
+    "path": "/api/v1/regiao/{id}",
+    "operationId": "findById_30"
+  },
+  {
+    "path": "/api/v1/raca/{id}",
+    "operationId": "findById_32"
+  },
+  {
+    "path": "/api/v1/prova/{id}",
+    "operationId": "findById_33"
+  },
+  {
+    "path": "/api/v1/polo/{id}",
+    "operationId": "findById_34"
+  },
+  {
+    "path": "/api/v1/perfil/{id}",
+    "operationId": "findById_39"
+  },
+  {
+    "path": "/api/v1/pais/{id}",
+    "operationId": "findById_42"
+  },
+  {
+    "path": "/api/v1/oferta/{id}",
+    "operationId": "getById_8"
+  },
+  {
+    "path": "/api/v1/nivel-ensino/{id}",
+    "operationId": "findById_43"
+  },
+  {
+    "path": "/api/v1/matricula/{id}",
+    "operationId": "findById_47"
+  },
+  {
+    "path": "/api/v1/matricula-requerimento/{id}",
+    "operationId": "findById_48"
+  },
+  {
+    "path": "/api/v1/matricula-disciplina/{id}",
+    "operationId": "findById_49"
+  },
+  {
+    "path": "/api/v1/instituicao/{id}",
+    "operationId": "findById_54"
+  },
+  {
+    "path": "/api/v1/idioma/{id}",
+    "operationId": "findById_55"
+  },
+  {
+    "path": "/api/v1/gestor/{id}",
+    "operationId": "findById_58"
+  },
+  {
+    "path": "/api/v1/genero/{id}",
+    "operationId": "findById_59"
+  },
+  {
+    "path": "/api/v1/funcionalidade/{id}",
+    "operationId": "findById_60"
+  },
+  {
+    "path": "/api/v1/feriado/{id}",
+    "operationId": "findById_64"
+  },
+  {
+    "path": "/api/v1/estado-civil/{id}",
+    "operationId": "getById_10"
+  },
+  {
+    "path": "/api/v1/escolaridade/{id}",
+    "operationId": "findById_66"
+  },
+  {
+    "path": "/api/v1/endereco/{id}",
+    "operationId": "findById_67"
+  },
+  {
+    "path": "/api/v1/deficiencia/{id}",
+    "operationId": "findById_75"
+  },
+  {
+    "path": "/api/v1/configuracao-registro/{id}",
+    "operationId": "getById_14"
+  },
+  {
+    "path": "/api/v1/concurso/{id}",
+    "operationId": "getById_15"
+  },
+  {
+    "path": "/api/v1/cidade/{id}",
+    "operationId": "findById_80"
+  },
+  {
+    "path": "/api/v1/cargo/{id}",
+    "operationId": "findById_81"
+  },
+  {
+    "path": "/api/v1/wae-curso",
+    "operationId": "getAll"
+  },
+  {
+    "path": "/api/v1/wae-curso/{id}",
+    "operationId": "findById"
+  },
+  {
+    "path": "/api/v1/wae-curso/list",
+    "operationId": "getAllList"
+  },
+  {
+    "path": "/api/v1/validacaoPagamento",
+    "operationId": "getAll_1"
+  },
+  {
+    "path": "/api/v1/validacaoPagamento/list",
+    "operationId": "getAllList_1"
+  },
+  {
+    "path": "/api/v1/usuario/{id}/with-setor",
+    "operationId": "findCleanWithSetorById"
+  },
+  {
+    "path": "/api/v1/usuario/{id}/with-setor-requerimento",
+    "operationId": "findCleanWithSetorRequerimentoById"
+  },
+  {
+    "path": "/api/v1/usuario/{id}/with-setor-mensageria",
+    "operationId": "findCleanWithSetorMensageriaById"
+  },
+  {
+    "path": "/api/v1/usuario/{id}/clean",
+    "operationId": "findCleanById"
+  },
+  {
+    "path": "/api/v1/usuario/page-custom",
+    "operationId": "findPessoaUsuarioPage"
+  },
+  {
+    "path": "/api/v1/usuario/list",
+    "operationId": "getAllList_2"
+  },
+  {
+    "path": "/api/v1/usuario/list-with-setor",
+    "operationId": "findUsuariosWithSetoresList"
+  },
+  {
+    "path": "/api/v1/usuario/list-with-setor-requerimento",
+    "operationId": "findUsuariosWithSetoresRequerimento"
+  },
+  {
+    "path": "/api/v1/usuario/list-custom",
+    "operationId": "findPessoaUsuario"
+  },
+  {
+    "path": "/api/v1/usuario/count",
+    "operationId": "count"
+  },
+  {
+    "path": "/api/v1/usuario/clean",
+    "operationId": "getAllClean_1"
+  },
+  {
+    "path": "/api/v1/usuario/atual",
+    "operationId": "current"
+  },
+  {
+    "path": "/api/v1/usuario-requerimento/page",
+    "operationId": "getAll_3"
+  },
+  {
+    "path": "/api/v1/usuario-perfil/list",
+    "operationId": "getAllList_3"
+  },
+  {
+    "path": "/api/v1/usuario-perfil/count",
+    "operationId": "count_1"
+  },
+  {
+    "path": "/api/v1/usuario-funcionalidade/{id}",
+    "operationId": "findById_3"
+  },
+  {
+    "path": "/api/v1/usuario-funcionalidade/list",
+    "operationId": "getAllList_4"
+  },
+  {
+    "path": "/api/v1/usuario-funcionalidade/count",
+    "operationId": "count_2"
+  },
+  {
+    "path": "/api/v1/usuario-atual/atual",
+    "operationId": "current_1"
+  },
+  {
+    "path": "/api/v1/unidade/page",
+    "operationId": "getAllPage"
+  },
+  {
+    "path": "/api/v1/unidade/list",
+    "operationId": "getAllList_5"
+  },
+  {
+    "path": "/api/v1/unidade/count",
+    "operationId": "count_3"
+  },
+  {
+    "path": "/api/v1/uf/list",
+    "operationId": "getAllList_6"
+  },
+  {
+    "path": "/api/v1/uf/count",
+    "operationId": "count_4"
+  },
+  {
+    "path": "/api/v1/turma",
+    "operationId": "list"
+  },
+  {
+    "path": "/api/v1/turma/{id}",
+    "operationId": "getById"
+  },
+  {
+    "path": "/api/v1/turma/geral",
+    "operationId": "list_1"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}",
+    "operationId": "findById_6"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/series",
+    "operationId": "findSeriesByTurmaId"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/serie/{serieId}",
+    "operationId": "findSerieByTurmaId"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/matriculas",
+    "operationId": "findcsByTurmaId"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/matriculas/{disciplinaId}",
+    "operationId": "findMatriculasByTurmaIdAndDisciplinaId"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/matricula/{matriculaId}",
+    "operationId": "findMatriculaByTurmaId"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/disciplinas",
+    "operationId": "findDisciplinasByTurmaId"
+  },
+  {
+    "path": "/api/v1/turma/geral/{id}/disciplina/{disciplinaId}",
+    "operationId": "findDisciplinaByTurmaId"
+  },
+  {
+    "path": "/api/v1/turma/clean",
+    "operationId": "listClean"
+  },
+  {
+    "path": "/api/v1/transferencia-matricula/{id}/turma/{turmaId}/disciplina-equivalencia",
+    "operationId": "findDisciplinaAproveitada"
+  },
+  {
+    "path": "/api/v1/transferencia-matricula/{id}/turma/{turmaId}/comparativo-financeiro",
+    "operationId": "findComparativoFinanceiro"
+  },
+  {
+    "path": "/api/v1/transferencia-matricula/{id}/turma/{turmaId}/comparativo-disciplina",
+    "operationId": "findComparativoDisciplina"
+  },
+  {
+    "path": "/api/v1/transferencia-matricula/{id}/turma/{turmaId}/comparativo-curso",
+    "operationId": "findComparativoCurso"
+  },
+  {
+    "path": "/api/v1/transferencia-matricula/plano-pagamento/{turmaId}",
+    "operationId": "getAllList_7"
+  },
+  {
+    "path": "/api/v1/titulacao",
+    "operationId": "getAll_8"
+  },
+  {
+    "path": "/api/v1/titulacao/{id}",
+    "operationId": "findById_7"
+  },
+  {
+    "path": "/api/v1/titulacao/list",
+    "operationId": "getAllList_8"
+  },
+  {
+    "path": "/api/v1/titulacao/count",
+    "operationId": "count_5"
+  },
+  {
+    "path": "/api/v1/tipoContratacao",
+    "operationId": "getAll_9"
+  },
+  {
+    "path": "/api/v1/tipoContratacao/list",
+    "operationId": "getAllList_9"
+  },
+  {
+    "path": "/api/v1/tipo-resposta",
+    "operationId": "getAll_10"
+  },
+  {
+    "path": "/api/v1/tipo-prova",
+    "operationId": "getAll_11"
+  },
+  {
+    "path": "/api/v1/tipo-prova/{id}",
+    "operationId": "findById_8"
+  },
+  {
+    "path": "/api/v1/tipo-prova/list",
+    "operationId": "getAllList_10"
+  },
+  {
+    "path": "/api/v1/tipo-prova/count",
+    "operationId": "count_6"
+  },
+  {
+    "path": "/api/v1/tipo-polo",
+    "operationId": "getAll_12"
+  },
+  {
+    "path": "/api/v1/tipo-polo/{id}",
+    "operationId": "findById_9"
+  },
+  {
+    "path": "/api/v1/tipo-polo/list",
+    "operationId": "getAllList_11"
+  },
+  {
+    "path": "/api/v1/tipo-polo/count",
+    "operationId": "count_7"
+  },
+  {
+    "path": "/api/v1/tipo-parametro/list",
+    "operationId": "getAllList_12"
+  },
+  {
+    "path": "/api/v1/tipo-parametro/list-for-taxa-matricula-disciplina",
+    "operationId": "getAllForTaxaMatriculaDisciplina"
+  },
+  {
+    "path": "/api/v1/tipo-parametro/list-for-descontos",
+    "operationId": "getAllForDescontoMatriculaDisciplina"
+  },
+  {
+    "path": "/api/v1/tipo-origem-matricula-disciplina/list",
+    "operationId": "getAllList_13"
+  },
+  {
+    "path": "/api/v1/tipo-operacao",
+    "operationId": "list_2"
+  },
+  {
+    "path": "/api/v1/tipo-operacao/{id}",
+    "operationId": "list_3"
+  },
+  {
+    "path": "/api/v1/tipo-operacao/list",
+    "operationId": "list_4"
+  },
+  {
+    "path": "/api/v1/tipo-obrigatoriedade/list",
+    "operationId": "getAllList_14"
+  },
+  {
+    "path": "/api/v1/tipo-nota",
+    "operationId": "getAll_13"
+  },
+  {
+    "path": "/api/v1/tipo-nota/{id}",
+    "operationId": "findById_10"
+  },
+  {
+    "path": "/api/v1/tipo-nota/list",
+    "operationId": "getAllList_15"
+  },
+  {
+    "path": "/api/v1/tipo-nota/count",
+    "operationId": "count_8"
+  },
+  {
+    "path": "/api/v1/tipo-matricula-documento",
+    "operationId": "getAll_14"
+  },
+  {
+    "path": "/api/v1/tipo-matricula-documento/{id}",
+    "operationId": "findById_11"
+  },
+  {
+    "path": "/api/v1/tipo-matricula-documento/list",
+    "operationId": "getAllList_16"
+  },
+  {
+    "path": "/api/v1/tipo-matricula-documento/count",
+    "operationId": "count_9"
+  },
+  {
+    "path": "/api/v1/tipo-mantenedora",
+    "operationId": "getAll_15"
+  },
+  {
+    "path": "/api/v1/tipo-mantenedora/{id}",
+    "operationId": "findById_12"
+  },
+  {
+    "path": "/api/v1/tipo-mantenedora/list",
+    "operationId": "getAllList_17"
+  },
+  {
+    "path": "/api/v1/tipo-mantenedora/count",
+    "operationId": "count_10"
+  },
+  {
+    "path": "/api/v1/tipo-formulario",
+    "operationId": "getAll_16"
+  },
+  {
+    "path": "/api/v1/tipo-filial",
+    "operationId": "getAll_17"
+  },
+  {
+    "path": "/api/v1/tipo-filial/{id}",
+    "operationId": "findById_13"
+  },
+  {
+    "path": "/api/v1/tipo-filial/list",
+    "operationId": "getAllList_18"
+  },
+  {
+    "path": "/api/v1/tipo-filial/count",
+    "operationId": "count_11"
+  },
+  {
+    "path": "/api/v1/tipo-filial-oferta",
+    "operationId": "getAll_18"
+  },
+  {
+    "path": "/api/v1/tipo-filial-oferta/{id}",
+    "operationId": "findById_14"
+  },
+  {
+    "path": "/api/v1/tipo-filial-oferta/list",
+    "operationId": "getAllList_19"
+  },
+  {
+    "path": "/api/v1/tipo-filial-oferta/count",
+    "operationId": "count_12"
+  },
+  {
+    "path": "/api/v1/tipo-feriado/list",
+    "operationId": "getAllList_20"
+  },
+  {
+    "path": "/api/v1/tipo-feriado/count",
+    "operationId": "count_13"
+  },
+  {
+    "path": "/api/v1/tipo-evento/list",
+    "operationId": "getAllList_21"
+  },
+  {
+    "path": "/api/v1/tipo-endereco/list",
+    "operationId": "getAllList_22"
+  },
+  {
+    "path": "/api/v1/tipo-endereco/count",
+    "operationId": "count_14"
+  },
+  {
+    "path": "/api/v1/tipo-empresa",
+    "operationId": "getAll_22"
+  },
+  {
+    "path": "/api/v1/tipo-empresa/{id}",
+    "operationId": "findById_17"
+  },
+  {
+    "path": "/api/v1/tipo-empresa/list",
+    "operationId": "getAllList_23"
+  },
+  {
+    "path": "/api/v1/tipo-empresa/count",
+    "operationId": "count_15"
+  },
+  {
+    "path": "/api/v1/tipo-documento",
+    "operationId": "getAll_23"
+  },
+  {
+    "path": "/api/v1/tipo-documento/{id}",
+    "operationId": "findById_18"
+  },
+  {
+    "path": "/api/v1/tipo-documento/list",
+    "operationId": "getAllList_24"
+  },
+  {
+    "path": "/api/v1/tipo-documento/count",
+    "operationId": "count_16"
+  },
+  {
+    "path": "/api/v1/tipo-documento-matricula-disciplina",
+    "operationId": "getAll_24"
+  },
+  {
+    "path": "/api/v1/tipo-documento-matricula-disciplina/{id}",
+    "operationId": "findById_19"
+  },
+  {
+    "path": "/api/v1/tipo-documento-matricula-disciplina/list",
+    "operationId": "getAllList_25"
+  },
+  {
+    "path": "/api/v1/tipo-disciplina/list",
+    "operationId": "getAllList_26"
+  },
+  {
+    "path": "/api/v1/tipo-disciplina/clean",
+    "operationId": "getAllByTipoDisciplinaIds"
+  },
+  {
+    "path": "/api/v1/tipo-dias/list",
+    "operationId": "getAllList_27"
+  },
+  {
+    "path": "/api/v1/tipo-curso/list",
+    "operationId": "getAllList_28"
+  },
+  {
+    "path": "/api/v1/tipo-contato",
+    "operationId": "getAll_26"
+  },
+  {
+    "path": "/api/v1/tipo-contato/{id}",
+    "operationId": "findById_20"
+  },
+  {
+    "path": "/api/v1/tipo-contato/list",
+    "operationId": "getAllList_29"
+  },
+  {
+    "path": "/api/v1/tipo-contato/count",
+    "operationId": "count_17"
+  },
+  {
+    "path": "/api/v1/tipo-concurso",
+    "operationId": "findAllPaged"
+  },
+  {
+    "path": "/api/v1/tipo-concurso/list",
+    "operationId": "getAllList_30"
+  },
+  {
+    "path": "/api/v1/tipo-cobranca/list",
+    "operationId": "getAllList_31"
+  },
+  {
+    "path": "/api/v1/tipo-classificacao/list",
+    "operationId": "getAllList_32"
+  },
+  {
+    "path": "/api/v1/tipo-classificacao/clean",
+    "operationId": "getAllList_33"
+  },
+  {
+    "path": "/api/v1/tipo-campo",
+    "operationId": "list_5"
+  },
+  {
+    "path": "/api/v1/tipo-banner",
+    "operationId": "getAll_27"
+  },
+  {
+    "path": "/api/v1/tipo-avaliacao",
+    "operationId": "getAll_28"
+  },
+  {
+    "path": "/api/v1/tipo-avaliacao/{id}",
+    "operationId": "findById_21"
+  },
+  {
+    "path": "/api/v1/tipo-avaliacao/list",
+    "operationId": "getAllList_34"
+  },
+  {
+    "path": "/api/v1/tipo-avaliacao/count",
+    "operationId": "count_18"
+  },
+  {
+    "path": "/api/v1/tipo-atividade/list",
+    "operationId": "getAllList_35"
+  },
+  {
+    "path": "/api/v1/tipo-aprovacao/list",
+    "operationId": "getAllList_36"
+  },
+  {
+    "path": "/api/v1/tipo-agenda-evento",
+    "operationId": "getAll_30"
+  },
+  {
+    "path": "/api/v1/tipo-agenda-evento/{id}",
+    "operationId": "findById_23"
+  },
+  {
+    "path": "/api/v1/tipo-agenda-evento/list",
+    "operationId": "getAllList_37"
+  },
+  {
+    "path": "/api/v1/termo/{id}",
+    "operationId": "getById_3"
+  },
+  {
+    "path": "/api/v1/termo-adesao/{termoId}/matricula/{matriculaId}",
+    "operationId": "getAdesaoPorMatricula"
+  },
+  {
+    "path": "/api/v1/termo-adesao/verificar/{termoId}/matricula/{matriculaId}",
+    "operationId": "verificarTermoAceite"
+  },
+  {
+    "path": "/api/v1/termo-adesao/matricula-ou-candidato/{id}",
+    "operationId": "getTermosByMatriculaOrCandidatoId"
+  },
+  {
+    "path": "/api/v1/tema/{id}/atendentes",
+    "operationId": "findAtendentes"
+  },
+  {
+    "path": "/api/v1/tema/{id}/assuntos",
+    "operationId": "findAssuntos"
+  },
+  {
+    "path": "/api/v1/tema/{assuntoId}/atendentes-assunto",
+    "operationId": "findAtendentesAssunto"
+  },
+  {
+    "path": "/api/v1/tema/tema/{setorId}",
+    "operationId": "findBySetorId"
+  },
+  {
+    "path": "/api/v1/tema/page",
+    "operationId": "getAllPage_1"
+  },
+  {
+    "path": "/api/v1/tema/list",
+    "operationId": "getAllList_38"
+  },
+  {
+    "path": "/api/v1/tema/list-custom",
+    "operationId": "getAllByDepartamentoId"
+  },
+  {
+    "path": "/api/v1/tema-external",
+    "operationId": "getAll_32"
+  },
+  {
+    "path": "/api/v1/tema-external/{id}",
+    "operationId": "findById_25"
+  },
+  {
+    "path": "/api/v1/tema-external/list",
+    "operationId": "getAllList_39"
+  },
+  {
+    "path": "/api/v1/tcc/matricula-disciplina/{matriculaDisciplinaId}",
+    "operationId": "findByMatriculaDisciplinaId"
+  },
+  {
+    "path": "/api/v1/sse/{channel}/{key}",
+    "operationId": "subscribe"
+  },
+  {
+    "path": "/api/v1/solicitacoes-certificados",
+    "operationId": "listar"
+  },
+  {
+    "path": "/api/v1/solicitacoes-certificados/{id}",
+    "operationId": "detalhar"
+  },
+  {
+    "path": "/api/v1/solicitacoes-certificados/{id}/validar-disponibilidade",
+    "operationId": "validarDisponibilidade"
+  },
+  {
+    "path": "/api/v1/solicitacoes-certificados/{id}/preview-certificado",
+    "operationId": "previewCertificado"
+  },
+  {
+    "path": "/api/v1/solicitacoes-certificados/{id}/preview-certificado-base64",
+    "operationId": "previewCertificadoBase64"
+  },
+  {
+    "path": "/api/v1/solicitacoes-certificados/status",
+    "operationId": "listarStatus"
+  },
+  {
+    "path": "/api/v1/solicitacao/{id}",
+    "operationId": "findById_27"
+  },
+  {
+    "path": "/api/v1/solicitacao/{id}/etapas",
+    "operationId": "findEtapas"
+  },
+  {
+    "path": "/api/v1/solicitacao/painel-analise/{id}",
+    "operationId": "findOneForPainelAnalise"
+  },
+  {
+    "path": "/api/v1/solicitacao/painel-analise/{id}/etapas",
+    "operationId": "findEtapas_1"
+  },
+  {
+    "path": "/api/v1/solicitacao/painel-analise/page",
+    "operationId": "findPainelAnalise"
+  },
+  {
+    "path": "/api/v1/solicitacao/pageable-setor",
+    "operationId": "getSetoresByUserId"
+  },
+  {
+    "path": "/api/v1/solicitacao/page",
+    "operationId": "getAll_33"
+  },
+  {
+    "path": "/api/v1/solicitacao/page-my-tickets",
+    "operationId": "getAllCustom"
+  },
+  {
+    "path": "/api/v1/solicitacao/list",
+    "operationId": "getAllList_40"
+  },
+  {
+    "path": "/api/v1/solicitacao/courses-by-setor-id/{setorId}",
+    "operationId": "getCursosBySetorId"
+  },
+  {
+    "path": "/api/v1/sistema/{id}",
+    "operationId": "getSistemaById"
+  },
+  {
+    "path": "/api/v1/setor",
+    "operationId": "getAll_34"
+  },
+  {
+    "path": "/api/v1/setor/{id}",
+    "operationId": "getById_4"
+  },
+  {
+    "path": "/api/v1/setor/list",
+    "operationId": "getAllList_41"
+  },
+  {
+    "path": "/api/v1/serie",
+    "operationId": "getAll_35"
+  },
+  {
+    "path": "/api/v1/serie/list",
+    "operationId": "getAllList_42"
+  },
+  {
+    "path": "/api/v1/resultado-documento-participante/{documentoParticipantId}",
+    "operationId": "findByResultadoDocumentoIdId"
+  },
+  {
+    "path": "/api/v1/requerimento/setor/{setorId}",
+    "operationId": "findEtapasBySetorId"
+  },
+  {
+    "path": "/api/v1/requerimento/list",
+    "operationId": "getAllList_43"
+  },
+  {
+    "path": "/api/v1/requerimento/list/resumo",
+    "operationId": "getAllListClean"
+  },
+  {
+    "path": "/api/v1/repasse-geral",
+    "operationId": "findAll"
+  },
+  {
+    "path": "/api/v1/repasse-geral/opcoes/tipo-regra",
+    "operationId": "listarTiposRegra"
+  },
+  {
+    "path": "/api/v1/repasse-geral/opcoes/tipo-filial",
+    "operationId": "listarTiposFilial"
+  },
+  {
+    "path": "/api/v1/repasse-geral/opcoes/receber-por",
+    "operationId": "listarReceberPor"
+  },
+  {
+    "path": "/api/v1/repasse-geral/opcoes/acrescimo-por",
+    "operationId": "listarAcrescimoPor"
+  },
+  {
+    "path": "/api/v1/repasse-geral/filiais",
+    "operationId": "findAllRepasseFiliais"
+  },
+  {
+    "path": "/api/v1/repasse-geral/filiais/{filialId}",
+    "operationId": "findRepasseFilialDados"
+  },
+  {
+    "path": "/api/v1/repasse-geral/filiais/opcoes/tipo-filial",
+    "operationId": "listarTiposFilialParaRepasseFilial"
+  },
+  {
+    "path": "/api/v1/repasse-geral/filiais/opcoes/cidade",
+    "operationId": "listarCidadesParaRepasseFilial"
+  },
+  {
+    "path": "/api/v1/repasse-filial/{filialId}/tipo-filial",
+    "operationId": "findTipoFilialPorFilialId"
+  },
+  {
+    "path": "/api/v1/repasse-filial/{filialId}/regras",
+    "operationId": "findAllRegras"
+  },
+  {
+    "path": "/api/v1/repasse-filial/opcoes/tipo-regra",
+    "operationId": "listarTiposRegra_1"
+  },
+  {
+    "path": "/api/v1/repasse-filial/opcoes/receber-por",
+    "operationId": "listarReceberPor_1"
+  },
+  {
+    "path": "/api/v1/repasse-filial/opcoes/acrescimo-por",
+    "operationId": "listarAcrescimoPor_1"
+  },
+  {
+    "path": "/api/v1/renegociacao/{id}",
+    "operationId": "findById_29"
+  },
+  {
+    "path": "/api/v1/renegociacao/financeiro/{financeirosId}",
+    "operationId": "findFinanceirosByFinanceirosId"
+  },
+  {
+    "path": "/api/v1/renegociacao/financeiro/composicao-valores/{financeirosId}",
+    "operationId": "findComposicaoValoressByFinanceirosId"
+  },
+  {
+    "path": "/api/v1/rematricula/{periodoLetivoId}/validar-inicio-rematricula",
+    "operationId": "validarRematricula"
+  },
+  {
+    "path": "/api/v1/rematricula/{periodoLetivoId}/matriculas",
+    "operationId": "findMatriculasByPeriodoLetivoId"
+  },
+  {
+    "path": "/api/v1/rematricula/{periodoLetivoId}/matriculas/{matriculaId}",
+    "operationId": "getDetalhesAluno"
+  },
+  {
+    "path": "/api/v1/rematricula/{periodoLetivoId}/matricula/{matriculaId}/disciplinas",
+    "operationId": "findDisciplinasByAluno"
+  },
+  {
+    "path": "/api/v1/rematricula/{periodoLetivoId}/detalhe-periodo",
+    "operationId": "obterDetalhesPeriodo"
+  },
+  {
+    "path": "/api/v1/rematricula/status",
+    "operationId": "listarStatusDisciplinas"
+  },
+  {
+    "path": "/api/v1/rematricula/periodos",
+    "operationId": "listarPeriodos"
+  },
+  {
+    "path": "/api/v1/relatorio-solicitacao/etapas-requerimentos/xls",
+    "operationId": "exportEtapasRequerimentosXLS"
+  },
+  {
+    "path": "/api/v1/relatorio-candidato/processo-seletivo/{processoSeletivoId}/xls",
+    "operationId": "exportCandidatoProcessoSeletivoXLS"
+  },
+  {
+    "path": "/api/v1/registros/view",
+    "operationId": "getDadosTela"
+  },
+  {
+    "path": "/api/v1/registros/historico",
+    "operationId": "getHistorico"
+  },
+  {
+    "path": "/api/v1/regiao/list",
+    "operationId": "getAllList_44"
+  },
+  {
+    "path": "/api/v1/regiao/count",
+    "operationId": "count_19"
+  },
+  {
+    "path": "/api/v1/rede",
+    "operationId": "getAll_38"
+  },
+  {
+    "path": "/api/v1/rede/{id}",
+    "operationId": "findById_31"
+  },
+  {
+    "path": "/api/v1/rede/list",
+    "operationId": "getAllList_45"
+  },
+  {
+    "path": "/api/v1/rede/count",
+    "operationId": "count_20"
+  },
+  {
+    "path": "/api/v1/rbac/recursos/meu-menu",
+    "operationId": "getMenuParaUsuario"
+  },
+  {
+    "path": "/api/v1/rbac/permissoes",
+    "operationId": "getPermissoesPaginado"
+  },
+  {
+    "path": "/api/v1/rbac/permissoes/mapa",
+    "operationId": "getPermissoesComoMapa"
+  },
+  {
+    "path": "/api/v1/raca/list",
+    "operationId": "getAllList_46"
+  },
+  {
+    "path": "/api/v1/raca/count",
+    "operationId": "count_21"
+  },
+  {
+    "path": "/api/v1/prova/list",
+    "operationId": "getAllList_47"
+  },
+  {
+    "path": "/api/v1/processo-seletivo",
+    "operationId": "getAll_41"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{processoId}/tipos-disciplinas",
+    "operationId": "listarDisciplinas"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{processoId}/dados-primarios",
+    "operationId": "buscarDadosPrimarios"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{processoId}/concursos/{concursoId}",
+    "operationId": "buscarDadosDoConcurso"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{processoId}/atividades",
+    "operationId": "listarAtividades"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{id}",
+    "operationId": "getById_5"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{id}/validar-concurso",
+    "operationId": "validarPeriodoLetivoParaConcursosCriados"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{id}/sincronizacao/status",
+    "operationId": "getSincronizacaoStatus"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{id}/ofertas-projetadas",
+    "operationId": "getProjectedOffers"
+  },
+  {
+    "path": "/api/v1/processo-seletivo/{id}/count-disciplinas-sincronizar",
+    "operationId": "countDisciplinas"
+  },
+  {
+    "path": "/api/v1/polo/list",
+    "operationId": "getAllList_48"
+  },
+  {
+    "path": "/api/v1/polo/count",
+    "operationId": "count_22"
+  },
+  {
+    "path": "/api/v1/polo-tipo",
+    "operationId": "getAll_43"
+  },
+  {
+    "path": "/api/v1/polo-tipo/{id}",
+    "operationId": "findById_35"
+  },
+  {
+    "path": "/api/v1/polo-tipo/list",
+    "operationId": "getAllList_49"
+  },
+  {
+    "path": "/api/v1/polo-tipo/count",
+    "operationId": "count_23"
+  },
+  {
+    "path": "/api/v1/plano-pagamento/{id}/for-modal",
+    "operationId": "findByIdClean"
+  },
+  {
+    "path": "/api/v1/plano-pagamento/{id}/curriculos",
+    "operationId": "findCurriculos"
+  },
+  {
+    "path": "/api/v1/pessoa/page-custom",
+    "operationId": "getAllCustom_1"
+  },
+  {
+    "path": "/api/v1/pessoa/page-clean",
+    "operationId": "getAllPeoplesCleanPageDTO"
+  },
+  {
+    "path": "/api/v1/pessoa/list",
+    "operationId": "getAllList_50"
+  },
+  {
+    "path": "/api/v1/pessoa/count",
+    "operationId": "count_24"
+  },
+  {
+    "path": "/api/v1/periodo-letivo/{id}/totais-periodo",
+    "operationId": "obterTotaisPeriodo"
+  },
+  {
+    "path": "/api/v1/periodo-letivo/pageable",
+    "operationId": "getPageable"
+  },
+  {
+    "path": "/api/v1/periodo-letivo/list",
+    "operationId": "getAllList_51"
+  },
+  {
+    "path": "/api/v1/pergunta-cpa/cpa/{id}",
+    "operationId": "findByCpaId"
+  },
+  {
+    "path": "/api/v1/perfil/list",
+    "operationId": "getAllList_52"
+  },
+  {
+    "path": "/api/v1/perfil/dados/{id}",
+    "operationId": "getDadosPerfil"
+  },
+  {
+    "path": "/api/v1/perfil/dados/usuario/{perfilId}",
+    "operationId": "getDadosUsuarioPerfil"
+  },
+  {
+    "path": "/api/v1/perfil/dados/funcionalidades/{perfilId}",
+    "operationId": "getFuncionalidadesPerfilDetalhadas"
+  },
+  {
+    "path": "/api/v1/perfil/count",
+    "operationId": "count_25"
+  },
+  {
+    "path": "/api/v1/perfil/class",
+    "operationId": "findIdAndNameGeneric"
+  },
+  {
+    "path": "/api/v1/perfil/acessosPerfil",
+    "operationId": "getAcessosPerfis"
+  },
+  {
+    "path": "/api/v1/perfil-funcionalidade/{id}",
+    "operationId": "findById_40"
+  },
+  {
+    "path": "/api/v1/perfil-funcionalidade/list",
+    "operationId": "getAllList_53"
+  },
+  {
+    "path": "/api/v1/perfil-funcionalidade/count",
+    "operationId": "count_26"
+  },
+  {
+    "path": "/api/v1/parametro-fonte/{id}",
+    "operationId": "findById_41"
+  },
+  {
+    "path": "/api/v1/parametro-fonte/list/{nivelEnsinoId}",
+    "operationId": "listarFontesAtivasByNivel"
+  },
+  {
+    "path": "/api/v1/pais/list",
+    "operationId": "getAllList_54"
+  },
+  {
+    "path": "/api/v1/pais/count",
+    "operationId": "count_27"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor-rg/{id}/exists-by-sigla",
+    "operationId": "existsBySiglaWithNotId"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor/{id}/exists-by-sigla",
+    "operationId": "existsBySiglaWithNotId_1"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor-rg/list",
+    "operationId": "getAllList_55"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor/list",
+    "operationId": "getAllList_56"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor-rg/exists-by-sigla",
+    "operationId": "existsBySigla"
+  },
+  {
+    "path": "/api/v1/orgao-expedidor/exists-by-sigla",
+    "operationId": "existsBySigla_1"
+  },
+  {
+    "path": "/api/v1/oferta/{id}/plano-pagamento",
+    "operationId": "findPlanoPagamentoByOfertaId"
+  },
+  {
+    "path": "/api/v1/nivel-ensino/list",
+    "operationId": "getAllList_57"
+  },
+  {
+    "path": "/api/v1/nivel-ensino/count",
+    "operationId": "count_28"
+  },
+  {
+    "path": "/api/v1/nacionalidade",
+    "operationId": "getAll_51"
+  },
+  {
+    "path": "/api/v1/motivo-delecao",
+    "operationId": "getAll_52"
+  },
+  {
+    "path": "/api/v1/motivo-delecao/{id}",
+    "operationId": "findById_44"
+  },
+  {
+    "path": "/api/v1/motivo-delecao/list",
+    "operationId": "getAllList_58"
+  },
+  {
+    "path": "/api/v1/motivo-delecao/count",
+    "operationId": "count_29"
+  },
+  {
+    "path": "/api/v1/modulo",
+    "operationId": "getAll_53"
+  },
+  {
+    "path": "/api/v1/modalidade",
+    "operationId": "getAll_54"
+  },
+  {
+    "path": "/api/v1/modalidade/{id}",
+    "operationId": "findById_45"
+  },
+  {
+    "path": "/api/v1/modalidade/list",
+    "operationId": "getAllList_59"
+  },
+  {
+    "path": "/api/v1/modalidade/count",
+    "operationId": "count_30"
+  },
+  {
+    "path": "/api/v1/modalidade-atividade-complementar",
+    "operationId": "getAll_55"
+  },
+  {
+    "path": "/api/v1/modalidade-atividade-complementar/{id}",
+    "operationId": "findById_46"
+  },
+  {
+    "path": "/api/v1/modalidade-atividade-complementar/list",
+    "operationId": "getAllList_60"
+  },
+  {
+    "path": "/api/v1/matricula",
+    "operationId": "getAll_56"
+  },
+  {
+    "path": "/api/v1/matricula/{pessoaId}/processo-seletivo",
+    "operationId": "findProcessoSeletivoById"
+  },
+  {
+    "path": "/api/v1/matricula/{pessoaId}/processo-seletivo/{candidatoId}",
+    "operationId": "findSingleProcessoSeletivoById"
+  },
+  {
+    "path": "/api/v1/matricula/{pessoaId}/pessoa",
+    "operationId": "findMatriculaPesssoaByPessoaId"
+  },
+  {
+    "path": "/api/v1/matricula/{pessoaId}/financeiro-pessoa/parcelas",
+    "operationId": "findFinanceiroByPessoaId"
+  },
+  {
+    "path": "/api/v1/matricula/{pessoaId}/curso",
+    "operationId": "findCursoByPessoaId"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/turma",
+    "operationId": "findTurmaById"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/financeiro-matricula/parcelas",
+    "operationId": "findFinanceiroByMatriculaId"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/financeiro-matricula/dados-gerais",
+    "operationId": "findFinanceiroDadosGeraisByMatriculaId"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/export-historico",
+    "operationId": "exportHistorico"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/disciplina",
+    "operationId": "findDisciplinaById"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/curso/historico/disciplinas",
+    "operationId": "findHistoricoDisciplinaById"
+  },
+  {
+    "path": "/api/v1/matricula/{matriculaId}/curso/historico/dados-gerais",
+    "operationId": "findHistoricoByIdAndCursoId"
+  },
+  {
+    "path": "/api/v1/matricula/{id}/matricula-disciplina/{matriculaDisciplinaId}",
+    "operationId": "findSingleDisciplinaByMatriculaDisciplinaId"
+  },
+  {
+    "path": "/api/v1/matricula/{id}/historico/dados-gerais",
+    "operationId": "findHistoricoById"
+  },
+  {
+    "path": "/api/v1/matricula/{id}/disciplina/{disciplinaId}",
+    "operationId": "findSingleDisciplinaById"
+  },
+  {
+    "path": "/api/v1/matricula/{id}/dados-matricula",
+    "operationId": "getDadosMatricula"
+  },
+  {
+    "path": "/api/v1/matricula/{id}/atividade-curricular",
+    "operationId": "findAtividadesComplementares"
+  },
+  {
+    "path": "/api/v1/matricula/pessoa/{pessoaId}",
+    "operationId": "findByPessoaId"
+  },
+  {
+    "path": "/api/v1/matricula/periodo/{periodoLetivoId}/curso/{cursoId}/disciplina/{disciplinaId}/tipo/{tipoDisciplinaId}/matriculas",
+    "operationId": "findMatriculasByPeriodoLetivoId_1"
+  },
+  {
+    "path": "/api/v1/matricula/pageable-clean",
+    "operationId": "getAllClean_2"
+  },
+  {
+    "path": "/api/v1/matricula/pageable-clean-ra",
+    "operationId": "findMatriculaRaClean"
+  },
+  {
+    "path": "/api/v1/matricula/list",
+    "operationId": "getAllList_61"
+  },
+  {
+    "path": "/api/v1/matricula/financeiro",
+    "operationId": "getAllProjection"
+  },
+  {
+    "path": "/api/v1/matricula/financeiro/filiais",
+    "operationId": "findAllFiliais"
+  },
+  {
+    "path": "/api/v1/matricula/financeiro/cursos",
+    "operationId": "findAllCursos"
+  },
+  {
+    "path": "/api/v1/matricula/financeiro-matricula/parcelas/{ids}",
+    "operationId": "findFinanceiroByMatriculaId_1"
+  },
+  {
+    "path": "/api/v1/matricula/export-certificate-completion",
+    "operationId": "exportCertificateCompletion"
+  },
+  {
+    "path": "/api/v1/matricula/disciplina-list/{matriculaId}",
+    "operationId": "getByMatricula"
+  },
+  {
+    "path": "/api/v1/matricula/curso/historico/{matriculaDisciplinaId}/motivo-dispensa",
+    "operationId": "motivoDispensa"
+  },
+  {
+    "path": "/api/v1/matricula/count",
+    "operationId": "count_31"
+  },
+  {
+    "path": "/api/v1/matricula-requerimento/{matriculaId}/requerimentos",
+    "operationId": "findRequerimentosByMatriculaId"
+  },
+  {
+    "path": "/api/v1/matricula-requerimento/list",
+    "operationId": "getAllList_62"
+  },
+  {
+    "path": "/api/v1/matricula-requerimento/count",
+    "operationId": "count_32"
+  },
+  {
+    "path": "/api/v1/matricula-documento/prestacao-servico/{prestacaoServico}",
+    "operationId": "checkIfMatriculaDocumentoByPrestacaoServicoHashExist"
+  },
+  {
+    "path": "/api/v1/matricula-documento/declaracao-matricula-disciplina/{declaracaoMatriculaDisciplina}",
+    "operationId": "checkIfMatriculaDocumentobyDeclaracaoMatriculaDisciplinaHashExist"
+  },
+  {
+    "path": "/api/v1/matricula-disciplina/list",
+    "operationId": "getAllList_63"
+  },
+  {
+    "path": "/api/v1/matricula-disciplina/count",
+    "operationId": "count_33"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar/{matriculaId}/horas-complementares",
+    "operationId": "horasComplementaresByMatriculaId"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar/{matriculaId}/atividades-complementares",
+    "operationId": "findAtividadesComplementaresByMatriculaId"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar/{id}",
+    "operationId": "findById_50"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar/{id}/matricula",
+    "operationId": "findAtividadeComplementarByAtividadeId"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar/list",
+    "operationId": "getAllList_64"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar-link",
+    "operationId": "getAll_60"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar-link/{id}",
+    "operationId": "findById_51"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar-link/list",
+    "operationId": "getAllList_65"
+  },
+  {
+    "path": "/api/v1/matricula-atividade-complementar-link/count",
+    "operationId": "count_34"
+  },
+  {
+    "path": "/api/v1/mantenedora/verify-sigla",
+    "operationId": "existsBySigla_2"
+  },
+  {
+    "path": "/api/v1/mantenedora/page",
+    "operationId": "getAllPage_3"
+  },
+  {
+    "path": "/api/v1/mantenedora/list",
+    "operationId": "getAllList_66"
+  },
+  {
+    "path": "/api/v1/mantenedora/count",
+    "operationId": "count_35"
+  },
+  {
+    "path": "/api/v1/mac/matricula/{matriculaId}",
+    "operationId": "getCursoByMatriculaId"
+  },
+  {
+    "path": "/api/v1/log-matricula-disciplina/{matriculaDisciplinaId}/ultimo-log",
+    "operationId": "getAllClean_3"
+  },
+  {
+    "path": "/api/v1/localizacao",
+    "operationId": "getAll_62"
+  },
+  {
+    "path": "/api/v1/localizacao/{id}",
+    "operationId": "findById_53"
+  },
+  {
+    "path": "/api/v1/localizacao/list",
+    "operationId": "getAllList_67"
+  },
+  {
+    "path": "/api/v1/localizacao/count",
+    "operationId": "count_36"
+  },
+  {
+    "path": "/api/v1/instituicao/list",
+    "operationId": "getAllList_68"
+  },
+  {
+    "path": "/api/v1/instituicao/count",
+    "operationId": "count_37"
+  },
+  {
+    "path": "/api/v1/idioma/list",
+    "operationId": "getAllList_69"
+  },
+  {
+    "path": "/api/v1/idioma/count",
+    "operationId": "count_38"
+  },
+  {
+    "path": "/api/v1/idioma-padrao/list",
+    "operationId": "getAllList_70"
+  },
+  {
+    "path": "/api/v1/health",
+    "operationId": "get"
+  },
+  {
+    "path": "/api/v1/grupo-repasse/{id}/cursos",
+    "operationId": "findCursosByGrupoId"
+  },
+  {
+    "path": "/api/v1/grupo-repasse/cursos",
+    "operationId": "findCursosParaGrupo"
+  },
+  {
+    "path": "/api/v1/grupo-repasse/cursos-sem-grupo",
+    "operationId": "findCursosSemGrupo"
+  },
+  {
+    "path": "/api/v1/grupo-curso/{id}/curriculos-afetados/count",
+    "operationId": "countCurriculosAfetados"
+  },
+  {
+    "path": "/api/v1/grupo-curso/planos-por-curso/{cursoId}",
+    "operationId": "findPlanosPorCurso"
+  },
+  {
+    "path": "/api/v1/grupo-curso/list",
+    "operationId": "findAllList"
+  },
+  {
+    "path": "/api/v1/grupo-curso/grupos-por-curriculos",
+    "operationId": "findGruposPorCurriculos"
+  },
+  {
+    "path": "/api/v1/grupo-curso/cursos-disponiveis",
+    "operationId": "findCursosDisponiveis"
+  },
+  {
+    "path": "/api/v1/grade-disciplina/status-disciplina",
+    "operationId": "listarStatusDisciplinas_1"
+  },
+  {
+    "path": "/api/v1/grade-disciplina/periodo/{periodoLetivoId}/resumo-acompanhamento",
+    "operationId": "findResumoDisciplinasByPeriodoLetivoId"
+  },
+  {
+    "path": "/api/v1/grade-disciplina/periodo/{periodoLetivoId}/disciplinas",
+    "operationId": "listarDisciplinas_1"
+  },
+  {
+    "path": "/api/v1/grade-disciplina/periodo/{periodoLetivoId}/curso/{cursoId}/disciplina/{disciplinaId}/tipo/{tipoDisciplinaId}",
+    "operationId": "findDetalhesDisciplina"
+  },
+  {
+    "path": "/api/v1/grade-disciplina/periodo/{periodoLetivoId}/curso/{cursoId}/disciplina/{disciplinaId}/tipo/{tipoDisciplinaId}/atividades",
+    "operationId": "findAtividadesByDisciplina"
+  },
+  {
+    "path": "/api/v1/grade-disciplina/periodo/{periodoLetivoId}/curso/{cursoId}/disciplina/{disciplinaId}/tipo/{tipoDisciplinaId}/atividade/{atividadeId}",
+    "operationId": "findDetalhesAtividade"
+  },
+  {
+    "path": "/api/v1/gestor/page-clean",
+    "operationId": "getAllClean_4"
+  },
+  {
+    "path": "/api/v1/gestor/list",
+    "operationId": "getAllList_71"
+  },
+  {
+    "path": "/api/v1/gestor/count",
+    "operationId": "count_39"
+  },
+  {
+    "path": "/api/v1/genero/list",
+    "operationId": "getAllList_72"
+  },
+  {
+    "path": "/api/v1/genero/count",
+    "operationId": "count_40"
+  },
+  {
+    "path": "/api/v1/funcionalidade/list",
+    "operationId": "getAllList_73"
+  },
+  {
+    "path": "/api/v1/funcionalidade/list-functionalits-available",
+    "operationId": "getAllList_74"
+  },
+  {
+    "path": "/api/v1/funcionalidade/count",
+    "operationId": "count_41"
+  },
+  {
+    "path": "/api/v1/funcionalidade-tipo",
+    "operationId": "getAll_68"
+  },
+  {
+    "path": "/api/v1/funcionalidade-tipo/{id}",
+    "operationId": "findById_61"
+  },
+  {
+    "path": "/api/v1/funcionalidade-tipo/list",
+    "operationId": "getAllList_75"
+  },
+  {
+    "path": "/api/v1/funcionalidade-tipo/count",
+    "operationId": "count_42"
+  },
+  {
+    "path": "/api/v1/formulario-nps/{id}/relatorio",
+    "operationId": "exportRelatorio"
+  },
+  {
+    "path": "/api/v1/forma-oferta/list",
+    "operationId": "getAllList_76"
+  },
+  {
+    "path": "/api/v1/forma-oferta/count",
+    "operationId": "count_43"
+  },
+  {
+    "path": "/api/v1/financeiro/geral",
+    "operationId": "getAll_71"
+  },
+  {
+    "path": "/api/v1/financeiro/geral/kpi",
+    "operationId": "findKpi"
+  },
+  {
+    "path": "/api/v1/financeiro/geral/export-report-excel",
+    "operationId": "exportReportAllAppliedCandidatosRegistrationsXLS"
+  },
+  {
+    "path": "/api/v1/financeiro/geral/detalhes",
+    "operationId": "getDetails"
+  },
+  {
+    "path": "/api/v1/filial/{id}/kpi",
+    "operationId": "findKpiById"
+  },
+  {
+    "path": "/api/v1/filial/{id}/clean",
+    "operationId": "findCleanById_1"
+  },
+  {
+    "path": "/api/v1/filial/verify-name",
+    "operationId": "verifyName"
+  },
+  {
+    "path": "/api/v1/filial/page",
+    "operationId": "getAllPage_4"
+  },
+  {
+    "path": "/api/v1/filial/list",
+    "operationId": "getAllList_77"
+  },
+  {
+    "path": "/api/v1/filial/list-clean",
+    "operationId": "findListClean"
+  },
+  {
+    "path": "/api/v1/filial/existem-em-concursos/page",
+    "operationId": "getAllListWhereProcessoSeletivoExists"
+  },
+  {
+    "path": "/api/v1/filial/count",
+    "operationId": "count_44"
+  },
+  {
+    "path": "/api/v1/filial/by-type-id",
+    "operationId": "getSubsidiaryByTypeId"
+  },
+  {
+    "path": "/api/v1/filial/by-mega-id",
+    "operationId": "getAllFilialByMegaFilialId"
+  },
+  {
+    "path": "/api/v1/feriado/list",
+    "operationId": "getAllList_78"
+  },
+  {
+    "path": "/api/v1/feriado/count",
+    "operationId": "count_45"
+  },
+  {
+    "path": "/api/v1/fechamento-periodo/{id}/validar-fechamento",
+    "operationId": "validarFechamento"
+  },
+  {
+    "path": "/api/v1/fechamento-periodo/{id}/detalhe-periodo",
+    "operationId": "obterDetalhesPeriodo_1"
+  },
+  {
+    "path": "/api/v1/estorno/{id}",
+    "operationId": "findById_65"
+  },
+  {
+    "path": "/api/v1/estorno/forma-pagamento",
+    "operationId": "findFormaPagamentoForEstorno"
+  },
+  {
+    "path": "/api/v1/estorno/financeiro/{parcelasId}",
+    "operationId": "findFinanceirosByFinanceirosId_1"
+  },
+  {
+    "path": "/api/v1/estorno/financeiro/valorEstorno/{parcelasId}",
+    "operationId": "findValueByFinanceirosId"
+  },
+  {
+    "path": "/api/v1/estado-civil/list",
+    "operationId": "getAllList_79"
+  },
+  {
+    "path": "/api/v1/escolaridade/list",
+    "operationId": "getAllList_80"
+  },
+  {
+    "path": "/api/v1/escolaridade/count",
+    "operationId": "count_46"
+  },
+  {
+    "path": "/api/v1/endereco/list",
+    "operationId": "getAllList_81"
+  },
+  {
+    "path": "/api/v1/endereco/count",
+    "operationId": "count_47"
+  },
+  {
+    "path": "/api/v1/empresa",
+    "operationId": "getByCnpj"
+  },
+  {
+    "path": "/api/v1/emissao-documento/{matriculaId}/export-documents",
+    "operationId": "exportDocuments"
+  },
+  {
+    "path": "/api/v1/emissao-documento/{matriculaId}/documents/preview",
+    "operationId": "previewDocument"
+  },
+  {
+    "path": "/api/v1/emissao-documento/{id}/page",
+    "operationId": "getAll_77"
+  },
+  {
+    "path": "/api/v1/emissao-documento/{emissaoId}/preview",
+    "operationId": "getPreview"
+  },
+  {
+    "path": "/api/v1/emissao-documento/{emissaoId}/detalhes",
+    "operationId": "getById_11"
+  },
+  {
+    "path": "/api/v1/emissao-documento/available-years/{matriculaId}",
+    "operationId": "getYearsAvailable"
+  },
+  {
+    "path": "/api/v1/ementa/{id}",
+    "operationId": "buscarPorId"
+  },
+  {
+    "path": "/api/v1/ementa/disciplinas",
+    "operationId": "listarDisciplinasParaVinculo"
+  },
+  {
+    "path": "/api/v1/ementa-disciplina",
+    "operationId": "findAll_5"
+  },
+  {
+    "path": "/api/v1/ementa-disciplina/{id}",
+    "operationId": "findById_68"
+  },
+  {
+    "path": "/api/v1/edital/list",
+    "operationId": "getAllList_82"
+  },
+  {
+    "path": "/api/v1/edital/count",
+    "operationId": "count_48"
+  },
+  {
+    "path": "/api/v1/edital-link",
+    "operationId": "getAll_79"
+  },
+  {
+    "path": "/api/v1/edital-link/{id}",
+    "operationId": "findById_70"
+  },
+  {
+    "path": "/api/v1/edital-link/list",
+    "operationId": "getAllList_83"
+  },
+  {
+    "path": "/api/v1/edital-link/count",
+    "operationId": "count_49"
+  },
+  {
+    "path": "/api/v1/documento-participante/participant/{participantId}",
+    "operationId": "findByParticipantId"
+  },
+  {
+    "path": "/api/v1/documento-participante/file-link/participant/{participantId}",
+    "operationId": "getFilesLinkByParticipantId"
+  },
+  {
+    "path": "/api/v1/documento-matricula-disciplina",
+    "operationId": "getAll_80"
+  },
+  {
+    "path": "/api/v1/documento-matricula-disciplina/{id}",
+    "operationId": "findById_71"
+  },
+  {
+    "path": "/api/v1/documento-matricula-disciplina/{id}/view",
+    "operationId": "getDocumentoBase64"
+  },
+  {
+    "path": "/api/v1/documento-matricula-disciplina/matricula/{matriculaId}",
+    "operationId": "getAllByMatriculaId"
+  },
+  {
+    "path": "/api/v1/documento-matricula-disciplina/list",
+    "operationId": "getAllList_84"
+  },
+  {
+    "path": "/api/v1/documentacao-matricula-disciplina",
+    "operationId": "getAll_81"
+  },
+  {
+    "path": "/api/v1/documentacao-matricula-disciplina/{id}",
+    "operationId": "findById_72"
+  },
+  {
+    "path": "/api/v1/disciplina/list",
+    "operationId": "getAllList_85"
+  },
+  {
+    "path": "/api/v1/disciplina/count",
+    "operationId": "count_50"
+  },
+  {
+    "path": "/api/v1/departamento/{departamentoId}/setores",
+    "operationId": "findSetoresByDepartamentoId"
+  },
+  {
+    "path": "/api/v1/departamento/list",
+    "operationId": "getAllList_86"
+  },
+  {
+    "path": "/api/v1/departamento/list-custom",
+    "operationId": "getAllListCustom"
+  },
+  {
+    "path": "/api/v1/deficiencia/list",
+    "operationId": "getAllList_87"
+  },
+  {
+    "path": "/api/v1/deficiencia/count",
+    "operationId": "count_51"
+  },
+  {
+    "path": "/api/v1/curso/page",
+    "operationId": "getAllPage_5"
+  },
+  {
+    "path": "/api/v1/curso/list",
+    "operationId": "getAllList_88"
+  },
+  {
+    "path": "/api/v1/curso/list-custom",
+    "operationId": "getAllListCustom_1"
+  },
+  {
+    "path": "/api/v1/curso/filial/{filialId}",
+    "operationId": "findCursosOfertadosByFilial"
+  },
+  {
+    "path": "/api/v1/curso/courses-pos-clean",
+    "operationId": "findAllCoursesPosClean"
+  },
+  {
+    "path": "/api/v1/curso/count",
+    "operationId": "count_52"
+  },
+  {
+    "path": "/api/v1/curso/concurso/{concursoId}",
+    "operationId": "getAllForProcessoSeletivo"
+  },
+  {
+    "path": "/api/v1/curso/by-matricula-id/{matriculaId}",
+    "operationId": "findByMatriculaId"
+  },
+  {
+    "path": "/api/v1/curriculo/{id}/plano-pagamento",
+    "operationId": "findPlanoPagamentoByCurriculoId"
+  },
+  {
+    "path": "/api/v1/curriculo/{cursoId}/curriculos",
+    "operationId": "findCurriculosOfertadosByCursoId"
+  },
+  {
+    "path": "/api/v1/curriculo/pageable-plano-pagamento",
+    "operationId": "getAllPageablePlanoPagamento"
+  },
+  {
+    "path": "/api/v1/curriculo/module/{moduleId}/course/{courseId}",
+    "operationId": "getCurriculosForCourseAndModule"
+  },
+  {
+    "path": "/api/v1/curriculo/list",
+    "operationId": "getAllList_89"
+  },
+  {
+    "path": "/api/v1/curriculo/course/{id}",
+    "operationId": "getCurriculosForCourse"
+  },
+  {
+    "path": "/api/v1/curriculo/count",
+    "operationId": "count_53"
+  },
+  {
+    "path": "/api/v1/curriculo/check-exists-by-course-id/{courseId}",
+    "operationId": "checkExistsByCourseId"
+  },
+  {
+    "path": "/api/v1/curriculo-disciplina/{id}/disciplinas-turma",
+    "operationId": "findDisciplinaById_1"
+  },
+  {
+    "path": "/api/v1/cupom/{id}/kpi",
+    "operationId": "getKpi"
+  },
+  {
+    "path": "/api/v1/cupom/{id}/candidatos",
+    "operationId": "getCandidatos"
+  },
+  {
+    "path": "/api/v1/cupom/list",
+    "operationId": "getAllList_90"
+  },
+  {
+    "path": "/api/v1/cupom/is-valid/{cupom}",
+    "operationId": "isValid"
+  },
+  {
+    "path": "/api/v1/cpa/{id}/relatorio",
+    "operationId": "exportRelatorio_1"
+  },
+  {
+    "path": "/api/v1/cpa/find-conflict",
+    "operationId": "getConflictingCpaName"
+  },
+  {
+    "path": "/api/v1/configuracao-registro/atual",
+    "operationId": "getAtual"
+  },
+  {
+    "path": "/api/v1/concurso",
+    "operationId": "getAll_90"
+  },
+  {
+    "path": "/api/v1/concurso/{id}/ofertas-padrao",
+    "operationId": "getOfertasPadrao"
+  },
+  {
+    "path": "/api/v1/concurso/{id}/filiais",
+    "operationId": "findAllFiliaisByConcursoId"
+  },
+  {
+    "path": "/api/v1/concurso/{id}/cursos",
+    "operationId": "findAllCursosByConcursoId"
+  },
+  {
+    "path": "/api/v1/concurso/{id}/curriculos",
+    "operationId": "findAllCurriculosByConcursoId"
+  },
+  {
+    "path": "/api/v1/concurso/{id}/areas-conhecimento",
+    "operationId": "findAllAreasByConcursoId"
+  },
+  {
+    "path": "/api/v1/concurso/processo-seletivos",
+    "operationId": "getAllByProcessoSeletivoIds"
+  },
+  {
+    "path": "/api/v1/concurso/processo-seletivo/{processoSeletivoId}",
+    "operationId": "getAllByProcessoSeletivo"
+  },
+  {
+    "path": "/api/v1/concurso/paginado",
+    "operationId": "findAllPaged_1"
+  },
+  {
+    "path": "/api/v1/colaborador/search-select",
+    "operationId": "getAllForSearchSelect"
+  },
+  {
+    "path": "/api/v1/colaborador/page",
+    "operationId": "getAll_92"
+  },
+  {
+    "path": "/api/v1/colaborador/page-with-params",
+    "operationId": "getAllWithParams"
+  },
+  {
+    "path": "/api/v1/colaborador/list",
+    "operationId": "getAllList_91"
+  },
+  {
+    "path": "/api/v1/classificacao-atividade-complementar",
+    "operationId": "findAllPage"
+  },
+  {
+    "path": "/api/v1/classificacao-atividade-complementar/{id}",
+    "operationId": "findById_79"
+  },
+  {
+    "path": "/api/v1/cidade/nome/{cidade}/uf/{uf}",
+    "operationId": "getCidadeByNome"
+  },
+  {
+    "path": "/api/v1/cidade/list",
+    "operationId": "getAllList_92"
+  },
+  {
+    "path": "/api/v1/certificados",
+    "operationId": "listar_2"
+  },
+  {
+    "path": "/api/v1/certificados/{id}",
+    "operationId": "detalhar_1"
+  },
+  {
+    "path": "/api/v1/certificados/por-solicitacao/{solicitacaoId}",
+    "operationId": "buscarPorSolicitacaoId"
+  },
+  {
+    "path": "/api/v1/cep/{cep}",
+    "operationId": "getCep"
+  },
+  {
+    "path": "/api/v1/cargo/list",
+    "operationId": "getAllList_93"
+  },
+  {
+    "path": "/api/v1/cargo/count",
+    "operationId": "count_54"
+  },
+  {
+    "path": "/api/v1/candidatoVestibularProva/list",
+    "operationId": "getAllList_94"
+  },
+  {
+    "path": "/api/v1/candidatoVestibularProva/count",
+    "operationId": "count_55"
+  },
+  {
+    "path": "/api/v1/candidatoProuni/list",
+    "operationId": "getAllList_95"
+  },
+  {
+    "path": "/api/v1/candidatoProuni/count",
+    "operationId": "count_56"
+  },
+  {
+    "path": "/api/v1/candidatoFies/list",
+    "operationId": "getAllList_96"
+  },
+  {
+    "path": "/api/v1/candidatoFies/count",
+    "operationId": "count_57"
+  },
+  {
+    "path": "/api/v1/candidatoEnem/list",
+    "operationId": "getAllList_97"
+  },
+  {
+    "path": "/api/v1/candidatoEnem/count",
+    "operationId": "count_58"
+  },
+  {
+    "path": "/api/v1/candidato/{id}",
+    "operationId": "findById_82"
+  },
+  {
+    "path": "/api/v1/candidato/processo-seletivo/{processoSeletivoId}",
+    "operationId": "getAll_100"
+  },
+  {
+    "path": "/api/v1/candidato/list",
+    "operationId": "getAllList_98"
+  },
+  {
+    "path": "/api/v1/campanha/list",
+    "operationId": "getAllList_99"
+  },
+  {
+    "path": "/api/v1/banner",
+    "operationId": "getAll_102"
+  },
+  {
+    "path": "/api/v1/banner/{id}",
+    "operationId": "getById_16"
+  },
+  {
+    "path": "/api/v1/baixa-manual/{id}",
+    "operationId": "findById_84"
+  },
+  {
+    "path": "/api/v1/baixa-manual/{financeiroId}/valor/{dataPagamento}",
+    "operationId": "findValueByFinanceiroIdAndDataPagamento"
+  },
+  {
+    "path": "/api/v1/baixa-manual/forma-pagamento",
+    "operationId": "findFormaPagamentoForBaixaManual"
+  },
+  {
+    "path": "/api/v1/baixa-manual/financeiro/{financeiroId}",
+    "operationId": "findFinanceiroByFinanceiroId"
+  },
+  {
+    "path": "/api/v1/aviso-tipo-publico-alvo",
+    "operationId": "findAll_7"
+  },
+  {
+    "path": "/api/v1/avaliacao/list",
+    "operationId": "getAllList_100"
+  },
+  {
+    "path": "/api/v1/avaliacao/count",
+    "operationId": "count_59"
+  },
+  {
+    "path": "/api/v1/auditoria-detalhes/{requestId}",
+    "operationId": "getByRequestId"
+  },
+  {
+    "path": "/api/v1/atividade/list",
+    "operationId": "getAllList_101"
+  },
+  {
+    "path": "/api/v1/atividade/count",
+    "operationId": "count_60"
+  },
+  {
+    "path": "/api/v1/atividade-complementar/list",
+    "operationId": "getAllList_102"
+  },
+  {
+    "path": "/api/v1/atendimento",
+    "operationId": "getAll_106"
+  },
+  {
+    "path": "/api/v1/atendimento/{id}",
+    "operationId": "findById_87"
+  },
+  {
+    "path": "/api/v1/atendimento/{id}/messages",
+    "operationId": "findMessages"
+  },
+  {
+    "path": "/api/v1/atendimento/{id}/export-pdf",
+    "operationId": "exportPDF"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise",
+    "operationId": "findHeaderForPainelAnalise"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/{id}",
+    "operationId": "findOneForPainelAnalise_1"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/page",
+    "operationId": "findForPainelAnalise"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/export-xls",
+    "operationId": "exportPainelXLS"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/export-report-mensageria-geral",
+    "operationId": "exportMensageriaGeralXLS"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/cursos-sem-atendente",
+    "operationId": "findCursosSemAtendentes"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/atendentes",
+    "operationId": "findUsuariosMensageria"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/atendente/{usuarioId}",
+    "operationId": "findOneUsuarioMensageria"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/atendente/{usuarioId}/setores",
+    "operationId": "findSetoresByUsuarioId"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/atendente/{usuarioId}/cursos",
+    "operationId": "findCursosByUsuarioId"
+  },
+  {
+    "path": "/api/v1/atendimento/painel-analise/atendente/{usuarioId}/atendimentos",
+    "operationId": "findDisciplinasByTurmaId_1"
+  },
+  {
+    "path": "/api/v1/atendimento/pageable-setor",
+    "operationId": "getSetoresByUserId_1"
+  },
+  {
+    "path": "/api/v1/atendimento/meus-atendimentos",
+    "operationId": "getAllCustom_2"
+  },
+  {
+    "path": "/api/v1/atendimento/meus-atendimentos-projection",
+    "operationId": "getAllAtendimentosByResponsavel"
+  },
+  {
+    "path": "/api/v1/atendimento/list",
+    "operationId": "getAllList_103"
+  },
+  {
+    "path": "/api/v1/atendimento/list-meus-atendimentos",
+    "operationId": "findAtendimentoByUserId"
+  },
+  {
+    "path": "/api/v1/atendimento/list-custom",
+    "operationId": "findAtendimentoByAtendimentosId"
+  },
+  {
+    "path": "/api/v1/atendimento/fila",
+    "operationId": "getAllFila"
+  },
+  {
+    "path": "/api/v1/atendimento/courses-atendimento-by-setor-id/{setorId}",
+    "operationId": "getCoursesAtendimentoBySetorId"
+  },
+  {
+    "path": "/api/v1/atendimento/count-atendimentos-by-filters",
+    "operationId": "getTotalAtendimentosByFiltersAndByResponsavel"
+  },
+  {
+    "path": "/api/v1/atendimento/atendimento-by-setor-id/{setorId}",
+    "operationId": "getFilaAtendimentoBySetorId"
+  },
+  {
+    "path": "/api/v1/atendimento-external/{id}",
+    "operationId": "findById_88"
+  },
+  {
+    "path": "/api/v1/atendimento-external/{id}/messages",
+    "operationId": "findMessages_1"
+  },
+  {
+    "path": "/api/v1/assunto",
+    "operationId": "getAll_108"
+  },
+  {
+    "path": "/api/v1/assunto/{id}",
+    "operationId": "findById_89"
+  },
+  {
+    "path": "/api/v1/assunto/list",
+    "operationId": "getAllList_104"
+  },
+  {
+    "path": "/api/v1/assunto-external",
+    "operationId": "getAllGenericSearch"
+  },
+  {
+    "path": "/api/v1/area-conhecimento",
+    "operationId": "getAll_109"
+  },
+  {
+    "path": "/api/v1/area-conhecimento/{id}",
+    "operationId": "findById_90"
+  },
+  {
+    "path": "/api/v1/area-conhecimento/list",
+    "operationId": "getAllList_105"
+  },
+  {
+    "path": "/api/v1/area-conhecimento/count",
+    "operationId": "count_61"
+  },
+  {
+    "path": "/api/v1/analises/report-welcome-trail",
+    "operationId": "exportWelcomeTrailReport"
+  },
+  {
+    "path": "/api/v1/analises/report-unassigned-queue/{reportType}",
+    "operationId": "exportUnassignedQueuePdf"
+  },
+  {
+    "path": "/api/v1/analises/report-unanswered-queue/{reportType}",
+    "operationId": "exportUnansweredQueuePdf"
+  },
+  {
+    "path": "/api/v1/analises/report-synchronized-disciplines",
+    "operationId": "exportSynchronizedDisciplinesXls"
+  },
+  {
+    "path": "/api/v1/analises/report-synchronized-classes/{reportType}",
+    "operationId": "exportSynchronizedClasses"
+  },
+  {
+    "path": "/api/v1/analises/report-student-in-course",
+    "operationId": "exportReportStudentInCourse"
+  },
+  {
+    "path": "/api/v1/analises/report-student-courses/{reportType}",
+    "operationId": "exportStudentCoursesXls"
+  },
+  {
+    "path": "/api/v1/analises/report-student-by-branches/{reportType}",
+    "operationId": "exportMatriculasPorFiliaisReport"
+  },
+  {
+    "path": "/api/v1/analises/report-sales-by-course/{reportType}",
+    "operationId": "exportSalesByCourseXls"
+  },
+  {
+    "path": "/api/v1/analises/report-requirements",
+    "operationId": "exportReportRequerimentos"
+  },
+  {
+    "path": "/api/v1/analises/report-registered-courses/{reportType}",
+    "operationId": "exportRegisteredCoursesXls"
+  },
+  {
+    "path": "/api/v1/analises/report-general-requirements",
+    "operationId": "exportGeneralRequests"
+  },
+  {
+    "path": "/api/v1/analises/report-enrolled-students",
+    "operationId": "exportReportEnrolledStudentsXls"
+  },
+  {
+    "path": "/api/v1/analises/report-curriculum",
+    "operationId": "exportCurricullumRegistered"
+  },
+  {
+    "path": "/api/v1/analises/report-candidate-by-cupom",
+    "operationId": "exportCandidatesByCupom"
+  },
+  {
+    "path": "/api/v1/analises/report-assigned-attendant-unanswered/{reportType}",
+    "operationId": "exportAssignedAttendantUnansweredPdf"
+  },
+  {
+    "path": "/api/v1/analises/report-applied-candidates/{reportType}",
+    "operationId": "exportAppliedCandidatesXls"
+  },
+  {
+    "path": "/api/v1/analises/report-all-student-enrolled/{reportType}",
+    "operationId": "exportReportAllAppliedCandidatosRegistrationsXLS_1"
+  },
+  {
+    "path": "/api/v1/analises/report-affiliated",
+    "operationId": "exportaffiliatedReportXls"
+  },
+  {
+    "path": "/api/v1/agenda-evento/list",
+    "operationId": "getAllList_106"
+  },
+  {
+    "path": "/api/v1/admin/rbac/recursos",
+    "operationId": "getAllRecursos"
+  },
+  {
+    "path": "/api/v1/admin/rbac/perfis",
+    "operationId": "getAllPerfis"
+  },
+  {
+    "path": "/api/v1/admin/rbac/perfis/{id}",
+    "operationId": "getPerfilDetalhado"
+  },
+  {
+    "path": "/api/v1/acordo/{id}",
+    "operationId": "findById_92"
+  },
+  {
+    "path": "/api/v1/acordo/financeiro/{financeirosId}",
+    "operationId": "findFinanceirosByFinanceirosId_2"
+  },
+  {
+    "path": "/api/v1/acordo/financeiro/composicao-valores/{financeirosId}",
+    "operationId": "findComposicaoValoresByFinanceirosId"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/sincronizacao/status",
+    "operationId": "getSincronizacaoStatus_1"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/report-disciplinas",
+    "operationId": "exportReportEnrolledStudentsXls_1"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/report-atividades",
+    "operationId": "exportReportEnrolledStudentsXls_2"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/etapa/{etapa}/voltar",
+    "operationId": "voltarEtapa"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/etapa/3/atividades",
+    "operationId": "listarAtividadesEtapa3"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/etapa/2/tipos-disciplinas",
+    "operationId": "listarTiposDisciplinasEtapa2"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/etapa/1/dados",
+    "operationId": "obterDadosEtapa1"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/disciplinas",
+    "operationId": "listarDisciplinas_2"
+  },
+  {
+    "path": "/api/v1/abertura-periodo/{id}/cursos",
+    "operationId": "listarCursos"
+  },
+  {
+    "path": "/actuator/rabbitmq-connection",
+    "operationId": "testRabbitMQConnection"
+  }
+]
