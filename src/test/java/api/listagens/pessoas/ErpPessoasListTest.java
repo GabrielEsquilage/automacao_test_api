@@ -40,11 +40,8 @@ public class ErpPessoasListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                // Valida o Contrato exato via JSON Schema
+                .body(matchesJsonSchemaInClasspath("schemas/PagePessoaRecordResponseDTO.json"))
                 .extract().response();
     }
 
