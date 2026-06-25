@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalAppResumeResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "requerimento": {
+      "$ref": "RequerimentoPortalAppCleanResponseDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "respostaVisualizada": {
+      "type": "boolean"
+    },
+    "dataPrimeiroContato": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "tipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

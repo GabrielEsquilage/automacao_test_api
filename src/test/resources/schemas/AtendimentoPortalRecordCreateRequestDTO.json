@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtendimentoPortalRecordCreateRequestDTO",
+  "required": [
+    "assuntoId",
+    "mensagem"
+  ],
+  "type": "object",
+  "properties": {
+    "assuntoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "mensagem": {
+      "type": "string"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoCodigo": {
+      "type": "string"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "origemThessie": {
+      "type": "boolean"
+    }
+  }
+}

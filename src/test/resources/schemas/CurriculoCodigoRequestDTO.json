@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoCodigoRequestDTO",
+  "type": "object",
+  "properties": {
+    "codigo": {
+      "maxLength": 10,
+      "minLength": 0,
+      "type": "string"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

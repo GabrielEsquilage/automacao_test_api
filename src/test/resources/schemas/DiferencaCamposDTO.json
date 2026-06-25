@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DiferencaCamposDTO",
+  "type": "object",
+  "properties": {
+    "valorAntigo": {
+      "type": "object"
+    },
+    "valorNovo": {
+      "type": "object"
+    }
+  }
+}

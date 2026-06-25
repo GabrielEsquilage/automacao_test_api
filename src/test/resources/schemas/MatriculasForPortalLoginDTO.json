@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculasForPortalLoginDTO",
+  "type": "object",
+  "properties": {
+    "cursosGrad": {
+      "type": "array",
+      "items": {
+        "$ref": "MatriculaMatriculaDisciplinaModalRecordResponseDTO.json"
+      }
+    },
+    "cursosPos": {
+      "type": "array",
+      "items": {
+        "$ref": "MatriculaMatriculaDisciplinaModalRecordResponseDTO.json"
+      }
+    }
+  }
+}

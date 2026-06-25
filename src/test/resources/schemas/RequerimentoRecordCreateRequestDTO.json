@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoRecordCreateRequestDTO",
+  "required": [
+    "descricao",
+    "etapas",
+    "liberacaoStatusMatriculaIds",
+    "nivelEnsino",
+    "nome",
+    "possuiDisponibilidadeEspecifica",
+    "possuiTaxa"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "diasResposta": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDiasId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "possuiTaxa": {
+      "type": "boolean"
+    },
+    "valorTaxa": {
+      "type": "number"
+    },
+    "descricao": {
+      "maxLength": 600,
+      "minLength": 0,
+      "type": "string"
+    },
+    "matriculaAnexos": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoMatriculaAnexoRecordCreateRequestDTO.json"
+      }
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoEtapaRecordCreateRequestDTO.json"
+      }
+    },
+    "possuiDisponibilidadeEspecifica": {
+      "type": "boolean"
+    },
+    "disponibilidades": {
+      "type": "array",
+      "items": {
+        "$ref": "DisponibilidadeRecordResponseDTO.json"
+      }
+    },
+    "liberacaoStatusMatriculaIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "liberacaoCursoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "liberacaoFilialIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

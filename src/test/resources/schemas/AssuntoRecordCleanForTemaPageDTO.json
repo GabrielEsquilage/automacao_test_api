@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AssuntoRecordCleanForTemaPageDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "setor": {
+      "type": "string"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tema": {
+      "type": "string"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "nivelEnsino": {
+      "type": "string"
+    },
+    "isN1": {
+      "type": "boolean"
+    },
+    "totalAtendentes": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

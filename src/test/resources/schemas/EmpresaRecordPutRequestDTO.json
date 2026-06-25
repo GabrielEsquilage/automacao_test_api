@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmpresaRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeSocial": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "razaoSocial": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "enderecos": {
+      "type": "array",
+      "items": {
+        "$ref": "EnderecoRecordPutRequestDTO.json"
+      }
+    },
+    "documentos": {
+      "type": "array",
+      "items": {
+        "$ref": "DocumentoRecordPutRequestDTO.json"
+      }
+    },
+    "contatos": {
+      "type": "array",
+      "items": {
+        "$ref": "ContatoRecordPutRequestDTO.json"
+      }
+    }
+  }
+}

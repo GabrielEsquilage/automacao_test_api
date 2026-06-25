@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concurso": {
+      "$ref": "ConcursoRecordCleanDTOForOferta.json"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordResponseDTOForOferta.json"
+    },
+    "filial": {
+      "$ref": "FilialRecordCleanDTO.json"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "isPlanoPagamentoPadrao": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfilRecordWithUsuariosResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "perfilFuncionalidades": {
+      "type": "array",
+      "items": {
+        "$ref": "PerfilFuncionalidadeRecordResponseDTO.json"
+      }
+    },
+    "usuarioPerfis": {
+      "type": "array",
+      "items": {
+        "$ref": "UsuarioPerfilRecordWithUsuarioResponseDTO.json"
+      }
+    }
+  }
+}

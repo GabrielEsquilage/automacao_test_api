@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ColaboradorRecordRequestDTO",
+  "required": [
+    "cargoId",
+    "escolaridadeId",
+    "filiaisIds",
+    "pcd",
+    "pessoaId",
+    "tipoContratacaoId",
+    "validacaoPagamentoId"
+  ],
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cargoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoContratacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "validacaoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "escolaridadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pcd": {
+      "type": "boolean"
+    },
+    "emailGestor": {
+      "type": "string"
+    },
+    "filiaisIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "titulacaoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

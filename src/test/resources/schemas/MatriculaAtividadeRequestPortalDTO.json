@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaAtividadeRequestPortalDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tipoAtividadeNome": {
+      "type": "string"
+    },
+    "classificacao": {
+      "type": "string"
+    },
+    "cargaHorariaMaxima": {
+      "type": "number"
+    },
+    "cargaHorariaEfetivada": {
+      "type": "number"
+    },
+    "dataSolicitacao": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

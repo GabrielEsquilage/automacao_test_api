@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TipoDisciplinaRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "atividadesCreate": {
+      "type": "array",
+      "items": {
+        "$ref": "AtividadeRecordCreateRequestDTO.json"
+      }
+    },
+    "atividadesUpdate": {
+      "type": "array",
+      "items": {
+        "$ref": "AtividadeRecordUpdateRequestDTO.json"
+      }
+    },
+    "atividadesRemove": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

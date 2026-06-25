@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PlanoPagamentoPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valoresTaxa": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorTaxaPutRequestDTO.json"
+      }
+    },
+    "valoresDesconto": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorDescontoPutRequestDTO.json"
+      }
+    },
+    "valoresJuros": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorJurosPutRequestDTO.json"
+      }
+    },
+    "valoresMultas": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorMultasPutRequestDTO.json"
+      }
+    },
+    "curriculoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "adicionarAosGruposCurso": {
+      "type": "boolean"
+    }
+  }
+}

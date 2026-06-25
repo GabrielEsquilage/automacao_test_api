@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaAtividadeResponseDetailDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoAtividade": {
+      "$ref": "AtividadeComplementarRecordCleanDTO.json"
+    },
+    "classificacao": {
+      "$ref": "ClassificacaoAtividadeComplementarPageDTO.json"
+    },
+    "chMaxima": {
+      "type": "number"
+    },
+    "chEfetivada": {
+      "type": "number"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "linkDocumento": {
+      "type": "array",
+      "items": {
+        "$ref": "MatriculaAtividadeComplementarLinkRecordCleanDTO.json"
+      }
+    },
+    "usuarioSolicitacao": {
+      "type": "string"
+    },
+    "dataSolicitacao": {
+      "type": "string",
+      "format": "date"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "usuarioResposta": {
+      "type": "string"
+    },
+    "dataResposta": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

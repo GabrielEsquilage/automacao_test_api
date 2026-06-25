@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "type": "string"
+    },
+    "tipoAprovacao": {
+      "$ref": "TipoAprovacaoRecordCleanDTO.json"
+    },
+    "diasResposta": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDias": {
+      "$ref": "TipoDiasRecordCleanDTO.json"
+    },
+    "possuiTaxa": {
+      "type": "boolean"
+    },
+    "valorTaxa": {
+      "type": "number"
+    },
+    "podeSolicitarNovamente": {
+      "type": "boolean"
+    },
+    "requerimentoInterno": {
+      "$ref": "RequerimentoInternoRecordResponseDTO.json"
+    },
+    "matriculaAnexos": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoMatriculaAnexoRecordCleanDTO.json"
+      }
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoEtapaRecordCleanDTO.json"
+      }
+    },
+    "possuiDisponibilidadeEspecifica": {
+      "type": "boolean"
+    },
+    "disponibilidades": {
+      "type": "array",
+      "items": {
+        "$ref": "DisponibilidadeRecordResponseDTO.json"
+      }
+    },
+    "liberacaoStatusMatricula": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoRestricaoRecordCleanDTO.json"
+      }
+    },
+    "liberacaoCurso": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoRestricaoRecordCleanDTO.json"
+      }
+    },
+    "liberacaoFilial": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoRestricaoRecordCleanDTO.json"
+      }
+    }
+  }
+}

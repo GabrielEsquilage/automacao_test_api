@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BaixaManualRecordCreateRequestDTO",
+  "required": [
+    "dataPagamento",
+    "financeiroId",
+    "formaPagamentoId",
+    "justificativa"
+  ],
+  "type": "object",
+  "properties": {
+    "financeiroId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "formaPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataPagamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "justificativa": {
+      "maxLength": 1000,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

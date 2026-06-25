@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursosDoGrupoFilterDTO",
+  "type": "object",
+  "properties": {
+    "search": {
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

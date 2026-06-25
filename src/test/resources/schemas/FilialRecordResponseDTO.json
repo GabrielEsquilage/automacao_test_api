@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "exclusao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigoWae": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "unidade": {
+      "$ref": "UnidadeRecordCleanForFilialDTO.json"
+    },
+    "modalidade": {
+      "$ref": "ModalidadeRecordCleanDTO.json"
+    },
+    "gestor": {
+      "$ref": "ColaboradorRecordCleanDTO.json"
+    },
+    "tipoFilial": {
+      "$ref": "TipoFilialRecordCleanDTO.json"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "disponivelWeb": {
+      "type": "boolean"
+    },
+    "ibge": {
+      "type": "string"
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "codigoRegional": {
+      "type": "string"
+    },
+    "nomeRegional": {
+      "type": "string"
+    },
+    "gerenteRegional": {
+      "type": "string"
+    },
+    "filialMega": {
+      "$ref": "FilialRecordCleanDTO.json"
+    },
+    "filialOfertas": {
+      "type": "array",
+      "items": {
+        "$ref": "FilialOfertaRecordCleanDTO.json"
+      }
+    },
+    "empresa": {
+      "$ref": "EmpresaRecordResponseDTO.json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeComplementarRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "chMaxima": {
+      "type": "number"
+    },
+    "modalidade": {
+      "$ref": "ModalidadeAtividadeComplementarRecordCleanResponseDTO.json"
+    }
+  }
+}

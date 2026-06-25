@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AssuntoMensageriaProjectionCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "totalAtendimentosEmEspera": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "dataAtendimentoRecente": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataAtendimentoAtrasado": {
+      "type": "string",
+      "format": "date"
+    },
+    "tema": {
+      "$ref": "TemaMensageriaCleanDTO.json"
+    }
+  }
+}

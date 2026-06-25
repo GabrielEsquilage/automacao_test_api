@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SimulacaoResponseDTO",
+  "type": "object",
+  "properties": {
+    "nomeFilial": {
+      "type": "string"
+    },
+    "valorTotal": {
+      "type": "number"
+    },
+    "porcentagemSede": {
+      "type": "number"
+    },
+    "valorSede": {
+      "type": "number"
+    },
+    "repasses": {
+      "type": "array",
+      "items": {
+        "$ref": "SimulacaoRepasseItemDTO.json"
+      }
+    }
+  }
+}

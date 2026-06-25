@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PageImplFilialProjectionCleanDTO",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "array",
+      "items": {
+        "$ref": "FilialProjectionCleanDTO.json"
+      }
+    },
+    "pageable": {
+      "$ref": "PageableObject.json"
+    },
+    "last": {
+      "type": "boolean"
+    },
+    "totalElements": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalPages": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "first": {
+      "type": "boolean"
+    },
+    "size": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "number": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sort": {
+      "$ref": "SortObject.json"
+    },
+    "numberOfElements": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "empty": {
+      "type": "boolean"
+    }
+  }
+}

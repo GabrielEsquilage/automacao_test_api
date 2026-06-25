@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CartaoRecorrenteRecordRequestDTO",
+  "required": [
+    "ano",
+    "bandeiraId",
+    "cvv",
+    "mes",
+    "nome",
+    "numero",
+    "titular"
+  ],
+  "type": "object",
+  "properties": {
+    "numero": {
+      "type": "string"
+    },
+    "titular": {
+      "type": "string"
+    },
+    "cvv": {
+      "type": "string"
+    },
+    "mes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ano": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "bandeiraId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}

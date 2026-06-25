@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoRecordRespostaSolicitacaoRequestDTO",
+  "required": [
+    "resposta"
+  ],
+  "type": "object",
+  "properties": {
+    "resposta": {
+      "maxLength": 4000,
+      "minLength": 0,
+      "type": "string"
+    },
+    "etapa": {
+      "$ref": "EtapaRecordNextEtapaRequestDTO.json"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroGeralRecordDetailsDTO",
+  "type": "object",
+  "properties": {
+    "dadosGeraisWithAcao": {
+      "$ref": "FinanceiroDetalhesView.json"
+    },
+    "itensFinanceiro": {
+      "type": "array",
+      "items": {
+        "$ref": "ItemFinanceiroRecordCleanDTO.json"
+      }
+    },
+    "itensPlanoPagamento": {
+      "$ref": "PlanoPagamentoForModalDTO.json"
+    },
+    "detailsRequerimento": {
+      "$ref": "DetailsRequerimentoByFinanceiroIdDTO.json"
+    },
+    "valorFinal": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeRecordCreateRequestDTO",
+  "required": [
+    "nome",
+    "tagAtividadeMoodle",
+    "tipoAtividadeId",
+    "tipoDisciplinaId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "tipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tagAtividadeMoodle": {
+      "type": "string"
+    }
+  }
+}

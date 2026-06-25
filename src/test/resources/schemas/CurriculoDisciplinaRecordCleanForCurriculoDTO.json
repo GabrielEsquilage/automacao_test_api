@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoDisciplinaRecordCleanForCurriculoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplina": {
+      "$ref": "DisciplinaRecordCleanDTO.json"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordCleanForTurmaDTO.json"
+    },
+    "turma": {
+      "$ref": "TurmaRecordCleanDTO.json"
+    },
+    "serie": {
+      "$ref": "SerieRecordCleanDTO.json"
+    },
+    "formaOferta": {
+      "$ref": "FormaOfertaRecordCleanResponseDTO.json"
+    },
+    "tipoNota": {
+      "$ref": "TipoNotaRecordCleanResponseDTO.json"
+    },
+    "diasLiberacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasRealizacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "faltaDiaria": {
+      "type": "boolean"
+    },
+    "nota": {
+      "type": "boolean"
+    },
+    "ementaDisciplina": {
+      "$ref": "EmentaDisciplinaResponseCleanDTO.json"
+    },
+    "valorDisciplina": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalCreditos": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaMinimaAprovacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplina": {
+      "$ref": "TipoDisciplinaRecordCleanResponseDTO.json"
+    },
+    "codigoDependencia": {
+      "type": "string"
+    },
+    "diasRealizacaoDependencia": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaDispensa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasImportacaoNota": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaborador": {
+      "$ref": "ColaboradorRecordCleanDTO.json"
+    },
+    "permiteAgendamentoPraticaPresencial": {
+      "type": "boolean"
+    }
+  }
+}

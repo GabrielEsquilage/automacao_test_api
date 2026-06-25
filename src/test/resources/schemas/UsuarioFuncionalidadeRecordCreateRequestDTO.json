@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioFuncionalidadeRecordCreateRequestDTO",
+  "required": [
+    "funcionalidades",
+    "usuarioId"
+  ],
+  "type": "object",
+  "properties": {
+    "usuarioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "funcionalidades": {
+      "type": "array",
+      "items": {
+        "$ref": "UsuarioFuncionalidadeRecordSingleCreateRequestDTO.json"
+      }
+    }
+  }
+}

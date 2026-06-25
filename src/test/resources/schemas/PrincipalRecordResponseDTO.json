@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PrincipalRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "avatarUrl": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}

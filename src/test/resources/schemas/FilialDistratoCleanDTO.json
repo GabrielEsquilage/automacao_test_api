@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialDistratoCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataCriacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "transferiuCaptacao": {
+      "type": "boolean"
+    },
+    "totalAlunosCaptacao": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "transferiuPraticas": {
+      "type": "boolean"
+    },
+    "totalAlunosPraticas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "filialDestinoCaptacao": {
+      "type": "string"
+    },
+    "filialDestinoPraticas": {
+      "type": "string"
+    },
+    "usuario": {
+      "$ref": "UsuarioPessoaRecordCleanDTO.json"
+    }
+  }
+}

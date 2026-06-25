@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "nomeSocial": {
+      "type": "string"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "participanteId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "genero": {
+      "$ref": "GeneroRecordCleanDTO.json"
+    },
+    "raca": {
+      "$ref": "RacaRecordCleanDTO.json"
+    },
+    "orgaoExpedidorRg": {
+      "$ref": "OrgaoExpedidorResponseDTO.json"
+    },
+    "enderecos": {
+      "type": "array",
+      "items": {
+        "$ref": "EnderecoRecordResponseDTO.json"
+      }
+    },
+    "documentos": {
+      "type": "array",
+      "items": {
+        "$ref": "DocumentoRecordResponseDTO.json"
+      }
+    },
+    "contatos": {
+      "type": "array",
+      "items": {
+        "$ref": "ContatoRecordResponseDTO.json"
+      }
+    },
+    "nacionalidade": {
+      "$ref": "NacionalidadeRecordCleanDTO.json"
+    },
+    "usuario": {
+      "$ref": "UsuarioRecordCleanWithoutPessoaDTO.json"
+    }
+  }
+}

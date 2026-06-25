@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MoodleAppRecordDisciplinaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "disciplinaMoodleId": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRecordPainelAnaliseKpiDTO",
+  "type": "object",
+  "properties": {
+    "kpisByStatus": {
+      "type": "array",
+      "items": {
+        "$ref": "PainelAnaliseRecordKpiByStatusDTO.json"
+      }
+    },
+    "totalEmAtraso": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalEmAtendimentoMatricula": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalEmAtendimentoAtendente": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalFinalizadoMatricula": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalFinalizadoSistema": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

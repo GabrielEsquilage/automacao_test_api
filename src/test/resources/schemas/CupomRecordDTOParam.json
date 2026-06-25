@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CupomRecordDTOParam",
+  "type": "object",
+  "properties": {
+    "dataInicio": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "dataUso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaAvaliacaoRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "avaliacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoNotaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaTotal": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaAvaliacaoAtividade": {
+      "type": "array",
+      "items": {
+        "$ref": "DisciplinaAvaliacaoAtividadeRecordCreateRequestDTO.json"
+      }
+    }
+  }
+}

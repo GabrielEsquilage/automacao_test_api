@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmissaoDocumentoResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDocumentoNome": {
+      "$ref": "TipoMatriculaDocumentoRecordCleanDTO.json"
+    },
+    "nomeUsuario": {
+      "$ref": "UsuarioPessoaRecordCleanDTO.json"
+    },
+    "dataEmissao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nomeMatricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    }
+  }
+}

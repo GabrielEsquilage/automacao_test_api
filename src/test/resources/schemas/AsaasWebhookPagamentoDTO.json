@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AsaasWebhookPagamentoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "customer": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "billingType": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    },
+    "netValue": {
+      "type": "number"
+    },
+    "externalReference": {
+      "type": "string"
+    },
+    "dueDate": {
+      "type": "string"
+    },
+    "paymentDate": {
+      "type": "string"
+    },
+    "confirmedDate": {
+      "type": "string"
+    }
+  }
+}

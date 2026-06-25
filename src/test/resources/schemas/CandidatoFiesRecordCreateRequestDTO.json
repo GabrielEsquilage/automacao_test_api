@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoFiesRecordCreateRequestDTO",
+  "required": [
+    "candidatoId",
+    "codigoFies"
+  ],
+  "type": "object",
+  "properties": {
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoFies": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

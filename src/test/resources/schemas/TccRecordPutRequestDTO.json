@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TccRecordPutRequestDTO",
+  "required": [
+    "colaboradorId",
+    "dataEntrega",
+    "titulo"
+  ],
+  "type": "object",
+  "properties": {
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "titulo": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "dataEntrega": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordCreateRequestDTO",
+  "required": [
+    "areaConhecimentoId",
+    "codigo",
+    "grupoCursoId",
+    "nivelEnsinoId",
+    "nome",
+    "tipoCursoId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "inep": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 10,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "grupoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "habilitacaoMasculino": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "habilitacaoFeminino": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "grauConferido": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "vagasAnuais": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "descricaoConhecimento": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "resolucao": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "autorizacao": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "credenciamento": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "reconhecimento": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "isWaeCurso": {
+      "type": "boolean"
+    },
+    "isSegundaGraduacao": {
+      "type": "boolean"
+    }
+  }
+}

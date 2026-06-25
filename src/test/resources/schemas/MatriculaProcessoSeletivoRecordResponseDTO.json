@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaProcessoSeletivoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeProcessoSeletivo": {
+      "type": "string"
+    },
+    "tipoClassificacao": {
+      "$ref": "TipoClassificacaoCleanDTO.json"
+    },
+    "pessoa": {
+      "$ref": "PessoaRecordResponseDTO.json"
+    },
+    "ofertaPlanoPagamento": {
+      "$ref": "OfertaPlanoPagamentoResponseDTOForMatricula.json"
+    },
+    "processoSeletivo": {
+      "$ref": "ProcessoSeletivoRecordCleanDTO.json"
+    },
+    "curso": {
+      "$ref": "CursoRecordCleanDTOForUsuario.json"
+    },
+    "concursoCurriculo": {
+      "$ref": "ConcursoCurriculoRecordCleanDTO.json"
+    },
+    "concursoCurriculoPlanoPagamento": {
+      "$ref": "ConcursoCurriculoPlanoPagamentoRecordCleanDTO.json"
+    },
+    "concursoFilial": {
+      "$ref": "ConcursoFilialRecordCleanDTO.json"
+    }
+  }
+}

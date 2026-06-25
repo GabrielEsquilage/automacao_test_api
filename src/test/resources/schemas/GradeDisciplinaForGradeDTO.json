@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaForGradeDTO",
+  "type": "object",
+  "properties": {
+    "gradeDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaNome": {
+      "type": "string"
+    },
+    "disciplinaCodigo": {
+      "type": "string"
+    },
+    "disciplinaAtivo": {
+      "type": "boolean"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serieId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serieNome": {
+      "type": "string"
+    },
+    "formaOfertaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "formaOfertaNome": {
+      "type": "string"
+    },
+    "tipoNotaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoNotaNome": {
+      "type": "string"
+    },
+    "diasLiberacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasRealizacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ementaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ementaNome": {
+      "type": "string"
+    },
+    "faltaDiaria": {
+      "type": "boolean"
+    },
+    "nota": {
+      "type": "boolean"
+    },
+    "valorDisciplina": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "totalCreditos": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaMinimaAprovacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaNome": {
+      "type": "string"
+    },
+    "codigoDependencia": {
+      "type": "string"
+    },
+    "diasRealizacaoDependencia": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaDispensa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasImportacaoNota": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorNome": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoLetivoNome": {
+      "type": "string"
+    },
+    "statusDisciplina": {
+      "type": "string"
+    },
+    "permiteAgendamentoPraticaPresencial": {
+      "type": "boolean"
+    }
+  }
+}

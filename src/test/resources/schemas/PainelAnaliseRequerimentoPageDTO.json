@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRequerimentoPageDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "etapaTotal": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "etapaAtual": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "atendente": {
+      "type": "string"
+    },
+    "setor": {
+      "type": "string"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "dataPrazo": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "departamento": {
+      "type": "string"
+    },
+    "matricula": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    }
+  }
+}

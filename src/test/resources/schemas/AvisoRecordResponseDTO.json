@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AvisoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "dataEnvio": {
+      "type": "string",
+      "format": "date"
+    },
+    "horaEnvio": {
+      "$ref": "LocalTime.json"
+    },
+    "enviado": {
+      "type": "boolean"
+    },
+    "tipoPublicoAlvo": {
+      "$ref": "AvisoTipoPublicoAlvoRecordResponseDTO.json"
+    },
+    "todosPolos": {
+      "type": "boolean"
+    },
+    "todosPublicosAlvo": {
+      "type": "boolean"
+    },
+    "listaFiliais": {
+      "type": "array",
+      "items": {
+        "$ref": "ListRecordCleanResponseDTO.json"
+      }
+    },
+    "listaPublicoAlvo": {
+      "type": "array",
+      "items": {
+        "$ref": "ListRecordCleanResponseDTO.json"
+      }
+    },
+    "mensagem": {
+      "type": "string"
+    }
+  }
+}

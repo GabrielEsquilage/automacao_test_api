@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerguntaNpsUpdateDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "texto": {
+      "type": "string"
+    },
+    "ordem": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

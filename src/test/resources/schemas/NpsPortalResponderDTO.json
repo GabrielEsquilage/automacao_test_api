@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "NpsPortalResponderDTO",
+  "type": "object",
+  "properties": {
+    "formularioNpsId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "justificativa": {
+      "type": "string"
+    },
+    "respostas": {
+      "type": "array",
+      "items": {
+        "$ref": "NpsPortalRespostaItemDTO.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaAtividadeComplementarPortalAppRecordCreateRequestDTO",
+  "required": [
+    "atividadeComplementarId",
+    "cargaHorariaSolicitada"
+  ],
+  "type": "object",
+  "properties": {
+    "atividadeComplementarId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cargaHorariaSolicitada": {
+      "type": "number"
+    },
+    "observacao": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

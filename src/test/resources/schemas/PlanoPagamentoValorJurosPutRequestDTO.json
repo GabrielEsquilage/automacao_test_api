@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PlanoPagamentoValorJurosPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "tipoParametroId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parcelaInicial": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parcelaFinal": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RematriculaPeriodoLetivoDTO",
+  "type": "object",
+  "properties": {
+    "periodoFechadoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoFechadoNome": {
+      "type": "string"
+    },
+    "periodoVigenteId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoVigenteNome": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusNome": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DetailsRequerimentoByFinanceiroIdDTO",
+  "type": "object",
+  "properties": {
+    "financeiroId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "protocoloRequerimento": {
+      "type": "string"
+    },
+    "nomeRequerimento": {
+      "type": "string"
+    }
+  }
+}

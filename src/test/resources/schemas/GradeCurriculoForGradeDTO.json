@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeCurriculoForGradeDTO",
+  "type": "object",
+  "properties": {
+    "gradeCurriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "horaAtividadeComplementar": {
+      "type": "number"
+    },
+    "horaAtividadeExtensao": {
+      "type": "number"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nivelEnsinoNome": {
+      "type": "string"
+    },
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "areaConhecimentoNome": {
+      "type": "string"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "moduloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "moduloNome": {
+      "type": "string"
+    },
+    "serieIngressoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serieIngressoNome": {
+      "type": "string"
+    },
+    "disciplinas": {
+      "type": "array",
+      "items": {
+        "$ref": "GradeDisciplinaForGradeDTO.json"
+      }
+    },
+    "planosPagamento": {
+      "type": "array",
+      "items": {
+        "$ref": "GradePlanoPagamentoForGradeDTO.json"
+      }
+    }
+  }
+}

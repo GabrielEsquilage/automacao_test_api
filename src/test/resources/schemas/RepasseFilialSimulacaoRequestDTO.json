@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialSimulacaoRequestDTO",
+  "required": [
+    "dataIngresso",
+    "grupoId",
+    "mes",
+    "nomeFilial",
+    "valorTotal"
+  ],
+  "type": "object",
+  "properties": {
+    "nomeFilial": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "grupoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "mes": {
+      "maximum": 12,
+      "minimum": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataIngresso": {
+      "type": "string",
+      "format": "date"
+    },
+    "valorTotal": {
+      "minimum": 0.01,
+      "exclusiveMinimum": false,
+      "type": "number"
+    }
+  }
+}

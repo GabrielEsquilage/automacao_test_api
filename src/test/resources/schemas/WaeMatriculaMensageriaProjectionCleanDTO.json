@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WaeMatriculaMensageriaProjectionCleanDTO",
+  "type": "object",
+  "properties": {
+    "waeMatriculaDisciplina": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "sexo": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "raca": {
+      "type": "string"
+    }
+  }
+}

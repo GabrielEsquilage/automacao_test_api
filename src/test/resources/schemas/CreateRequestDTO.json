@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreateRequestDTO",
+  "required": [
+    "financeiroIds",
+    "justificativa"
+  ],
+  "type": "object",
+  "properties": {
+    "financeiroIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "justificativa": {
+      "maxLength": 1000,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

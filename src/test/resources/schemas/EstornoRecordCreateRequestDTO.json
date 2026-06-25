@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EstornoRecordCreateRequestDTO",
+  "required": [
+    "formaPagamentoId",
+    "justificativa",
+    "parcelasId"
+  ],
+  "type": "object",
+  "properties": {
+    "formaPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "justificativa": {
+      "maxLength": 1000,
+      "minLength": 0,
+      "type": "string"
+    },
+    "parcelasId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

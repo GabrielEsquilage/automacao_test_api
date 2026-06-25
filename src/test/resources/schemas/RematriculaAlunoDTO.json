@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RematriculaAlunoDTO",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "alunoNome": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "turmaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "turmaNome": {
+      "type": "string"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoCodigo": {
+      "type": "string"
+    },
+    "serieDestino": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusNome": {
+      "type": "string"
+    }
+  }
+}

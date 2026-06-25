@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaDisciplinaRecordCleanForSearchDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "disciplina": {
+      "$ref": "DisciplinaRecordCleanDTO.json"
+    },
+    "turma": {
+      "$ref": "TurmaRecordCleanDTO.json"
+    },
+    "periodoLetivo": {
+      "$ref": "PeriodoLetivoRecordCleanDTO.json"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    }
+  }
+}

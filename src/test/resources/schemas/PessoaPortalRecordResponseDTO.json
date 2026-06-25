@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaPortalRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "email": {
+      "$ref": "ContatoRecordResponseDTO.json"
+    },
+    "telefone": {
+      "$ref": "ContatoRecordResponseDTO.json"
+    },
+    "cpf": {
+      "$ref": "DocumentoRecordResponseDTO.json"
+    },
+    "rg": {
+      "$ref": "DocumentoRecordResponseDTO.json"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "avatarUrl": {
+      "type": "string"
+    },
+    "estadoCivil": {
+      "$ref": "EstadoCivilResponseCleanDTO.json"
+    },
+    "genero": {
+      "$ref": "GeneroRecordCleanDTO.json"
+    },
+    "raca": {
+      "$ref": "RacaRecordCleanDTO.json"
+    },
+    "endereco": {
+      "$ref": "EnderecoRecordResponseDTO.json"
+    },
+    "nacionalidade": {
+      "$ref": "NacionalidadeRecordCleanDTO.json"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

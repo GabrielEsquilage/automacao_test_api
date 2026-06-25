@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ConcursoRecordCleanDTOForOferta",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tipoConcurso": {
+      "$ref": "TipoConcursoCleanDTO.json"
+    },
+    "inicioConcurso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fimConcurso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requerProva": {
+      "type": "boolean"
+    },
+    "taxaInscricao": {
+      "type": "boolean"
+    },
+    "valorTaxaInscricao": {
+      "type": "number"
+    },
+    "tipoClassificacao": {
+      "$ref": "TipoClassificacaoCleanDTO.json"
+    },
+    "dataVestibular": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "provasPublicadas": {
+      "type": "boolean"
+    },
+    "resultadoPublicado": {
+      "type": "boolean"
+    },
+    "moduloGenDocs": {
+      "type": "string"
+    },
+    "exibirRequerimentoInscricao": {
+      "type": "boolean"
+    },
+    "origem": {
+      "$ref": "TipoOrigemMatriculaDisciplinaRecordCleanDTO.json"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

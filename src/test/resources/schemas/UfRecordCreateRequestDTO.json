@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UfRecordCreateRequestDTO",
+  "required": [
+    "codigo",
+    "nome",
+    "paisId",
+    "regiaoId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 63,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 7,
+      "minLength": 0,
+      "type": "string"
+    },
+    "paisId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "regiaoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

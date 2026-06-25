@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalRecordAnexoDTO",
+  "required": [
+    "requerimentoMatriculaAnexoId"
+  ],
+  "type": "object",
+  "properties": {
+    "requerimentoMatriculaAnexoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valor": {
+      "type": "string"
+    },
+    "itensFonteSelecionados": {
+      "type": "array",
+      "items": {
+        "$ref": "ParametroFonteItemSelecionadoDTO.json"
+      }
+    }
+  }
+}

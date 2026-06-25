@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigoFilialWae": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "unidade": {
+      "$ref": "UnidadeRecordCleanForFilialDTO.json"
+    },
+    "modalidade": {
+      "$ref": "ModalidadeRecordCleanDTO.json"
+    },
+    "gestor": {
+      "$ref": "ColaboradorRecordCleanDTO.json"
+    },
+    "tipoFilial": {
+      "$ref": "TipoFilialRecordCleanDTO.json"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "disponivelWeb": {
+      "type": "boolean"
+    },
+    "ibge": {
+      "type": "string"
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "codigoRegional": {
+      "type": "string"
+    },
+    "nomeRegional": {
+      "type": "string"
+    },
+    "gerenteRegional": {
+      "type": "string"
+    },
+    "filialOfertas": {
+      "type": "array",
+      "items": {
+        "$ref": "FilialOfertaRecordCleanDTO.json"
+      }
+    },
+    "filialMega": {
+      "$ref": "FilialRecordCleanDTO.json"
+    },
+    "empresa": {
+      "$ref": "EmpresaRecordCleanDTO.json"
+    }
+  }
+}

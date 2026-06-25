@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProcessoSeletivoTipoDisciplinaDatasDTO",
+  "type": "object",
+  "properties": {
+    "datas": {
+      "type": "array",
+      "items": {
+        "$ref": "ProcessoSeletivoTipoDisciplinaDTO.json"
+      }
+    }
+  }
+}

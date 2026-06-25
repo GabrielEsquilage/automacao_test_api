@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "$ref": "AreaConhecimentoRecordCleanDTO.json"
+    },
+    "inep": {
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "$ref": "NivelEnsinoRecordCleanDTO.json"
+    },
+    "tipoCurso": {
+      "$ref": "TipoCursoRecordCleanDTO.json"
+    },
+    "grupoCurso": {
+      "$ref": "GrupoCursoRecordCleanDTO.json"
+    },
+    "modalidade": {
+      "$ref": "ModalidadeRecordCleanDTO.json"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "habilitacaoMasculino": {
+      "type": "string"
+    },
+    "habilitacaoFeminino": {
+      "type": "string"
+    },
+    "grauConferido": {
+      "type": "string"
+    },
+    "vagasAnuais": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "coordenador": {
+      "$ref": "ColaboradorRecordCleanDTO.json"
+    },
+    "segundaGraduacao": {
+      "type": "boolean"
+    },
+    "ra": {
+      "type": "string"
+    }
+  }
+}

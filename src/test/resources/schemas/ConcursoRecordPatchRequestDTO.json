@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ConcursoRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "tipoConcursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "inicioConcurso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fimConcurso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requerProva": {
+      "type": "boolean"
+    },
+    "taxaInscricao": {
+      "type": "boolean"
+    },
+    "valorTaxaInscricao": {
+      "type": "number"
+    },
+    "tipoClassificacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVestibular": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "provasPublicadas": {
+      "type": "boolean"
+    },
+    "resultadoPublicado": {
+      "type": "boolean"
+    },
+    "exibirRequerimentoInscricao": {
+      "type": "boolean"
+    },
+    "oferta": {
+      "$ref": "OfertaRecordCreateListRequestDTO.json"
+    }
+  }
+}

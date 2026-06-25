@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaRecordCreateRequestDTO",
+  "required": [
+    "cargaHoraria",
+    "codigo",
+    "codigoMoodle",
+    "colaboradorId",
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 200,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 20,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoMoodle": {
+      "type": "string"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaAvaliacao": {
+      "type": "array",
+      "items": {
+        "$ref": "DisciplinaAvaliacaoRecordCreateRequestDTO.json"
+      }
+    },
+    "disciplinasEquivalentes": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "selectionType": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    }
+  }
+}

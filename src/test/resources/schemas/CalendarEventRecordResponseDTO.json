@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CalendarEventRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "cursoMoodleId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplina": {
+      "type": "string"
+    },
+    "tipoEvento": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "instanteInicio": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "instanteFim": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

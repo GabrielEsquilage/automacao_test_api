@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProcessoSeletivoDadosPrimariosDTO",
+  "required": [
+    "codigo",
+    "editalId",
+    "nivelEnsinoId",
+    "nome",
+    "periodoLetivoId"
+  ],
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "editalId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

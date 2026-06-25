@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CupomCandidatoDTO",
+  "type": "object",
+  "properties": {
+    "dataUso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nomeCandidato": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "filial": {
+      "type": "string"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PeriodoLetivoTotaisDTO",
+  "type": "object",
+  "properties": {
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalDisciplinas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalAtividades": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalMatriculas": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

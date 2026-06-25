@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoEtapasResponseDTO",
+  "type": "object",
+  "properties": {
+    "etapas": {
+      "$ref": "PageEtapaRecordResponseDTOForSolicitacao.json"
+    },
+    "solicitacaoCertificadoPendente": {
+      "type": "boolean"
+    }
+  }
+}

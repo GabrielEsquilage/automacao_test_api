@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioSetorRequerimentoRecordCleanForFilaSolicitacoesDTO",
+  "type": "object",
+  "properties": {
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "totalSolicitacoesEmEspera": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

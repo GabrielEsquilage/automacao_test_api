@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialPorcentagemCriacaoDTO",
+  "required": [
+    "dataInicialIngresso",
+    "gruposIds",
+    "nome",
+    "porcentagens"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "gruposIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "dataInicialIngresso": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFinalIngresso": {
+      "type": "string",
+      "format": "date"
+    },
+    "porcentagens": {
+      "type": "array",
+      "items": {
+        "$ref": "PorcentagemRequest.json"
+      }
+    }
+  }
+}

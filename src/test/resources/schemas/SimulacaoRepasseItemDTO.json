@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SimulacaoRepasseItemDTO",
+  "type": "object",
+  "properties": {
+    "nomeRegra": {
+      "type": "string"
+    },
+    "tiposFilial": {
+      "type": "string"
+    },
+    "porcentagem": {
+      "type": "number"
+    },
+    "valor": {
+      "type": "number"
+    }
+  }
+}

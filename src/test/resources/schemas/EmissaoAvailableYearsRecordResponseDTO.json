@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmissaoAvailableYearsRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "yearsAvailable": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

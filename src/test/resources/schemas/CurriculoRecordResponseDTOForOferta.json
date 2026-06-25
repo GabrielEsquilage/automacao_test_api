@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoRecordResponseDTOForOferta",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "horaAtividadeComplementar": {
+      "type": "number"
+    },
+    "horaAtividadeExtensao": {
+      "type": "number"
+    },
+    "curso": {
+      "$ref": "CursoRecordCleanDTO.json"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "planosPagamento": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoPlanoPagamentoRecordCleanForCurriculoDTO.json"
+      }
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "modulo": {
+      "$ref": "Modulo.json"
+    },
+    "moduloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "processoSeletivo": {
+      "$ref": "ProcessoSeletivoRecordCleanDTO.json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaIndicacaoPortalRecordCreateRequestDTO",
+  "required": [
+    "email",
+    "nome",
+    "telefone"
+  ],
+  "type": "object",
+  "properties": {
+    "cursoNome": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "waeAlunoIndicacao": {
+      "$ref": "WaeMatriculaIndicacaoRecordRequestDTO.json"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "observacao": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

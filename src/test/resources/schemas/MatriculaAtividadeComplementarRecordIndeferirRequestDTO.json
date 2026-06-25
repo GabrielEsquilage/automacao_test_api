@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaAtividadeComplementarRecordIndeferirRequestDTO",
+  "required": [
+    "justificativa"
+  ],
+  "type": "object",
+  "properties": {
+    "justificativa": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

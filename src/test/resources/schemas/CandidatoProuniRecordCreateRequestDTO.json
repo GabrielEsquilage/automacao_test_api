@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoProuniRecordCreateRequestDTO",
+  "required": [
+    "candidatoId",
+    "codigoProuni",
+    "notaProuni"
+  ],
+  "type": "object",
+  "properties": {
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoProuni": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "notaProuni": {
+      "type": "number"
+    }
+  }
+}

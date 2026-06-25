@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AberturaAtividadeFilterDTO",
+  "type": "object",
+  "properties": {
+    "selectionType": {
+      "type": "string"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "tipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "grupoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "areaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaCodigo": {
+      "type": "string"
+    }
+  }
+}

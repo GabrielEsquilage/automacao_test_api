@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRecordResponseForPainelAnaliseDetailDTO",
+  "type": "object",
+  "properties": {
+    "atendimentos": {
+      "$ref": "PagePainelAnaliseRecordResponseForPainelAnaliseDTO.json"
+    },
+    "cursosSemAtendente": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

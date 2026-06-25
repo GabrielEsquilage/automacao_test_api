@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalRecordForMatriculaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "matricula": {
+      "$ref": "MatriculaMensageriaRecordCleanDTO.json"
+    },
+    "requerimento": {
+      "$ref": "RequerimentoRecordCleanForSolicitacaoDTO.json"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "resposta": {
+      "type": "string"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "responsavel": {
+      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+    },
+    "etapaAtual": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "$ref": "EtapaRecordResponseForMatriculaDTO.json"
+      }
+    },
+    "idEtapaFinanceiroAtual": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "respostaVisualizada": {
+      "type": "boolean"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "slaSolicitacao": {
+      "type": "number"
+    },
+    "valorTaxa": {
+      "type": "number"
+    }
+  }
+}

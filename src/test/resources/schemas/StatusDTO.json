@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "StatusDTO",
+  "type": "object",
+  "properties": {
+    "aceito": {
+      "type": "boolean"
+    },
+    "dataAceite": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

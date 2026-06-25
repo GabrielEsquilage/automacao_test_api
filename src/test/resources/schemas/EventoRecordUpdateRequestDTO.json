@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EventoRecordUpdateRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "horaInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "horaFim": {
+      "$ref": "LocalTime.json"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "tipoEventoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

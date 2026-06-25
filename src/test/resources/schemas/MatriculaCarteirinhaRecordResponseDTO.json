@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaCarteirinhaRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "filial": {
+      "type": "string"
+    },
+    "statusAtual": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmpresaRecordCreateRequestDTO",
+  "required": [
+    "contatos",
+    "documentos",
+    "enderecos"
+  ],
+  "type": "object",
+  "properties": {
+    "nomeSocial": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "razaoSocial": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "enderecos": {
+      "type": "array",
+      "items": {
+        "$ref": "EnderecoRecordCreateRequestDTO.json"
+      }
+    },
+    "documentos": {
+      "type": "array",
+      "items": {
+        "$ref": "DocumentoRecordCreateRequestDTO.json"
+      }
+    },
+    "contatos": {
+      "type": "array",
+      "items": {
+        "$ref": "ContatoRecordCreateRequestDTO.json"
+      }
+    }
+  }
+}

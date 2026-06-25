@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GrupoRepasseCreateRequestDTO",
+  "required": [
+    "nome",
+    "tipoSelecao"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "tipoSelecao": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    },
+    "cursosIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

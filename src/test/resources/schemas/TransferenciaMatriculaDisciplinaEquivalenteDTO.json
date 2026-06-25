@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaDisciplinaEquivalenteDTO",
+  "type": "object",
+  "properties": {
+    "disciplinaCursada": {
+      "type": "array",
+      "items": {
+        "$ref": "TransferenciaMatriculaDisciplinaDTO.json"
+      }
+    },
+    "disciplinaAproveitada": {
+      "type": "array",
+      "items": {
+        "$ref": "TransferenciaMatriculaDisciplinaDTO.json"
+      }
+    }
+  }
+}

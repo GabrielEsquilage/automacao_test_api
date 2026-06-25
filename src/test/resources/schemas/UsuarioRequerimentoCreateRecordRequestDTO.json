@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioRequerimentoCreateRecordRequestDTO",
+  "required": [
+    "setoresId",
+    "usuarioId"
+  ],
+  "type": "object",
+  "properties": {
+    "usuarioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setoresId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

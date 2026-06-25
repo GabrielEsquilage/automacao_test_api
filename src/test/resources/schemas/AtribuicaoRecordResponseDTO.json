@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtribuicaoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "ativo": {
+      "type": "boolean"
+    },
+    "visualizar": {
+      "type": "boolean"
+    },
+    "inserir": {
+      "type": "boolean"
+    },
+    "atualizar": {
+      "type": "boolean"
+    },
+    "deletar": {
+      "type": "boolean"
+    },
+    "funcionalidade": {
+      "$ref": "FuncionalidadeRecordCleanDTO.json"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioRecordCreateRequestDTO",
+  "required": [
+    "departamentoId",
+    "login",
+    "perfilIds",
+    "pessoaId"
+  ],
+  "type": "object",
+  "properties": {
+    "login": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "departamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "usuarioFuncionalidades": {
+      "type": "array",
+      "items": {
+        "$ref": "UsuarioFuncionalidadeRecordSingleCreateRequestDTO.json"
+      }
+    },
+    "perfilIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

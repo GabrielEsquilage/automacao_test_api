@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "codigoMoodle": {
+      "type": "string"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "turma": {
+      "$ref": "TurmaRecordCleanDTO.json"
+    },
+    "colaborador": {
+      "$ref": "ColaboradorRecordCleanDTO.json"
+    }
+  }
+}

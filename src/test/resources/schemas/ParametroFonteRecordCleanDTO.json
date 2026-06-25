@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ParametroFonteRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "tipoParametro": {
+      "type": "string"
+    },
+    "tipoExecucao": {
+      "type": "string"
+    }
+  }
+}

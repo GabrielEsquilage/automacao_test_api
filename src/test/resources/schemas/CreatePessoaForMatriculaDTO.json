@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreatePessoaForMatriculaDTO",
+  "required": [
+    "cpf",
+    "email",
+    "endereco",
+    "nome",
+    "telefone"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nomeSocial": {
+      "type": "string"
+    },
+    "email": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "telefone": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cpf": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "endereco": {
+      "$ref": "CreateEnderecoForMatriculaDTO.json"
+    },
+    "rg": {
+      "type": "string"
+    },
+    "racaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "generoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

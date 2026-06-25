@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AgendamentoMatriculaPortalGestorCreateRequestDTO",
+  "required": [
+    "cursoId",
+    "data",
+    "disciplinaId",
+    "horaFim",
+    "horaInicio",
+    "matriculaId",
+    "salaTipoAtividadeId"
+  ],
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "salaTipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "horaInicio": {
+      "type": "string"
+    },
+    "horaFim": {
+      "type": "string"
+    }
+  }
+}

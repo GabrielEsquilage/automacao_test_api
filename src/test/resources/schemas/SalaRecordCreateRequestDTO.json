@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SalaRecordCreateRequestDTO",
+  "required": [
+    "cep",
+    "filialId",
+    "horarioFim",
+    "horarioInicio",
+    "logradouro",
+    "nome",
+    "numero",
+    "tipoAtividadeIds",
+    "vagas"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoAtividadeIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "horarioInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "horarioFim": {
+      "$ref": "LocalTime.json"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "linkMaps": {
+      "type": "string"
+    },
+    "inicioIntervalo": {
+      "$ref": "LocalTime.json"
+    },
+    "fimIntervalo": {
+      "$ref": "LocalTime.json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TemaRecordCreateRequestDTO",
+  "required": [
+    "assuntosCreate",
+    "departamentoId",
+    "nome",
+    "temaDestinadoId"
+  ],
+  "type": "object",
+  "properties": {
+    "departamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "temaDestinadoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "assuntosCreate": {
+      "type": "array",
+      "items": {
+        "$ref": "AssuntoRecordCreateRequestDTO.json"
+      }
+    }
+  }
+}

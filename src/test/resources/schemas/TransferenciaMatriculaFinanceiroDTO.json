@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaFinanceiroDTO",
+  "type": "object",
+  "properties": {
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoNome": {
+      "type": "string"
+    },
+    "curriculoCodigo": {
+      "type": "string"
+    },
+    "valorCurriculo": {
+      "type": "number"
+    },
+    "descontoEquivalencia": {
+      "type": "number"
+    },
+    "valorAPagar": {
+      "type": "number"
+    }
+  }
+}

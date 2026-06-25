@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioMensageriaRecordCreateRequestDTO",
+  "required": [
+    "departamentoId",
+    "setoresId",
+    "usuarioId"
+  ],
+  "type": "object",
+  "properties": {
+    "usuarioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "departamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setoresId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "cursoRecord": {
+      "$ref": "CursoRecordPatchForMultiCursosIdDTO.json"
+    }
+  }
+}

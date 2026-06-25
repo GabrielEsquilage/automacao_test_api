@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AvisoRecordResponseCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "dataEnvio": {
+      "type": "string",
+      "format": "date"
+    },
+    "horaEnvio": {
+      "$ref": "LocalTime.json"
+    },
+    "todosPolos": {
+      "type": "boolean"
+    },
+    "enviado": {
+      "type": "boolean"
+    },
+    "tipoPublicoAlvo": {
+      "$ref": "AvisoTipoPublicoAlvoRecordResponseDTO.json"
+    },
+    "todosPublicosAlvo": {
+      "type": "boolean"
+    },
+    "mensagem": {
+      "type": "string"
+    }
+  }
+}

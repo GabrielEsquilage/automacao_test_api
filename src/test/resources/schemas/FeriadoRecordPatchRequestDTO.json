@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FeriadoRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "tipoFeriadoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

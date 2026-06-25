@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaComparativoFinanceiroDTO",
+  "type": "object",
+  "properties": {
+    "cursoAtual": {
+      "$ref": "TransferenciaMatriculaFinanceiroDTO.json"
+    },
+    "cursoNovo": {
+      "$ref": "TransferenciaMatriculaFinanceiroDTO.json"
+    },
+    "comparativo": {
+      "$ref": "TransferenciaMatriculaFinanceiroDTO.json"
+    }
+  }
+}

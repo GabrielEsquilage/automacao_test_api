@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AsaasWebhookRequestDTO",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "string"
+    },
+    "payment": {
+      "$ref": "AsaasWebhookPagamentoDTO.json"
+    }
+  }
+}

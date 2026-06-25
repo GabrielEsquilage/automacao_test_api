@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRequerimentoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordResponseDTO.json"
+    },
+    "requerimento": {
+      "$ref": "RequerimentoRecordCleanDTO.json"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "dataSolicitacao": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataResposta": {
+      "type": "string",
+      "format": "date"
+    },
+    "departamento": {
+      "$ref": "DepartamentoRecordCleanDTO.json"
+    },
+    "prazoMaximo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    }
+  }
+}

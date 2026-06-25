@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtendimentoExternalRecordCreateRequestDTO",
+  "required": [
+    "assuntoId",
+    "cursoCodigo",
+    "cursoNome",
+    "firstMessage"
+  ],
+  "type": "object",
+  "properties": {
+    "assuntoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "cursoCodigo": {
+      "type": "string"
+    },
+    "firstMessage": {
+      "type": "string"
+    },
+    "origemThessie": {
+      "type": "boolean"
+    }
+  }
+}

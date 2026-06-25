@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoDisciplinaDiasRealizacaoRecordCreateRequestDTO",
+  "required": [
+    "disciplinaId"
+  ],
+  "type": "object",
+  "properties": {
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasLiberacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasRealizacao": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

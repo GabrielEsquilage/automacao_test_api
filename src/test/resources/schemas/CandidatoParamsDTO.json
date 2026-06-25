@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoParamsDTO",
+  "type": "object",
+  "properties": {
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "possuiMatricula": {
+      "type": "boolean"
+    },
+    "tipoConcursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

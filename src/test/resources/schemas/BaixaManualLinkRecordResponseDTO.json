@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BaixaManualLinkRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "baixaManualLink": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "baixaManual": {
+      "$ref": "BaixaManualRecordCleanDTO.json"
+    }
+  }
+}

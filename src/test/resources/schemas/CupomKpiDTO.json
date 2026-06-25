@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CupomKpiDTO",
+  "type": "object",
+  "properties": {
+    "totalCupons": {
+      "type": "string"
+    },
+    "disponiveis": {
+      "type": "string"
+    },
+    "cuponsUsados": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

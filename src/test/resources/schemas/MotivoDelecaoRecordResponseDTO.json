@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MotivoDelecaoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "motivo": {
+      "type": "string"
+    },
+    "entidade": {
+      "type": "string",
+      "enum": [
+        "PERFIL"
+      ]
+    },
+    "entidadeId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "login": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "departamentoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

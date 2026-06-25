@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EstadoCivilUpdateRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 25,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

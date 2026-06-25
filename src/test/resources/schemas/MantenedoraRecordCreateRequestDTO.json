@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MantenedoraRecordCreateRequestDTO",
+  "required": [
+    "codigoMecInep",
+    "empresa",
+    "nome",
+    "sigla",
+    "tipoMantenedoraId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "sigla": {
+      "maxLength": 15,
+      "minLength": 0,
+      "type": "string"
+    },
+    "tipoMantenedoraId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoMecInep": {
+      "maxLength": 15,
+      "minLength": 0,
+      "type": "string"
+    },
+    "empresa": {
+      "$ref": "EmpresaRecordCreateRequestDTO.json"
+    }
+  }
+}

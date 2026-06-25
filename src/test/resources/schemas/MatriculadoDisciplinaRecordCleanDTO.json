@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculadoDisciplinaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoDisciplina": {
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "string"
+    },
+    "nomeDisciplina": {
+      "type": "string"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "existeDP": {
+      "type": "boolean"
+    },
+    "formaOferta": {
+      "$ref": "FormaOfertaRecordCleanResponseDTO.json"
+    },
+    "tipoDisciplina": {
+      "$ref": "TipoDisciplinaRecordCleanResponseDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    }
+  }
+}

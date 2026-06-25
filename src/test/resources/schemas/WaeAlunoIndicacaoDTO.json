@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WaeAlunoIndicacaoDTO",
+  "type": "object",
+  "properties": {
+    "waeCursoCodigo": {
+      "type": "string"
+    },
+    "waeCursoNome": {
+      "type": "string"
+    },
+    "waePoloCodigo": {
+      "type": "string"
+    },
+    "waePoloNome": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RespostaCpaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nota": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "perguntaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

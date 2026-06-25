@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaTipoAtividadeResponseDTO",
+  "type": "object",
+  "properties": {
+    "atividades": {
+      "type": "array",
+      "items": {
+        "$ref": "MatriculaAtividadeDetalheDTO.json"
+      }
+    }
+  }
+}

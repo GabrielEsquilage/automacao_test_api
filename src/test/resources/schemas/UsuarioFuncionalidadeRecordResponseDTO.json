@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioFuncionalidadeRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "usuario": {
+      "$ref": "UsuarioRecordCleanDTO.json"
+    },
+    "funcionalidade": {
+      "$ref": "FuncionalidadeRecordCleanDTO.json"
+    },
+    "perfilId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "perfilIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "visualizar": {
+      "type": "boolean"
+    },
+    "inserir": {
+      "type": "boolean"
+    },
+    "atualizar": {
+      "type": "boolean"
+    },
+    "deletar": {
+      "type": "boolean"
+    }
+  }
+}

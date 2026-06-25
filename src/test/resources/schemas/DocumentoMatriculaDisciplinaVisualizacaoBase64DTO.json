@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DocumentoMatriculaDisciplinaVisualizacaoBase64DTO",
+  "type": "object",
+  "properties": {
+    "base64": {
+      "type": "string"
+    }
+  }
+}

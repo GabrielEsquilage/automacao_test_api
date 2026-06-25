@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RenegociacaoRecordCreateRequestDTO",
+  "required": [
+    "dataVencimento",
+    "financeirosId",
+    "justificativa",
+    "numeroParcelas",
+    "valorRenegociacao"
+  ],
+  "type": "object",
+  "properties": {
+    "valorRenegociacao": {
+      "type": "number"
+    },
+    "entrada": {
+      "type": "number"
+    },
+    "entradaPercentual": {
+      "type": "boolean"
+    },
+    "numeroParcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVencimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "isentoMultaJuros": {
+      "type": "boolean"
+    },
+    "descontoAplicado": {
+      "type": "boolean"
+    },
+    "descontoPercentual": {
+      "type": "boolean"
+    },
+    "valorDesconto": {
+      "type": "number"
+    },
+    "justificativa": {
+      "maxLength": 1000,
+      "minLength": 0,
+      "type": "string"
+    },
+    "financeirosId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

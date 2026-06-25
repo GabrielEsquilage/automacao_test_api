@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PoloRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 30,
+      "minLength": 0,
+      "type": "string"
+    },
+    "instituicaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloTipoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "endereco": {
+      "$ref": "EnderecoRecordPatchRequestDTO.json"
+    },
+    "gestor": {
+      "$ref": "GestorRecordPatchRequestDTO.json"
+    },
+    "redesSociais": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

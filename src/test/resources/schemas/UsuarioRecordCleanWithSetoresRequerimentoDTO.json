@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioRecordCleanWithSetoresRequerimentoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoa": {
+      "$ref": "PessoaRecordCleanDTO.json"
+    },
+    "departamento": {
+      "$ref": "DepartamentoRecordListDTO.json"
+    },
+    "totalSetores": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "setores": {
+      "type": "array",
+      "items": {
+        "$ref": "UsuarioSetorRequerimentoRecordCleanForUsuarioDTO.json"
+      }
+    }
+  }
+}

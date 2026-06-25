@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AssuntoRecordPutRequestDTO",
+  "required": [
+    "descricao",
+    "nivelEnsinoIds",
+    "nome",
+    "setorId",
+    "sla"
+  ],
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "nivelEnsinoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "isN1": {
+      "type": "boolean"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

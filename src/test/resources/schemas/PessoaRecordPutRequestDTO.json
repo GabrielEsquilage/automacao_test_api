@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nomeSocial": {
+      "type": "string"
+    },
+    "racaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "generoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "estadoCivilId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "avatarUrl": {
+      "type": "string"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "enderecos": {
+      "type": "array",
+      "items": {
+        "$ref": "EnderecoRecordPutRequestDTO.json"
+      }
+    },
+    "contatos": {
+      "type": "array",
+      "items": {
+        "$ref": "ContatoRecordPutRequestDTO.json"
+      }
+    },
+    "documentos": {
+      "type": "array",
+      "items": {
+        "$ref": "DocumentoRecordPutRequestDTO.json"
+      }
+    },
+    "nacionalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

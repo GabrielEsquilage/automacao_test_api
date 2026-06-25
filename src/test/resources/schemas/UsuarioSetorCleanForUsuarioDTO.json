@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioSetorCleanForUsuarioDTO",
+  "type": "object",
+  "properties": {
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "hasAtendimento": {
+      "type": "boolean"
+    }
+  }
+}

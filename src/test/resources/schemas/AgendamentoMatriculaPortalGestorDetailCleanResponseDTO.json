@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AgendamentoMatriculaPortalGestorDetailCleanResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "presenca": {
+      "type": "boolean"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaCodigo": {
+      "type": "string"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialNome": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusNome": {
+      "type": "string"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaNome": {
+      "type": "string"
+    },
+    "agendaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "agendaData": {
+      "type": "string",
+      "format": "date"
+    },
+    "agendaHorarioInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "agendaHorarioFim": {
+      "$ref": "LocalTime.json"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    }
+  }
+}

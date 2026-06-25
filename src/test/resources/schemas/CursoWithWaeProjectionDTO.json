@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoWithWaeProjectionDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "codigoWae": {
+      "type": "string"
+    },
+    "modalidade": {
+      "type": "string"
+    }
+  }
+}

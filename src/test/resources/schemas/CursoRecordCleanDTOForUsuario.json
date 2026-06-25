@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordCleanDTOForUsuario",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "$ref": "AreaConhecimentoRecordCleanDTO.json"
+    },
+    "tipoCurso": {
+      "$ref": "TipoCursoRecordCleanDTO.json"
+    },
+    "modalidadeCurso": {
+      "$ref": "ModalidadeRecordCleanDTO.json"
+    }
+  }
+}

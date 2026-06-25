@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRecordCleanForPainelAnaliseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dadosGerais": {
+      "$ref": "PainelAnaliseRecordDadosGeraisDTO.json"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "dataCriacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataPrimeiroContato": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataResolucao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "avaliacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "slaFinalizacao": {
+      "type": "number"
+    },
+    "slaAtendimento": {
+      "type": "number"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "assunto": {
+      "$ref": "AssuntoRecordCleanDTO.json"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "atendente": {
+      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+    },
+    "matricula": {
+      "$ref": "MatriculaMensageriaRecordCleanDTO.json"
+    },
+    "mensagens": {
+      "type": "array",
+      "items": {
+        "$ref": "MensagemRecordResponseDTOForAtendimento.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseGeralFilterDTO",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "tipoRegraId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

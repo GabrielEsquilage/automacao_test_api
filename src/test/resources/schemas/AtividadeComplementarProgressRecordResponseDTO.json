@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeComplementarProgressRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "horasTotais": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "horasCumpridas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "horasFaltantes": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

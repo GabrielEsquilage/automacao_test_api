@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoEtapaFinanceiroRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "diasParaVencimento": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

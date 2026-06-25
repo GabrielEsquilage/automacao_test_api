@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 10,
+      "minLength": 0,
+      "type": "string"
+    },
+    "horaAtividadeComplementar": {
+      "type": "number"
+    },
+    "horaAtividadeExtensao": {
+      "type": "number"
+    },
+    "moduloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serieIngressoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoDisciplina": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoDisciplinaRecordPutRequestDTO.json"
+      }
+    },
+    "curriculoSerie": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoSerieRecordPutRequestDTO.json"
+      }
+    },
+    "planosPagamentoId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

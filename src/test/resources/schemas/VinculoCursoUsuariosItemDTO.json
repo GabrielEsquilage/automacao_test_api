@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "VinculoCursoUsuariosItemDTO",
+  "required": [
+    "cursoId",
+    "selectionType"
+  ],
+  "type": "object",
+  "properties": {
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "selectionType": {
+      "type": "string"
+    },
+    "usuarioIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

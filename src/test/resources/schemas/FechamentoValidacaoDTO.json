@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FechamentoValidacaoDTO",
+  "type": "object",
+  "properties": {
+    "podeFechar": {
+      "type": "boolean"
+    },
+    "motivo": {
+      "type": "string"
+    }
+  }
+}

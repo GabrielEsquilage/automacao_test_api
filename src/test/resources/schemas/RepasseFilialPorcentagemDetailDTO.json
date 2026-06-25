@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialPorcentagemDetailDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tipoRegra": {
+      "$ref": "TipoRepasseDTO.json"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataInicialIngresso": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFinalIngresso": {
+      "type": "string",
+      "format": "date"
+    },
+    "porcentagens": {
+      "type": "array",
+      "items": {
+        "$ref": "PorcentagemDTO.json"
+      }
+    },
+    "grupos": {
+      "type": "array",
+      "items": {
+        "$ref": "GrupoRepasseSimpleDTO.json"
+      }
+    }
+  }
+}

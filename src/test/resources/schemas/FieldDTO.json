@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FieldDTO",
+  "type": "object",
+  "properties": {
+    "fieldName": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "accuracy": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}

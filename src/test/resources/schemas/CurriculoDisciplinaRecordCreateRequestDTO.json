@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoDisciplinaRecordCreateRequestDTO",
+  "required": [
+    "colaboradorId",
+    "disciplinaId",
+    "faltaDiaria",
+    "formaOfertaId",
+    "nota",
+    "serie",
+    "tipoDisciplinaId",
+    "tipoNotaId"
+  ],
+  "type": "object",
+  "properties": {
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "faltaDiaria": {
+      "type": "boolean"
+    },
+    "nota": {
+      "type": "boolean"
+    },
+    "codigoDependencia": {
+      "type": "string"
+    },
+    "diasRealizacaoDependencia": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorDisciplina": {
+      "type": "number"
+    },
+    "ementaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "totalCreditos": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaMinimaAprovacao": {
+      "maximum": 10,
+      "minimum": 0,
+      "type": "integer",
+      "format": "int32"
+    },
+    "formaOfertaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoNotaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaDispensa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "permiteAgendamentoPraticaPresencial": {
+      "type": "boolean"
+    },
+    "diasImportacaoNota": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

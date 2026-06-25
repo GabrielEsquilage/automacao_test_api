@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BannerRecordRequestDTO",
+  "required": [
+    "extensao",
+    "imagem",
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "extensao": {
+      "type": "string"
+    },
+    "imagem": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

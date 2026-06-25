@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DocumentacaoMatriculaDisciplinaRecordResponseCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "visualizadaAprovacao": {
+      "type": "boolean"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "solicitacao": {
+      "$ref": "SolicitacaoRecordCleanDTO.json"
+    }
+  }
+}

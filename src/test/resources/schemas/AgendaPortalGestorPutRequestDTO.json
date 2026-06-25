@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AgendaPortalGestorPutRequestDTO",
+  "required": [
+    "data",
+    "horarioFim",
+    "horarioInicio",
+    "salaId",
+    "tipoAtividadeId"
+  ],
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "horarioInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "horarioFim": {
+      "$ref": "LocalTime.json"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "salaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

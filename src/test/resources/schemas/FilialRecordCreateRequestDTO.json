@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialRecordCreateRequestDTO",
+  "required": [
+    "empresa",
+    "modalidadeId",
+    "nome",
+    "tipoFilialId",
+    "unidadeId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "unidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "gestorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "disponivelWeb": {
+      "type": "boolean"
+    },
+    "ibge": {
+      "type": "string"
+    },
+    "filialMegaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoOfertasId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "codigoRegional": {
+      "type": "string"
+    },
+    "nomeRegional": {
+      "type": "string"
+    },
+    "gerenteRegional": {
+      "type": "string"
+    },
+    "codigoWae": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "atendePraticas": {
+      "type": "boolean"
+    },
+    "empresa": {
+      "$ref": "EmpresaRecordCreateRequestDTO.json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TipoDocumentoMatriculaDisciplinaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "mascara": {
+      "type": "string"
+    },
+    "tipoConcurso": {
+      "$ref": "TipoConcursoCleanDTO.json"
+    },
+    "nivelEnsino": {
+      "$ref": "NivelEnsinoRecordCleanDTO.json"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoEtapaAnexoRecordCreateRequestDTO",
+  "required": [
+    "nome",
+    "tipoCampoId",
+    "tipoObrigatoriedadeId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "tipoObrigatoriedadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCampoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

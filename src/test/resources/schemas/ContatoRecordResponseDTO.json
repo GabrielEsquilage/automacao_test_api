@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ContatoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "valor": {
+      "type": "string"
+    },
+    "nomeResponsavel": {
+      "type": "string"
+    },
+    "cargo": {
+      "$ref": "CargoRecordCleanDTO.json"
+    },
+    "tipoContato": {
+      "$ref": "TipoContatoRecordCleanResponseDTO.json"
+    }
+  }
+}

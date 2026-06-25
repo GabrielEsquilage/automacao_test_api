@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoEtapaRecordCreateRequestDTO",
+  "required": [
+    "descricao",
+    "etapa",
+    "setorId"
+  ],
+  "type": "object",
+  "properties": {
+    "etapa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "descricao": {
+      "maxLength": 400,
+      "minLength": 0,
+      "type": "string"
+    },
+    "etapaFinanceiro": {
+      "$ref": "RequerimentoEtapaFinanceiroRecordCreateRequestDTO.json"
+    },
+    "etapaAnexos": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoEtapaAnexoRecordCreateRequestDTO.json"
+      }
+    }
+  }
+}

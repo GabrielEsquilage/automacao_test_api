@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfilFuncionalidadeRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "visualizar": {
+      "type": "boolean"
+    },
+    "inserir": {
+      "type": "boolean"
+    },
+    "atualizar": {
+      "type": "boolean"
+    },
+    "deletar": {
+      "type": "boolean"
+    },
+    "perfil": {
+      "$ref": "PerfilRecordCleanDTO.json"
+    },
+    "funcionalidade": {
+      "$ref": "FuncionalidadeRecordCleanDTO.json"
+    }
+  }
+}

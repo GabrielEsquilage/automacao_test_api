@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UnidadeRecordCreateRequestDTO",
+  "required": [
+    "codigoMecInep",
+    "empresa",
+    "mantenedoraId",
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "mantenedoraId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "empresa": {
+      "$ref": "EmpresaRecordCreateRequestDTO.json"
+    }
+  }
+}

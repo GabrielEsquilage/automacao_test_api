@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CartaoRecordSemEnderecoDTO",
+  "required": [
+    "cvv",
+    "dueAt",
+    "holderName",
+    "number"
+  ],
+  "type": "object",
+  "properties": {
+    "number": {
+      "maxLength": 19,
+      "minLength": 13,
+      "type": "string"
+    },
+    "dueAt": {
+      "pattern": "^(\\d{2})/(\\d{2})$",
+      "type": "string"
+    },
+    "holderName": {
+      "type": "string"
+    },
+    "cvv": {
+      "maxLength": 4,
+      "minLength": 3,
+      "type": "string"
+    }
+  }
+}

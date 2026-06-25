@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaCreateRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "financeiroId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "installments": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "barCode": {
+      "type": "string"
+    },
+    "pdf": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "codeOrder": {
+      "type": "string"
+    },
+    "codeCharge": {
+      "type": "string"
+    },
+    "qrCode": {
+      "type": "string"
+    },
+    "qrCodeUrl": {
+      "type": "string"
+    },
+    "isPaid": {
+      "type": "boolean"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloPratica": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloInidicacao": {
+      "type": "string"
+    }
+  }
+}

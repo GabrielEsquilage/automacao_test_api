@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TccRecordCreateRequestDTO",
+  "required": [
+    "colaboradorId",
+    "dataEntrega",
+    "matriculaDisciplinaId",
+    "titulo"
+  ],
+  "type": "object",
+  "properties": {
+    "matriculaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "titulo": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "dataEntrega": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

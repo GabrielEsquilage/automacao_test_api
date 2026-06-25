@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoProjectionDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "processoSeletivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "processoSeletivoNome": {
+      "type": "string"
+    },
+    "cursoPretendido": {
+      "type": "string"
+    },
+    "concursoNome": {
+      "type": "string"
+    },
+    "concursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialCaptacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialCaptacaoNome": {
+      "type": "string"
+    },
+    "dataInscricao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "isMatricula": {
+      "type": "boolean"
+    }
+  }
+}

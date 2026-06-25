@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GestorRecordCreateRequestDTO",
+  "required": [
+    "email",
+    "nome",
+    "telefone"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    },
+    "email": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    },
+    "telefone": {
+      "maxLength": 15,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

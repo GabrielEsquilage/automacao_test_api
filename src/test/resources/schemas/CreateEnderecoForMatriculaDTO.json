@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreateEnderecoForMatriculaDTO",
+  "required": [
+    "bairro",
+    "cep",
+    "cidade",
+    "logradouro",
+    "uf"
+  ],
+  "type": "object",
+  "properties": {
+    "logradouro": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cep": {
+      "maxLength": 9,
+      "minLength": 0,
+      "type": "string"
+    },
+    "bairro": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "numero": {
+      "maxLength": 6,
+      "minLength": 0,
+      "type": "string"
+    },
+    "complemento": {
+      "maxLength": 20,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "uf": {
+      "type": "string"
+    },
+    "cidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ufId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

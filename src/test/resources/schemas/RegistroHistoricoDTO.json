@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RegistroHistoricoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "numeroLivro": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "numeroRegistro": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "folha": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataRegistro": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nomeMatricula": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "nomeCurso": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GrupoCursoCurriculoAfetadoCountDTO",
+  "type": "object",
+  "properties": {
+    "grupoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalCurriculos": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "curriculosAptos": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

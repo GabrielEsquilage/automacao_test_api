@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoRecordCreateRequestDTO",
+  "required": [
+    "concursoCurriculoId",
+    "concursoFilialId",
+    "formaPagamentoId",
+    "pessoaId"
+  ],
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoCurriculoPlanoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ofertaPlanoPagementoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoCurriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "formaPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloIdicacao": {
+      "type": "string"
+    },
+    "diaVencimento": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "origemId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

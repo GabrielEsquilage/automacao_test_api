@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EstornoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "formaPagamento": {
+      "$ref": "FormaPagamentoRecordCleanDTO.json"
+    },
+    "valorTotal": {
+      "type": "number"
+    },
+    "justificativa": {
+      "type": "string"
+    },
+    "financeirosEstorno": {
+      "type": "array",
+      "items": {
+        "$ref": "FinanceiroEstornoRecordCleanForEstornoDTO.json"
+      }
+    },
+    "arquivoLinks": {
+      "type": "array",
+      "items": {
+        "$ref": "EstornoLinkRecordResponseDTO.json"
+      }
+    }
+  }
+}

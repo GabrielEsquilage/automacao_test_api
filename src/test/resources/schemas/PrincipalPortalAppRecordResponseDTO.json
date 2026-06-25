@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PrincipalPortalAppRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "usuarioExternoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

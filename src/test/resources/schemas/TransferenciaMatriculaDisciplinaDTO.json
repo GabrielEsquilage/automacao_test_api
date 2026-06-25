@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaDisciplinaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cargaHorariaTotal": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalDisciplina": {
+      "type": "number"
+    },
+    "disciplinaAproveitada": {
+      "type": "number"
+    },
+    "disciplinaACursar": {
+      "type": "number"
+    }
+  }
+}

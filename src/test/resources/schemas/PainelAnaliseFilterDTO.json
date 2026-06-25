@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseFilterDTO",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "filterEmAtraso": {
+      "type": "boolean"
+    },
+    "filterEmAtendimentoMatricula": {
+      "type": "boolean"
+    },
+    "filterEmAtendimentoAtendente": {
+      "type": "boolean"
+    },
+    "filterPossuiPrimeiroContato": {
+      "type": "boolean"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "filterTimeLastInteraction": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "orderBySlaLate": {
+      "type": "boolean"
+    }
+  }
+}

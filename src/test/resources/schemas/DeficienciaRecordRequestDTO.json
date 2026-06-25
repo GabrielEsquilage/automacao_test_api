@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DeficienciaRecordRequestDTO",
+  "type": "object",
+  "properties": {
+    "codigo": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigoInep": {
+      "type": "string"
+    },
+    "tipoEnade": {
+      "type": "string"
+    },
+    "codigoEnade": {
+      "type": "string"
+    }
+  }
+}

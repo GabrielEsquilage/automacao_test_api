@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FechamentoPeriodoDetalhesDTO",
+  "type": "object",
+  "properties": {
+    "periodoFechamento": {
+      "$ref": "PeriodoLetivoRecordDatasDTO.json"
+    },
+    "periodoVigente": {
+      "$ref": "PeriodoLetivoRecordDatasDTO.json"
+    },
+    "totalMatriculas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalMatriculasSemNota": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalDisciplinas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalAtividades": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

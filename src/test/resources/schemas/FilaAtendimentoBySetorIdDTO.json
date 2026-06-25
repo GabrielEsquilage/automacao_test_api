@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilaAtendimentoBySetorIdDTO",
+  "type": "object",
+  "properties": {
+    "atendimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "tema": {
+      "type": "string"
+    },
+    "assunto": {
+      "type": "string"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "possuiTransferencia": {
+      "type": "boolean"
+    },
+    "matriculaNome": {
+      "type": "string"
+    },
+    "matriculaRa": {
+      "type": "string"
+    },
+    "waeMatriculaMatriculaDisciplina": {
+      "type": "string"
+    },
+    "waeMatriculaNome": {
+      "type": "string"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "cursoNome": {
+      "type": "string"
+    }
+  }
+}
