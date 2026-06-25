@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PageableObject",
+  "type": "object",
+  "properties": {
+    "pageNumber": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pageSize": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "offset": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "sort": {
+      "$ref": "SortObject.json"
+    },
+    "paged": {
+      "type": "boolean"
+    },
+    "unpaged": {
+      "type": "boolean"
+    }
+  }
+}

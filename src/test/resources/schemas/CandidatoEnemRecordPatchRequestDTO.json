@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoEnemRecordPatchRequestDTO",
+  "required": [
+    "codigoEnem",
+    "notaEnem"
+  ],
+  "type": "object",
+  "properties": {
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoEnem": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "notaEnem": {
+      "type": "number"
+    }
+  }
+}

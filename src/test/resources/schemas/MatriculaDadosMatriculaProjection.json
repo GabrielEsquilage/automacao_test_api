@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaDadosMatriculaProjection",
+  "type": "object",
+  "properties": {
+    "dataMatricula": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataTransferencia": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "cursoTransferido": {
+      "type": "string"
+    },
+    "dataTrancamento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataCancelamento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataFormatura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataColacaoGrau": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "hasDiploma": {
+      "type": "boolean"
+    },
+    "documentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

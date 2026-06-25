@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProvaRecordCreateRequestDTO",
+  "required": [
+    "codigo",
+    "descricao",
+    "numeroQuestoes",
+    "tipoProvaId"
+  ],
+  "type": "object",
+  "properties": {
+    "tipoProvaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigo": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "descricao": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "numeroQuestoes": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

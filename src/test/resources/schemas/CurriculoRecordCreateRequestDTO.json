@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoRecordCreateRequestDTO",
+  "required": [
+    "codigo",
+    "cursoId",
+    "nome",
+    "valorCurso"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "horaAtividadeComplementar": {
+      "type": "number"
+    },
+    "horaAtividadeExtensao": {
+      "type": "number"
+    },
+    "moduloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoDisciplina": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoDisciplinaRecordCreateRequestDTO.json"
+      }
+    },
+    "curriculoSerie": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoSerieRecordCreateRequestDTO.json"
+      }
+    },
+    "planosPagamentoId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "substituirCurriculo": {
+      "type": "boolean"
+    },
+    "serieIngressoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

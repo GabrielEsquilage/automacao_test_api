@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaAtividadeDetalheDTO",
+  "type": "object",
+  "properties": {
+    "atividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tagAtividadeMoodle": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "sincronizada": {
+      "type": "boolean"
+    },
+    "mensagemSincronizacao": {
+      "type": "string"
+    }
+  }
+}

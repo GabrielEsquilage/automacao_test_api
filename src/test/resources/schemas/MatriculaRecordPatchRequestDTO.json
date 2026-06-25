@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "alunoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

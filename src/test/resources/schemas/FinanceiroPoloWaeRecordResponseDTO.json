@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroPoloWaeRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "PoloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "Polo": {
+      "type": "string"
+    },
+    "PoloWaeCodigo": {
+      "type": "string"
+    },
+    "AnoMesReferencia": {
+      "type": "string"
+    },
+    "ValorPago": {
+      "type": "number"
+    },
+    "QuantidadeMatriculasMatriculados": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "Lote": {
+      "type": "string"
+    }
+  }
+}

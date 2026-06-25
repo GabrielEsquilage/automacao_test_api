@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DepartamentoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sigla": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "setores": {
+      "type": "array",
+      "items": {
+        "$ref": "SetorRecordCleanForDepartamentoDTO.json"
+      }
+    }
+  }
+}

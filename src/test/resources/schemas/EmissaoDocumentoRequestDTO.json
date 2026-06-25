@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmissaoDocumentoRequestDTO",
+  "required": [
+    "dataEmissao",
+    "matriculaId",
+    "tipoMatriculaDocumentoIds",
+    "usuarioEmissaoId"
+  ],
+  "type": "object",
+  "properties": {
+    "tipoMatriculaDocumentoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "usuarioEmissaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataEmissao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaRecordCreateRequestDTO",
+  "required": [
+    "contatos",
+    "documentos",
+    "enderecos",
+    "generoId",
+    "nacionalidadeId",
+    "nome",
+    "racaId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nomeSocial": {
+      "type": "string"
+    },
+    "contatos": {
+      "type": "array",
+      "items": {
+        "$ref": "ContatoRecordCreateRequestDTO.json"
+      }
+    },
+    "documentos": {
+      "type": "array",
+      "items": {
+        "$ref": "DocumentoRecordCreateRequestDTO.json"
+      }
+    },
+    "enderecos": {
+      "type": "array",
+      "items": {
+        "$ref": "EnderecoRecordCreateRequestDTO.json"
+      }
+    },
+    "racaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "generoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nacionalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

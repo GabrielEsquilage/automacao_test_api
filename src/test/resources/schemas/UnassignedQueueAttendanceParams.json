@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UnassignedQueueAttendanceParams",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "departmentId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sectorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "themeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "subjectId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

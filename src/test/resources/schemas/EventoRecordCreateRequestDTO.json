@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EventoRecordCreateRequestDTO",
+  "required": [
+    "data",
+    "nome",
+    "tipoEventoId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "horaInicio": {
+      "type": "string"
+    },
+    "horaFim": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "tipoEventoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AvisoCreateRecordDTO",
+  "required": [
+    "dataEnvio",
+    "filiaisIds",
+    "horaEnvio",
+    "mensagem",
+    "publicoAlvoIds",
+    "tipoPublicoAlvo",
+    "titulo"
+  ],
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "dataEnvio": {
+      "type": "string"
+    },
+    "horaEnvio": {
+      "type": "string"
+    },
+    "filiaisIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "filiaisSelection": {
+      "type": "string"
+    },
+    "tipoPublicoAlvo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "publicoAlvoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "publicoAlvoSelection": {
+      "type": "string"
+    },
+    "mensagem": {
+      "type": "string"
+    }
+  }
+}

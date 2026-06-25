@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaCursoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeCurso": {
+      "type": "string"
+    },
+    "codigoCurso": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "codigoMatricula": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "turma": {
+      "$ref": "TurmaRecordCleanDTO.json"
+    },
+    "statusFinanceiro": {
+      "type": "string"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialCaptacao": {
+      "$ref": "FilialRecordCleanDTOForMatricula.json"
+    },
+    "serieAtual": {
+      "type": "string"
+    },
+    "dataMatriculaDisciplina": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

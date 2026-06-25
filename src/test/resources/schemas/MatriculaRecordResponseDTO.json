@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "participantId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataConclusao": {
+      "type": "string",
+      "format": "date"
+    },
+    "pessoa": {
+      "$ref": "PessoaRecordResponseDTO.json"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordResponseForFinanceiroDTO.json"
+    },
+    "filialCaptacao": {
+      "$ref": "FilialRecordCleanDTOForMatricula.json"
+    },
+    "filialPratica": {
+      "$ref": "FilialRecordCleanDTOForMatricula.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "tipoCertificado": {
+      "$ref": "TipoCertificadoRecordCleanDTO.json"
+    }
+  }
+}

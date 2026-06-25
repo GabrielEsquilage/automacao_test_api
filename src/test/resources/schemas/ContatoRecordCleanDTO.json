@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ContatoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valor": {
+      "type": "string"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tipoContatoNome": {
+      "type": "string"
+    }
+  }
+}

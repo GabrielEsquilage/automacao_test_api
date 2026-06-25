@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EnderecoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "cidade": {
+      "$ref": "CidadeRecordCleanDTO.json"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "uf": {
+      "$ref": "UfRecordCleanDTO.json"
+    },
+    "pais": {
+      "$ref": "PaisRecordCleanDTO.json"
+    },
+    "tipoEndereco": {
+      "$ref": "TipoEnderecoRecordCleanResponseDTO.json"
+    }
+  }
+}

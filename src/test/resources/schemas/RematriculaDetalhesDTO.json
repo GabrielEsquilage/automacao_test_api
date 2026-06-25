@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RematriculaDetalhesDTO",
+  "type": "object",
+  "properties": {
+    "periodoFechado": {
+      "$ref": "PeriodoLetivoRecordDatasDTO.json"
+    },
+    "periodoVigente": {
+      "$ref": "PeriodoLetivoRecordDatasDTO.json"
+    },
+    "statusNome": {
+      "type": "string"
+    },
+    "totalMatriculas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalDisciplinas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalTurmas": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

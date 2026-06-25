@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmentaDisciplinaResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ementaNome": {
+      "type": "string"
+    },
+    "ementaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaNome": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

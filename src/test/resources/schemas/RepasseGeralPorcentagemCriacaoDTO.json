@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseGeralPorcentagemCriacaoDTO",
+  "required": [
+    "dataInicialVigencia",
+    "gruposIds",
+    "nome",
+    "porcentagens",
+    "tipoFilialIds"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "tipoFilialIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "gruposIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "porcentagens": {
+      "type": "array",
+      "items": {
+        "$ref": "PorcentagemRequest.json"
+      }
+    },
+    "dataInicialVigencia": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFinalVigencia": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

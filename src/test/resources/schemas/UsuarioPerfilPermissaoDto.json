@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioPerfilPermissaoDto",
+  "type": "object",
+  "properties": {
+    "perfilId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "permissaoChave": {
+      "type": "string"
+    }
+  }
+}

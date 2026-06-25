@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PoloRecordCreateRequestDTO",
+  "required": [
+    "endereco",
+    "gestor",
+    "instituicaoId",
+    "modalidadeId",
+    "nome",
+    "poloTipoId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 30,
+      "minLength": 0,
+      "type": "string"
+    },
+    "instituicaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloTipoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "endereco": {
+      "$ref": "EnderecoRecordCreateRequestDTO.json"
+    },
+    "gestor": {
+      "$ref": "GestorRecordCreateRequestDTO.json"
+    },
+    "redesSociais": {
+      "maxLength": 127,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

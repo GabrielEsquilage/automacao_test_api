@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AvaliacaoRecordCreateRequestDTO",
+  "required": [
+    "nome",
+    "tipoAvaliacaoId"
+  ],
+  "type": "object",
+  "properties": {
+    "tipoAvaliacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

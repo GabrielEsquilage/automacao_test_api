@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GrupoRepasseFilterDTO",
+  "type": "object",
+  "properties": {
+    "search": {
+      "type": "string"
+    },
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "variadas": {
+      "type": "boolean"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProcessoSeletivoProjectedOfertaDTO",
+  "type": "object",
+  "properties": {
+    "concursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ofertaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "curriculoNome": {
+      "type": "string"
+    },
+    "filialNome": {
+      "type": "string"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "planoPagamentoPadrao": {
+      "type": "boolean"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

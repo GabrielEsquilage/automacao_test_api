@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WebHookPagarmeRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "account": {
+      "$ref": "Account.json"
+    },
+    "type": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "data": {
+      "$ref": "Data.json"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SalesByCourseReportParams",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "educationLevelId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "courseSelectionType": {
+      "type": "string"
+    },
+    "courseIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

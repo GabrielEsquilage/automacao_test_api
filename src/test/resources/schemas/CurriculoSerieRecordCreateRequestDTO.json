@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoSerieRecordCreateRequestDTO",
+  "required": [
+    "serieId"
+  ],
+  "type": "object",
+  "properties": {
+    "serieId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "arredondarDias": {
+      "type": "boolean"
+    },
+    "disciplinaDiasRealizacao": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoDisciplinaDiasRealizacaoRecordCreateRequestDTO.json"
+      }
+    }
+  }
+}

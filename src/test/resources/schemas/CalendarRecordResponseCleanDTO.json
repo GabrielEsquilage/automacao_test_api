@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CalendarRecordResponseCleanDTO",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "eventos": {
+      "type": "array",
+      "items": {
+        "$ref": "CalendarEventRecordResponseCleanDTO.json"
+      }
+    }
+  }
+}

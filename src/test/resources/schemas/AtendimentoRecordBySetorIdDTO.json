@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtendimentoRecordBySetorIdDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "waeMatriculaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WaeMeioPagamentoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "Pagador": {
+      "type": "string"
+    },
+    "Loja": {
+      "type": "number"
+    },
+    "LojaDescricao": {
+      "type": "string"
+    },
+    "MeioPagamento": {
+      "type": "number"
+    },
+    "MeioPagamentoDescricao": {
+      "type": "string"
+    },
+    "Operadora": {
+      "type": "number"
+    },
+    "OperadoraDescri\u00e7\u00e3o": {
+      "type": "string"
+    }
+  }
+}

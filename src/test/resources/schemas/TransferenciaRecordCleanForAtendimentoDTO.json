@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaRecordCleanForAtendimentoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "usuarioTransferencia": {
+      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  }
+}

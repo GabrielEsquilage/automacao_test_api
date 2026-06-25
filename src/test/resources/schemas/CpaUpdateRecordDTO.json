@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CpaUpdateRecordDTO",
+  "type": "object",
+  "properties": {
+    "identificador": {
+      "type": "string"
+    },
+    "tipoFormularioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "idsParaExcluir": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "perguntas": {
+      "type": "array",
+      "items": {
+        "$ref": "PerguntaCpaUpdateRecord.json"
+      }
+    }
+  }
+}

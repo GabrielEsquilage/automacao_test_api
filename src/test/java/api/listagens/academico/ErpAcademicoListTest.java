@@ -1,6 +1,7 @@
 package api.listagens.academico;
 
 import static org.hamcrest.Matchers.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -26,13 +27,9 @@ public class ErpAcademicoListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura: deve ser um array não vazio com id
-                .body("$", isA(java.util.List.class))
-                .body("size()", greaterThan(0))
-                .body("[0]", hasKey("id"))
+                // Valida o contrato via JSON Schema (Array de Cursos)
+                .body(matchesJsonSchemaInClasspath("schemas/ArrayCursoRecordResponseDTO.json"))
                 .extract().response();
-
-        System.out.println("Cursos retornados: " + response.path("size()"));
     }
 
     @Test
@@ -44,15 +41,9 @@ public class ErpAcademicoListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação (Page do Spring Data)
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("pageable"))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                // Valida o Contrato via JSON Schema (Paginação de Cursos)
+                .body(matchesJsonSchemaInClasspath("schemas/PageCursoRecordResponseForPageDTO.json"))
                 .extract().response();
-
-        System.out.println("Cursos na primeira página: " + response.path("content.size()"));
     }
 
     @Test
@@ -64,13 +55,9 @@ public class ErpAcademicoListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura: deve ser um array não vazio com id
-                .body("$", isA(java.util.List.class))
-                .body("size()", greaterThan(0))
-                .body("[0]", hasKey("id"))
+                // Valida o contrato via JSON Schema (Array de Currículos)
+                .body(matchesJsonSchemaInClasspath("schemas/ArrayCurriculoRecordResponseDTO.json"))
                 .extract().response();
-
-        System.out.println("Curriculos retornados: " + response.path("size()"));
     }
 
     @Test
@@ -82,14 +69,9 @@ public class ErpAcademicoListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                // Valida o Contrato via JSON Schema (Paginação de Currículos)
+                .body(matchesJsonSchemaInClasspath("schemas/PageCurriculoProjectionForPageDTO.json"))
                 .extract().response();
-
-        System.out.println("Currículos na primeira página: " + response.path("content.size()"));
     }
 
     @Test
@@ -101,13 +83,9 @@ public class ErpAcademicoListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura
-                .body("$", isA(java.util.List.class))
-                .body("size()", greaterThan(0))
-                .body("[0]", hasKey("id"))
+                // Valida o contrato via JSON Schema (Array de Disciplinas)
+                .body(matchesJsonSchemaInClasspath("schemas/ArrayDisciplinaRecordResponseDTO.json"))
                 .extract().response();
-
-        System.out.println("Disciplinas retornadas: " + response.path("size()"));
     }
 
     @Test
@@ -119,13 +97,8 @@ public class ErpAcademicoListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                // Valida o Contrato via JSON Schema (Paginação de Disciplinas)
+                .body(matchesJsonSchemaInClasspath("schemas/PageDisciplinaRecordCleanDTO.json"))
                 .extract().response();
-
-        System.out.println("Disciplinas na primeira página: " + response.path("content.size()"));
     }
 }

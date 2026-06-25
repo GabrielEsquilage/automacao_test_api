@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CupomReportParams",
+  "type": "object",
+  "properties": {
+    "cupomId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyword": {
+      "type": "string"
+    }
+  }
+}

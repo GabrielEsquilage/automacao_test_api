@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioAtividadesRemunerado",
+  "type": "object",
+  "properties": {
+    "atividadesProgramadas": {
+      "type": "string"
+    },
+    "conhecimentosHabilidades": {
+      "type": "string"
+    },
+    "bolsaAuxilio": {
+      "type": "string"
+    },
+    "auxilioTransporte": {
+      "type": "boolean"
+    },
+    "valorValeTransporte": {
+      "type": "string"
+    },
+    "areaAtuacaoEstagiario": {
+      "type": "string"
+    }
+  }
+}

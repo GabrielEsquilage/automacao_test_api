@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilterDateTimeParams",
+  "type": "object",
+  "properties": {
+    "startDateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endDateTime": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TurmaGeralRecordSincronizacaoDTO",
+  "required": [
+    "curriculoId",
+    "processoSeletivoId"
+  ],
+  "type": "object",
+  "properties": {
+    "processoSeletivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

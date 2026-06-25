@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PlanoPagamentoResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valores": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    },
+    "hasTaxa": {
+      "type": "boolean"
+    },
+    "taxaMatricula": {
+      "$ref": "PlanoPagamentoValorCleanDTO.json"
+    },
+    "valoresDesconto": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    },
+    "valoresJuros": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    },
+    "valoresMultas": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    }
+  }
+}

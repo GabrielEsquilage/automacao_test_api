@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioHorarioRemunerado",
+  "type": "object",
+  "properties": {
+    "dataInicial": {
+      "type": "string"
+    },
+    "dataFinal": {
+      "type": "string"
+    },
+    "cargaHorariaSemanal": {
+      "type": "string"
+    },
+    "tabelaHorarios": {
+      "$ref": "SolicitacaoDocumentoEstagioTabelaHorarios.json"
+    }
+  }
+}

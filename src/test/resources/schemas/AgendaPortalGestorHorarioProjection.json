@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AgendaPortalGestorHorarioProjection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "horarioInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "horarioFim": {
+      "$ref": "LocalTime.json"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "vagasOcupadas": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

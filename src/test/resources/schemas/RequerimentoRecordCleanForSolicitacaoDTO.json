@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoRecordCleanForSolicitacaoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "tipoAprovacao": {
+      "$ref": "TipoAprovacaoRecordCleanDTO.json"
+    },
+    "diasResposta": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDias": {
+      "$ref": "TipoDiasRecordCleanDTO.json"
+    },
+    "possuiTaxa": {
+      "type": "boolean"
+    },
+    "valorTaxa": {
+      "type": "number"
+    },
+    "isRequerimentoInterno": {
+      "type": "boolean"
+    }
+  }
+}

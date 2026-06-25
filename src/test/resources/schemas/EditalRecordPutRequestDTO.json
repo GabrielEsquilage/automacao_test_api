@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EditalRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "codigo": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

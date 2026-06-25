@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreateBoletoPaymentDTO",
+  "required": [
+    "financeiroIds"
+  ],
+  "type": "object",
+  "properties": {
+    "financeiroIds": {
+      "maxItems": 2147483647,
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

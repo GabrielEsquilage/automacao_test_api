@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaFinanceiroDadosGeraisRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "saldoDevedor": {
+      "type": "number"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordResponseForFinanceiroDTO.json"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "planoPagamento": {
+      "$ref": "CleanForFinanceiroDTO.json"
+    },
+    "itensPlanoPagamento": {
+      "$ref": "PlanoPagamentoForModalDTO.json"
+    },
+    "itensFinanceiros": {
+      "type": "array",
+      "items": {
+        "$ref": "ItemFinanceiroRecordCleanDTO.json"
+      }
+    }
+  }
+}

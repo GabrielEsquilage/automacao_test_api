@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AgendaPortalGestorCleanResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "horarioInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "horarioFim": {
+      "$ref": "LocalTime.json"
+    },
+    "duracao": {
+      "$ref": "LocalTime.json"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "salaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "salaNome": {
+      "type": "string"
+    },
+    "tipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoAtividadeNome": {
+      "type": "string"
+    },
+    "poloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloNome": {
+      "type": "string"
+    }
+  }
+}

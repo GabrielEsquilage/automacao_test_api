@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoRecordResponseForPlanoPagamentoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoCurriculo": {
+      "type": "string"
+    },
+    "nomeCurriculo": {
+      "type": "string"
+    },
+    "nomeCurso": {
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "type": "string"
+    },
+    "tipoCurso": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "type": "string"
+    },
+    "modalidade": {
+      "type": ["string", "null"]
+    },
+    "valorCurriculo": {
+      "type": "number"
+    }
+  }
+}

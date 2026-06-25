@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AcordoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "formaPagamento": {
+      "$ref": "FormaPagamentoRecordCleanDTO.json"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "valorTotal": {
+      "type": "number"
+    },
+    "valorAcordo": {
+      "type": "number"
+    },
+    "numeroParcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVencimentoParcela": {
+      "type": "string",
+      "format": "date"
+    },
+    "justificativa": {
+      "type": "string"
+    },
+    "financeirosAcordo": {
+      "type": "array",
+      "items": {
+        "$ref": "FinanceiroAcordoRecordCleanForNegociacaoDTO.json"
+      }
+    },
+    "arquivoLinks": {
+      "type": "array",
+      "items": {
+        "$ref": "AcordoLinkRecordResponseDTO.json"
+      }
+    }
+  }
+}

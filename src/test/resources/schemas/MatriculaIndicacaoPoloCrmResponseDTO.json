@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaIndicacaoPoloCrmResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "email": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "dataIndicacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "aluno": {
+      "$ref": "AlunoCleanDTO.json"
+    },
+    "waeAluno": {
+      "$ref": "AlunoCleanDTO.json"
+    },
+    "waeAlunoIndicacao": {
+      "$ref": "WaeAlunoIndicacaoDTO.json"
+    }
+  }
+}

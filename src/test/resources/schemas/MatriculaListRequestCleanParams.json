@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaListRequestCleanParams",
+  "type": "object",
+  "properties": {
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

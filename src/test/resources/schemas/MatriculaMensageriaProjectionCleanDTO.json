@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaMensageriaProjectionCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "matriculaWae": {
+      "type": "boolean"
+    },
+    "pessoa": {
+      "$ref": "PessoaMensageriaProjectionCleanDTO.json"
+    }
+  }
+}

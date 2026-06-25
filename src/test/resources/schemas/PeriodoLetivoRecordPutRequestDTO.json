@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PeriodoLetivoRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 80,
+      "minLength": 0,
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "moduloId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "possuiPeriodoAnterior": {
+      "type": "boolean"
+    },
+    "periodoAnteriorId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

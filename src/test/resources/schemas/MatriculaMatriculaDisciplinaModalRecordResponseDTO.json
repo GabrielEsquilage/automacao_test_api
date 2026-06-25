@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaMatriculaDisciplinaModalRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "codigoMatricula": {
+      "type": "string"
+    },
+    "matriculaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "curso": {
+      "$ref": "CursoProjectionCleanDTO.json"
+    },
+    "tipoCertificado": {
+      "$ref": "TipoCertificadoRecordCleanDTO.json"
+    },
+    "filial": {
+      "$ref": "FilialRecordResponseDTOForTipoFilialOferta.json"
+    },
+    "matriculaDisciplina": {
+      "$ref": "MatriculaDisciplinaInfoDTO.json"
+    },
+    "nivelEnsino": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

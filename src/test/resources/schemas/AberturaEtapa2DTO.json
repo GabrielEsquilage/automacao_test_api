@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AberturaEtapa2DTO",
+  "type": "object",
+  "properties": {
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "datas": {
+      "type": "array",
+      "items": {
+        "$ref": "TipoDisciplinaRegraDTO.json"
+      }
+    },
+    "excecoes": {
+      "type": "array",
+      "items": {
+        "$ref": "DisciplinaExcecaoDTO.json"
+      }
+    },
+    "filter": {
+      "$ref": "AberturaDisciplinaFilterDTO.json"
+    },
+    "dataPadrao": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

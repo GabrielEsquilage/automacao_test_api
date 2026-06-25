@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaDisciplinaRecordForHistoricoResponseDTO",
+  "type": "object",
+  "properties": {
+    "matriculaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeDisciplina": {
+      "type": "string"
+    },
+    "codigoDisciplina": {
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "string"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaFinal": {
+      "type": "number"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "notaMinimaAprovacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoLetivo": {
+      "type": "string"
+    }
+  }
+}

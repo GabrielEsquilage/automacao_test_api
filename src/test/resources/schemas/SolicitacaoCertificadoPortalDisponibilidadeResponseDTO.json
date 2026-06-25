@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoCertificadoPortalDisponibilidadeResponseDTO",
+  "type": "object",
+  "properties": {
+    "disponivel": {
+      "type": "boolean"
+    },
+    "motivo": {
+      "type": "string"
+    },
+    "disciplinasPendentes": {
+      "type": "array",
+      "items": {
+        "$ref": "DisciplinaPendenteDTO.json"
+      }
+    },
+    "tccsPendentes": {
+      "type": "array",
+      "items": {
+        "$ref": "TccRecordCleanDTO.json"
+      }
+    }
+  }
+}

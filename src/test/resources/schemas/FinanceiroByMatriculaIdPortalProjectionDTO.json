@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroByMatriculaIdPortalProjectionDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "installmentNumber": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jurisdiction": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "month": {
+          "type": "string",
+          "enum": [
+            "JANUARY",
+            "FEBRUARY",
+            "MARCH",
+            "APRIL",
+            "MAY",
+            "JUNE",
+            "JULY",
+            "AUGUST",
+            "SEPTEMBER",
+            "OCTOBER",
+            "NOVEMBER",
+            "DECEMBER"
+          ]
+        },
+        "monthValue": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "leapYear": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dueDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "originalValue": {
+      "type": "number"
+    },
+    "valuePaid": {
+      "type": "number"
+    },
+    "valueToPay": {
+      "type": "number"
+    },
+    "paymentDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "typePayment": {
+      "type": "string"
+    },
+    "typeChargeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "typeCharge": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfiAcessosProjection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "quantidadeUsuarios": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

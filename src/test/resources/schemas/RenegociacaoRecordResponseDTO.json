@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RenegociacaoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "formaPagamento": {
+      "$ref": "FormaPagamentoRecordCleanDTO.json"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "valorTotal": {
+      "type": "number"
+    },
+    "valorRenegociacao": {
+      "type": "number"
+    },
+    "entrada": {
+      "type": "number"
+    },
+    "entradaPercentual": {
+      "type": "boolean"
+    },
+    "numeroParcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVencimentoParcela": {
+      "type": "string",
+      "format": "date"
+    },
+    "isentoMultaJuros": {
+      "type": "boolean"
+    },
+    "descontoAplicado": {
+      "type": "boolean"
+    },
+    "descontoPercentual": {
+      "type": "boolean"
+    },
+    "valorDesconto": {
+      "type": "number"
+    },
+    "justificativa": {
+      "type": "string"
+    },
+    "financeirosRenegociacao": {
+      "type": "array",
+      "items": {
+        "$ref": "FinanceiroRenegociacaoRecordCleanForNegociacaoDTO.json"
+      }
+    },
+    "arquivoLinks": {
+      "type": "array",
+      "items": {
+        "$ref": "RenegociacaoLinkRecordResponseDTO.json"
+      }
+    }
+  }
+}

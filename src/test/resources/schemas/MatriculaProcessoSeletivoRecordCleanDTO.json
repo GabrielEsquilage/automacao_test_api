@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaProcessoSeletivoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idProcessoSeletivo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeProcessoSeletivo": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

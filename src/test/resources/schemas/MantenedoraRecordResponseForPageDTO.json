@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MantenedoraRecordResponseForPageDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "cnpj": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

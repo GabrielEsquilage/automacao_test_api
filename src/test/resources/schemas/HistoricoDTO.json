@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "HistoricoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusAcao": {
+      "type": "string"
+    },
+    "dataAcao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nomeAtendente": {
+      "type": "string"
+    },
+    "possuiJustificativa": {
+      "type": "boolean"
+    },
+    "justificativa": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialTransferenciaOpcaoDTO",
+  "type": "object",
+  "properties": {
+    "transferir": {
+      "type": "boolean"
+    },
+    "filialDestinoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

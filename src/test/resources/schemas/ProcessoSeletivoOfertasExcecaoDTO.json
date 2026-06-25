@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProcessoSeletivoOfertasExcecaoDTO",
+  "type": "object",
+  "properties": {
+    "curriculoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "filialIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "tipoSelecao": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    },
+    "valorCurriculo": {
+      "type": "number"
+    },
+    "acao": {
+      "type": "string",
+      "enum": [
+        "REAJUSTE",
+        "INATIVACAO",
+        "ATIVACAO"
+      ]
+    },
+    "tipoReajuste": {
+      "type": "string",
+      "enum": [
+        "PERCENTUAL",
+        "ABSOLUTO"
+      ]
+    },
+    "operacaoReajuste": {
+      "type": "string",
+      "enum": [
+        "SOMAR",
+        "SUBTRAIR",
+        "SUBSTITUIR"
+      ]
+    }
+  }
+}

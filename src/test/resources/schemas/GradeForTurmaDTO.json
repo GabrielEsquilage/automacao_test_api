@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeForTurmaDTO",
+  "type": "object",
+  "properties": {
+    "gradeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoLetivoNome": {
+      "type": "string"
+    },
+    "processoSeletivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "processoSeletivoNome": {
+      "type": "string"
+    },
+    "gradeCurriculo": {
+      "$ref": "GradeCurriculoForGradeDTO.json"
+    }
+  }
+}

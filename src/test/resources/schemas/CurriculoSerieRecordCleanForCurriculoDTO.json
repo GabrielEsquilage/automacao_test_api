@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoSerieRecordCleanForCurriculoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serie": {
+      "$ref": "SerieRecordCleanDTO.json"
+    },
+    "disciplinas": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoDisciplinaRecordCleanForCurriculoDTO.json"
+      }
+    }
+  }
+}

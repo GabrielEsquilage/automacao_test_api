@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoCertificadoPortalStatusResponseDTO",
+  "type": "object",
+  "properties": {
+    "solicitacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "justificativaReprovacao": {
+      "type": "string"
+    }
+  }
+}

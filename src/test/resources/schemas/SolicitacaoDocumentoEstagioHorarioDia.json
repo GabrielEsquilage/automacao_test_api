@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioHorarioDia",
+  "type": "object",
+  "properties": {
+    "manha": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioPeriodo.json"
+    },
+    "tarde": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioPeriodo.json"
+    },
+    "noite": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioPeriodo.json"
+    },
+    "cargaHoraria": {
+      "type": "string"
+    }
+  }
+}

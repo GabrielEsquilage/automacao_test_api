@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseSolicitacaoRecordCleanForPainelAnaliseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "atendente": {
+      "type": "string"
+    },
+    "matricula": {
+      "$ref": "MatriculaMensageriaRecordCleanDTO.json"
+    },
+    "waeMatricula": {
+      "$ref": "WaeMatriculaRecordCleanDTO.json"
+    },
+    "requerimento": {
+      "$ref": "RequerimentoRecordCleanForSolicitacaoDTO.json"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "dataPrazo": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "etapaAtual": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "etapaTotal": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "resposta": {
+      "type": "string"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaAvaliacaoAtividadeRecordCleanForDisciplinaAvaliacaoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "atividade": {
+      "$ref": "AtividadeRecordCleanResponseDTO.json"
+    },
+    "nota": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "peso": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

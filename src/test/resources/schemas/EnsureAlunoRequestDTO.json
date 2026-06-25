@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EnsureAlunoRequestDTO",
+  "required": [
+    "cursoId",
+    "pessoaId"
+  ],
+  "type": "object",
+  "properties": {
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FormularioNpsCreateDTO",
+  "type": "object",
+  "properties": {
+    "identificador": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "perguntas": {
+      "type": "array",
+      "items": {
+        "$ref": "PerguntaNpsCreateDTO.json"
+      }
+    }
+  }
+}

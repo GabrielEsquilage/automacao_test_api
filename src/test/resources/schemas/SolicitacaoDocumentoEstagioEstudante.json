@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioEstudante",
+  "type": "object",
+  "properties": {
+    "cursoNome": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "rg": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "dataNascimento": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "numeroResidencial": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

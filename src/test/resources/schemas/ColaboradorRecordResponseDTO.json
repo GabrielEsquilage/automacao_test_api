@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ColaboradorRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "pessoa": {
+      "$ref": "PessoaRecordResponseDTO.json"
+    },
+    "tipoContratacao": {
+      "$ref": "TipoContratacaoRecordResponseDTO.json"
+    },
+    "cargo": {
+      "$ref": "CargoRecordResponseDTO.json"
+    },
+    "validacaoPagamento": {
+      "$ref": "ValidacaoPagamentoRecordResponseDTO.json"
+    },
+    "escolaridade": {
+      "$ref": "EscolaridadeRecordResponseDTO.json"
+    },
+    "pcd": {
+      "type": "boolean"
+    },
+    "locais": {
+      "type": "array",
+      "items": {
+        "$ref": "ColaboradorFilialRecordResponseForListDTO.json"
+      }
+    },
+    "titulacao": {
+      "$ref": "TitulacaoRecordResponseDTO.json"
+    }
+  }
+}

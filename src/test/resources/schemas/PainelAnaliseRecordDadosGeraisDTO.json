@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRecordDadosGeraisDTO",
+  "type": "object",
+  "properties": {
+    "avgAberturaAtribuicao": {
+      "type": "number"
+    },
+    "avgAberturaPrimeiroContato": {
+      "type": "number"
+    },
+    "avgResolucao": {
+      "type": "number"
+    },
+    "avgFinalizacao": {
+      "type": "number"
+    },
+    "avgAtribuicaoPrimeiroContato": {
+      "type": "number"
+    },
+    "avgPrimeiroContatoResolucao": {
+      "type": "number"
+    },
+    "avgResolucaoFinalizacao": {
+      "type": "number"
+    },
+    "avgRespostaReabertura": {
+      "type": "number"
+    },
+    "avgRespostaMatricula": {
+      "type": "number"
+    },
+    "npsGeral": {
+      "type": "number"
+    }
+  }
+}

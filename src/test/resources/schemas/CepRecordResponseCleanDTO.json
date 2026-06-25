@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CepRecordResponseCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "uf": {
+      "$ref": "UfRecordCleanForCepDTO.json"
+    },
+    "cidade": {
+      "$ref": "CidadeRecordCleanForCepDTO.json"
+    },
+    "regiao": {
+      "$ref": "RegiaoRecordCleanDTO.json"
+    },
+    "pais": {
+      "$ref": "PaisRecordCleanDTO.json"
+    },
+    "valor": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    }
+  }
+}

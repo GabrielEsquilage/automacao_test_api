@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeComplementarRecordCreateRequestDTO",
+  "required": [
+    "chMaxima",
+    "descricao",
+    "nome",
+    "tipoClassificacaoId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "descricao": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    },
+    "chMaxima": {
+      "type": "number"
+    },
+    "tipoClassificacaoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

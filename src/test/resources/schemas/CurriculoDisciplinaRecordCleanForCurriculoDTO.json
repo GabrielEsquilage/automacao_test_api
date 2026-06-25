@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoDisciplinaRecordCleanForCurriculoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplina": {
+      "$ref": "DisciplinaRecordCleanDTO.json"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordCleanForTurmaDTO.json"
+    },
+    "turma": {
+      "anyOf": [
+        { "$ref": "TurmaRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
+    },
+    "serie": {
+      "$ref": "SerieRecordCleanDTO.json"
+    },
+    "formaOferta": {
+      "$ref": "FormaOfertaRecordCleanResponseDTO.json"
+    },
+    "tipoNota": {
+      "$ref": "TipoNotaRecordCleanResponseDTO.json"
+    },
+    "diasLiberacao": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "diasRealizacao": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "faltaDiaria": {
+      "type": "boolean"
+    },
+    "nota": {
+      "type": "boolean"
+    },
+    "ementaDisciplina": {
+      "anyOf": [
+        { "$ref": "EmentaDisciplinaResponseCleanDTO.json" },
+        { "type": "null" }
+      ]
+    },
+    "valorDisciplina": {
+      "type": ["number", "null"]
+    },
+    "observacao": {
+      "type": ["string", "null"]
+    },
+    "cargaHoraria": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "totalCreditos": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "notaMinimaAprovacao": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "tipoDisciplina": {
+      "$ref": "TipoDisciplinaRecordCleanResponseDTO.json"
+    },
+    "codigoDependencia": {
+      "type": ["string", "null"]
+    },
+    "diasRealizacaoDependencia": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "notaDispensa": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "diasImportacaoNota": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "colaborador": {
+      "$ref": "ColaboradorRecordCleanDTO.json"
+    },
+    "permiteAgendamentoPraticaPresencial": {
+      "type": "boolean"
+    }
+  }
+}

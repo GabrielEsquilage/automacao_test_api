@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WaeMatriculaIndicacaoRecordRequestDTO",
+  "required": [
+    "waeCursoCodigo",
+    "waeCursoNome",
+    "waePoloCodigo",
+    "waePoloNome"
+  ],
+  "type": "object",
+  "properties": {
+    "waePoloCodigo": {
+      "type": "string"
+    },
+    "waePoloNome": {
+      "type": "string"
+    },
+    "waeCursoNome": {
+      "type": "string"
+    },
+    "waeCursoCodigo": {
+      "type": "string"
+    }
+  }
+}

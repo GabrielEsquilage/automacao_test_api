@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioObrigatorioEtapaCinco",
+  "type": "object",
+  "properties": {
+    "disciplina": {
+      "type": "string"
+    },
+    "dataInicial": {
+      "type": "string"
+    },
+    "dataFinal": {
+      "type": "string"
+    },
+    "cargaHorariaSemanal": {
+      "type": "string"
+    },
+    "cargaHorariaTotal": {
+      "type": "string"
+    },
+    "tabelaHorarios": {
+      "$ref": "SolicitacaoDocumentoEstagioObrigatorioTabelaHorarios.json"
+    }
+  }
+}

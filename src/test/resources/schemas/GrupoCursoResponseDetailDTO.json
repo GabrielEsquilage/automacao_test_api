@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GrupoCursoResponseDetailDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "qtdCursos": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtdPlanosPagamento": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "planosPagamentoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

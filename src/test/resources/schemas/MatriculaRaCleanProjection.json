@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRaCleanProjection",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "nomeCurso": {
+      "type": "string"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

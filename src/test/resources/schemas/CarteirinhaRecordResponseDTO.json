@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CarteirinhaRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matricula": {
+      "$ref": "MatriculaCarteirinhaRecordResponseDTO.json"
+    },
+    "qrCode": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "validade": {
+      "type": "string",
+      "format": "date"
+    },
+    "valida": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "LogMatriculaDisciplinaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "nomeUsuario": {
+      "type": "string"
+    },
+    "emailUsuario": {
+      "type": "string"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

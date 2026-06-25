@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoParaGrupoRepasseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "$ref": "NivelEnsinoRecordCleanDTO.json"
+    },
+    "tipoCurso": {
+      "$ref": "TipoCursoRecordCleanDTO.json"
+    },
+    "areaConhecimento": {
+      "$ref": "AreaConhecimentoRecordCleanDTO.json"
+    },
+    "grupoRepasseNome": {
+      "type": "string"
+    }
+  }
+}

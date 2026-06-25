@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRaCleanParams",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyword": {
+      "type": "string"
+    }
+  }
+}

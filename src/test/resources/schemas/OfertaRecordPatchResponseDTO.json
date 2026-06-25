@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRecordPatchResponseDTO",
+  "type": "object",
+  "properties": {
+    "valorCurso": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

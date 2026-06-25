@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroPoloCrmView",
+  "type": "object",
+  "properties": {
+    "enviadoPoloCrmAt": {
+      "type": "string",
+      "format": "date-time",
+      "writeOnly": true
+    },
+    "LancamentoNro": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "Unidade": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "Matricula": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "NomeAluno": {
+      "type": "string"
+    },
+    "AnoLetivo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "PeriodoLetivo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "Curso": {
+      "type": "string"
+    },
+    "NomeCurso": {
+      "type": "string"
+    },
+    "Serie": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "SerieDescricao": {
+      "type": "string"
+    },
+    "Polo": {
+      "type": "string"
+    },
+    "NomePolo": {
+      "type": "string"
+    },
+    "Representante": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "NomeRepresentante": {
+      "type": "string"
+    },
+    "DataVencto": {
+      "type": "string"
+    },
+    "DataPagto": {
+      "type": "string"
+    },
+    "FlagNegociacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "Parcela": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "MesAnoCompetencia": {
+      "type": "string"
+    },
+    "Taxa": {
+      "type": "number"
+    },
+    "TaxaMatricula": {
+      "type": "string"
+    },
+    "LiquidadoPor": {
+      "type": "string"
+    },
+    "LiquidadoPorDescricao": {
+      "type": "string"
+    },
+    "Situacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "SituacaoDescricao": {
+      "type": "string"
+    },
+    "ValorBruto": {
+      "type": "number"
+    },
+    "ValorBolsa": {
+      "type": "number"
+    },
+    "ValorDescontos": {
+      "type": "number"
+    },
+    "ValorDeducao": {
+      "type": "number"
+    },
+    "ValorLiquido": {
+      "type": "number"
+    },
+    "ValorMulta": {
+      "type": "number"
+    },
+    "ValorJuros": {
+      "type": "number"
+    },
+    "ValorAcrescimo": {
+      "type": "number"
+    },
+    "ValorPago": {
+      "type": "number"
+    },
+    "DataGeracao": {
+      "type": "string"
+    },
+    "Lote": {
+      "type": "string"
+    }
+  }
+}

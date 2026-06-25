@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRequestCreateDTO",
+  "type": "object",
+  "properties": {
+    "concursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "planoPagamentoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "numeroVagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorCurso": {
+      "type": "number"
+    }
+  }
+}

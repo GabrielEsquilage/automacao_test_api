@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaRecordCleanForPeriodoLetivoDTO",
+  "type": "object",
+  "properties": {
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplina": {
+      "type": "string"
+    },
+    "disciplinaCodigo": {
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "grupo": {
+      "type": "string"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplina": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "statusDisciplina": {
+      "type": "string"
+    },
+    "statusSincronizacao": {
+      "type": "string"
+    },
+    "mensagemSincronizacao": {
+      "type": "string"
+    },
+    "totalAtividades": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

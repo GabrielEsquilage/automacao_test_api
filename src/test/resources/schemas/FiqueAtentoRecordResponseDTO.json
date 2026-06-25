@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FiqueAtentoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "atividadesAcademicas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "geral": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

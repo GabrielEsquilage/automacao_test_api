@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GetTransactionResponse",
+  "type": "object",
+  "properties": {
+    "gateway_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "pdf": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "attempt_count": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "max_attempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "next_attempt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "transaction_type": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "gateway_response": {
+      "$ref": "GetGatewayResponseResponse.json"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "max_days_to_pay_past_due": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qr_code": {
+      "type": "string"
+    },
+    "qr_code_url": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

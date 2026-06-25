@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SerieMoodleRecordWithDisciplinaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serie": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "nrDisciplinas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "disciplinas": {
+      "type": "array",
+      "items": {
+        "$ref": "DisciplinaMoodleRecordCleanForTurmaDTO.json"
+      }
+    },
+    "diasRealizacao": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

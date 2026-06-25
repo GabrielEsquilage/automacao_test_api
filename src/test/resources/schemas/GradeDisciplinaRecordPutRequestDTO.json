@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaRecordPutRequestDTO",
+  "required": [
+    "colaboradorId",
+    "tipoNotaId"
+  ],
+  "type": "object",
+  "properties": {
+    "gradeDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ementaDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalCreditos": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notaMinimaAprovacao": {
+      "maximum": 10,
+      "minimum": 0,
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoNotaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorDisciplina": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "faltaDiaria": {
+      "type": "boolean"
+    },
+    "nota": {
+      "type": "boolean"
+    },
+    "codigoDependencia": {
+      "type": "string"
+    },
+    "diasRealizacaoDependencia": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diasImportacaoNota": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "permiteAgendamentoPraticaPresencial": {
+      "type": "boolean"
+    }
+  }
+}

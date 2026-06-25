@@ -1,0 +1,148 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaPoloCrmView",
+  "type": "object",
+  "properties": {
+    "Matricula": {
+      "type": "string"
+    },
+    "Unidade": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "Ano": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "PeriodoLetivo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "NomeAluno": {
+      "type": "string"
+    },
+    "Curso": {
+      "type": "string"
+    },
+    "CursoNome": {
+      "type": "string"
+    },
+    "Serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "SerieNome": {
+      "type": "string"
+    },
+    "Polo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "PoloNome": {
+      "type": "string"
+    },
+    "IDMoodle": {
+      "type": "string"
+    },
+    "DataMatricula": {
+      "type": "string"
+    },
+    "DataSE": {
+      "type": "string"
+    },
+    "SitFinal": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "SitFinalDescricao": {
+      "type": "string"
+    },
+    "SitEscolar": {
+      "type": "string"
+    },
+    "SitEscolarDescricao": {
+      "type": "string"
+    },
+    "NivelEnsino": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "NivelEnsinoDescricao": {
+      "type": "string"
+    },
+    "TipoMatricula": {
+      "type": "string"
+    },
+    "TipoMatriculaDescricao": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Celular": {
+      "type": "string"
+    },
+    "Endereco": {
+      "type": "string"
+    },
+    "Numero": {
+      "type": "string"
+    },
+    "Bairro": {
+      "type": "string"
+    },
+    "CEP": {
+      "type": "string"
+    },
+    "Municipio": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "MunicipioNome": {
+      "type": "string"
+    },
+    "UF": {
+      "type": "string"
+    },
+    "DataNascimento": {
+      "type": "string"
+    },
+    "EADBloq": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "GradeCodigo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "GradeNro": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "TurmaBase": {
+      "type": "string"
+    },
+    "Operacao": {
+      "type": "string"
+    },
+    "Cpf": {
+      "type": "string"
+    },
+    "Campanha": {
+      "type": "string"
+    },
+    "CampanhaDescricao": {
+      "type": "string"
+    },
+    "TipoIngresso": {
+      "type": "string"
+    },
+    "TipoIngressoDescricao": {
+      "type": "string"
+    },
+    "EnviadoPoloCrmAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

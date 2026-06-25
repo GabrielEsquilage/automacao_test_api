@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GetGatewayResponseResponse",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "GetGatewayErrorResponse.json"
+      }
+    }
+  }
+}

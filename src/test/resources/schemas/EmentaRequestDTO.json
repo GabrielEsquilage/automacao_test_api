@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmentaRequestDTO",
+  "required": [
+    "codigo",
+    "conteudoProgramatico",
+    "criteriosAvaliacao",
+    "disciplinasIds",
+    "metodologiaEnsino",
+    "nome",
+    "objetivos",
+    "referenciaBasica",
+    "referenciaComplementar",
+    "textoEmenta"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "objetivos": {
+      "type": "string"
+    },
+    "textoEmenta": {
+      "type": "string"
+    },
+    "conteudoProgramatico": {
+      "type": "string"
+    },
+    "metodologiaEnsino": {
+      "type": "string"
+    },
+    "criteriosAvaliacao": {
+      "type": "string"
+    },
+    "referenciaBasica": {
+      "type": "string"
+    },
+    "referenciaComplementar": {
+      "type": "string"
+    },
+    "disciplinasIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

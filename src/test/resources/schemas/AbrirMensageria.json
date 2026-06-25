@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AbrirMensageria",
+  "required": [
+    "assuntoId",
+    "isWae",
+    "matriculaId",
+    "mensagem"
+  ],
+  "type": "object",
+  "properties": {
+    "isWae": {
+      "type": "boolean"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "assuntoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "mensagem": {
+      "type": "string"
+    },
+    "cursoCodigo": {
+      "type": "string"
+    },
+    "cursoNome": {
+      "type": "string"
+    }
+  }
+}

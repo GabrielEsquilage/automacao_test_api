@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EscolaridadeRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 31,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

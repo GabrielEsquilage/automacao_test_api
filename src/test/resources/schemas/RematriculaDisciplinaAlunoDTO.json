@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RematriculaDisciplinaAlunoDTO",
+  "type": "object",
+  "properties": {
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaNome": {
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

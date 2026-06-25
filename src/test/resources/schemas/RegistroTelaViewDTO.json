@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RegistroTelaViewDTO",
+  "type": "object",
+  "properties": {
+    "configuracao": {
+      "$ref": "ConfiguracaoRegistroRecordResponseDTO.json"
+    },
+    "historico": {
+      "$ref": "PageRegistroHistoricoDTO.json"
+    }
+  }
+}

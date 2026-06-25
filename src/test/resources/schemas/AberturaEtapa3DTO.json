@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AberturaEtapa3DTO",
+  "type": "object",
+  "properties": {
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "datas": {
+      "type": "array",
+      "items": {
+        "$ref": "AtividadeRegraDTO.json"
+      }
+    },
+    "excecoes": {
+      "type": "array",
+      "items": {
+        "$ref": "AtividadeExcecaoDTO.json"
+      }
+    },
+    "filter": {
+      "$ref": "AberturaAtividadeFilterDTO.json"
+    },
+    "dataInicioPadrao": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFimPadrao": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "InstituicaoRecordCreateRequestDTO",
+  "required": [
+    "endereco",
+    "gestor",
+    "localizacaoId",
+    "modalidadeId",
+    "nome",
+    "redeId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 63,
+      "minLength": 0,
+      "type": "string"
+    },
+    "sigla": {
+      "maxLength": 15,
+      "minLength": 0,
+      "type": "string"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "redeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "localizacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "endereco": {
+      "$ref": "EnderecoRecordCreateRequestDTO.json"
+    },
+    "gestor": {
+      "$ref": "GestorRecordCreateRequestDTO.json"
+    },
+    "site": {
+      "maxLength": 63,
+      "minLength": 0,
+      "type": "string"
+    },
+    "instagram": {
+      "maxLength": 63,
+      "minLength": 0,
+      "type": "string"
+    },
+    "linkedin": {
+      "maxLength": 63,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigoMecInep": {
+      "maxLength": 15,
+      "minLength": 0,
+      "type": "string"
+    },
+    "polos": {
+      "type": "array",
+      "items": {
+        "$ref": "PoloRecordCreateRequestDTO.json"
+      }
+    }
+  }
+}

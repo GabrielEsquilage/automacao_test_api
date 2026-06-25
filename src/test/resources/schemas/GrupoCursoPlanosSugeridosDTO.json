@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GrupoCursoPlanosSugeridosDTO",
+  "type": "object",
+  "properties": {
+    "grupoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "grupoCursoNome": {
+      "type": "string"
+    },
+    "planos": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoCleanDTO.json"
+      }
+    }
+  }
+}

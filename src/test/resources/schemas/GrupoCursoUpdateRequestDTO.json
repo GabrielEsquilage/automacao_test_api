@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GrupoCursoUpdateRequestDTO",
+  "required": [
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cursoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "cursoSelectionType": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    },
+    "planosPagamentoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "planoSelectionType": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "NotificacaoRecordResponseCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "visualizada": {
+      "type": "boolean"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "atendimento": {
+      "$ref": "AtendimentoRecordCleanDTO.json"
+    },
+    "aviso": {
+      "$ref": "AvisoRecordResponseCleanDTO.json"
+    },
+    "solicitacao": {
+      "$ref": "SolicitacaoRecordCleanDTO.json"
+    },
+    "tipoNotificacao": {
+      "$ref": "TipoNotificacaoRecordResponseDTO.json"
+    }
+  }
+}

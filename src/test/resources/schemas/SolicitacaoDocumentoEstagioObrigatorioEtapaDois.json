@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioObrigatorioEtapaDois",
+  "type": "object",
+  "properties": {
+    "cnpj": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "alvara": {
+      "type": "string"
+    },
+    "razaoSocial": {
+      "type": "string"
+    },
+    "areaAtuacao": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "telefoneDois": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "representante": {
+      "type": "string"
+    },
+    "representanteCargo": {
+      "type": "string"
+    },
+    "representanteEmail": {
+      "type": "string"
+    },
+    "apolice": {
+      "type": "string"
+    },
+    "seguradora": {
+      "type": "string"
+    }
+  }
+}

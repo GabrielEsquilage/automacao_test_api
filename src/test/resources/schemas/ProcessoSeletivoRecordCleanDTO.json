@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProcessoSeletivoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "periodoLetivo": {
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "type": "string"
+    },
+    "statusNome": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

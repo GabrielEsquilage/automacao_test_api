@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalRecordCreateRequestDTO",
+  "required": [
+    "requerimentoId"
+  ],
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "requerimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  }
+}

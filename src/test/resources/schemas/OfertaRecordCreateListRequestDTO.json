@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRecordCreateListRequestDTO",
+  "required": [
+    "curriculoIds",
+    "filialIds"
+  ],
+  "type": "object",
+  "properties": {
+    "curriculoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "filialIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "parametrizacoes": {
+      "type": "array",
+      "items": {
+        "$ref": "OfertaRecordCreateListCurriculoFilialRequestDTO.json"
+      }
+    }
+  }
+}

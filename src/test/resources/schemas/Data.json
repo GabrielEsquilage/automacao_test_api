@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Data",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "paid_amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "paid_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "canceled_amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "customer": {
+      "$ref": "CustomerDTO.json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "charges": {
+      "type": "array",
+      "items": {
+        "$ref": "GetChargeResponse.json"
+      }
+    },
+    "last_transaction": {
+      "$ref": "LastTransaction.json"
+    }
+  }
+}

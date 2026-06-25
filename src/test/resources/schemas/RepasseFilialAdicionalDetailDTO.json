@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialAdicionalDetailDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tipoRegra": {
+      "$ref": "TipoRepasseDTO.json"
+    },
+    "acrescimoPor": {
+      "$ref": "TipoRepasseDTO.json"
+    },
+    "receberPor": {
+      "$ref": "TipoRepasseDTO.json"
+    },
+    "serieInicial": {
+      "$ref": "TipoRepasseDTO.json"
+    },
+    "serieFinal": {
+      "$ref": "TipoRepasseDTO.json"
+    },
+    "porcentagemAdicional": {
+      "type": "number"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "grupos": {
+      "type": "array",
+      "items": {
+        "$ref": "GrupoRepasseSimpleDTO.json"
+      }
+    }
+  }
+}

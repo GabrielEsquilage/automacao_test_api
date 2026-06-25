@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaResponsavelSolicitacaoRecordCreateRequestDTOForController",
+  "required": [
+    "usuarioId"
+  ],
+  "type": "object",
+  "properties": {
+    "usuarioId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

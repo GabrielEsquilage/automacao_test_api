@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalRecordCleanForMatriculaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requerimento": {
+      "$ref": "RequerimentoRecordCleanForSolicitacaoDTO.json"
+    },
+    "responsavel": {
+      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "resposta": {
+      "type": "string"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "respostaVisualizada": {
+      "type": "boolean"
+    },
+    "dataPrimeiroContato": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "slaSolicitacao": {
+      "type": "number"
+    },
+    "valorTaxa": {
+      "type": "number"
+    }
+  }
+}

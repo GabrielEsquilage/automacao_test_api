@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SyncedClassesReportParams",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "admissionProcessId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "contestId": {
+      "type": "string"
+    }
+  }
+}

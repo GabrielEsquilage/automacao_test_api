@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoEtapaRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "etapa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "descricao": {
+      "maxLength": 400,
+      "minLength": 0,
+      "type": "string"
+    },
+    "etapaFinanceiro": {
+      "$ref": "RequerimentoEtapaFinanceiroRecordPutRequestDTO.json"
+    },
+    "etapaAnexos": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoEtapaAnexoRecordPutRequestDTO.json"
+      }
+    }
+  }
+}

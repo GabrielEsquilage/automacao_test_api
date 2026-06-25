@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CpaDateConflictCheckParams",
+  "type": "object",
+  "properties": {
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "tipoFormularioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "currentCpaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

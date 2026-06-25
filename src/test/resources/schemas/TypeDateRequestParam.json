@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TypeDateRequestParam",
+  "type": "object",
+  "properties": {
+    "startDateVencimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDateVencimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "startDatePagamento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endDatePagamento": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

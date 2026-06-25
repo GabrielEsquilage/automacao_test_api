@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CargoRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 31,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

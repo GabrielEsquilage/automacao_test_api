@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CpaPortalRespostasObservacaoDTO",
+  "type": "object",
+  "properties": {
+    "respostas": {
+      "type": "array",
+      "items": {
+        "$ref": "RespostaCpaRecordCleanDTO.json"
+      }
+    },
+    "observacao": {
+      "$ref": "ObservacaoCpaCleanDTO.json"
+    }
+  }
+}

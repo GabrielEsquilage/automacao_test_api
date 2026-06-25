@@ -3,6 +3,7 @@ package api.listagens.financeiro;
 import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.is;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -33,6 +34,7 @@ public class ErpFinanceiroListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(matchesJsonSchemaInClasspath("schemas/PageFinanceiroGeralProjectionForPage.json"))
                 .extract().response();
 
         System.out.println("Resposta de financeiro geral: " + response.asString());
@@ -67,6 +69,7 @@ public class ErpFinanceiroListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(matchesJsonSchemaInClasspath("schemas/PagePlanoPagamentoResponseForPageDTO.json"))
                 .extract().response();
 
         // Tenta obter o ID do primeiro plano retornado para testar a busca de currículos
@@ -78,7 +81,8 @@ public class ErpFinanceiroListTest {
                     .get("/api/v1/plano-pagamento/" + planoId + "/curriculos")
                 .then()
                     .log().status()
-                    .statusCode(200);
+                    .statusCode(200)
+                    .body(matchesJsonSchemaInClasspath("schemas/PageCurriculoRecordResponseForPlanoPagamentoDTO.json"));
         } else {
             System.out.println("Nenhum plano retornado para testar o relacionamento com currículos.");
         }
@@ -98,6 +102,7 @@ public class ErpFinanceiroListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(matchesJsonSchemaInClasspath("schemas/PageCupomListResponseDTO.json"))
                 .extract().response();
 
         // Tenta obter o ID do primeiro cupom retornado para testar a busca de candidatos
@@ -109,7 +114,8 @@ public class ErpFinanceiroListTest {
                     .get("/api/v1/cupom/" + cupomId + "/candidatos")
                 .then()
                     .log().status()
-                    .statusCode(200);
+                    .statusCode(200)
+                    .body(matchesJsonSchemaInClasspath("schemas/PageCupomCandidatoDTO.json"));
         } else {
             System.out.println("Nenhum cupom retornado para testar o relacionamento com candidatos.");
         }

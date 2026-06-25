@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoRecordResponseForFinanceiroDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "curso": {
+      "$ref": "CursoRecordCleanDTO.json"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  }
+}

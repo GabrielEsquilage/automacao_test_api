@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaFinanceiroFilialProjectionDTO",
+  "type": "object",
+  "properties": {
+    "filialCaptacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialCaptacaoNome": {
+      "type": "string"
+    }
+  }
+}

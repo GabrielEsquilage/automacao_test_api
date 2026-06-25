@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioObrigatorioEtapaQuatro",
+  "type": "object",
+  "properties": {
+    "areaAtuacaoEstagiario": {
+      "type": "string"
+    },
+    "atividadesProgramadas": {
+      "type": "string"
+    },
+    "conhecimentosHabilidades": {
+      "type": "string"
+    }
+  }
+}

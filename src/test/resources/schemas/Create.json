@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Create",
+  "required": [
+    "validadeFinal",
+    "validadeInicio"
+  ],
+  "type": "object",
+  "properties": {
+    "validadeInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "validadeFinal": {
+      "type": "string",
+      "format": "date"
+    },
+    "conteudo": {
+      "type": "string"
+    },
+    "conteudoUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AcordoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "valorTotal": {
+      "type": "number"
+    },
+    "valorAcordo": {
+      "type": "number"
+    },
+    "numeroParcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVencimentoParcela": {
+      "type": "string",
+      "format": "date"
+    },
+    "justificativa": {
+      "type": "string"
+    }
+  }
+}

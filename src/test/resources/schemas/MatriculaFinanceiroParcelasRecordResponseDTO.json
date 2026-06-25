@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaFinanceiroParcelasRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "financeiroId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parcela": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "competencia": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "month": {
+          "type": "string",
+          "enum": [
+            "JANUARY",
+            "FEBRUARY",
+            "MARCH",
+            "APRIL",
+            "MAY",
+            "JUNE",
+            "JULY",
+            "AUGUST",
+            "SEPTEMBER",
+            "OCTOBER",
+            "NOVEMBER",
+            "DECEMBER"
+          ]
+        },
+        "monthValue": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "leapYear": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dataVencimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "valorOriginal": {
+      "type": "number"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "valorAteVencimento": {
+      "type": "number"
+    },
+    "dataPagamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "valorPagamento": {
+      "type": "number"
+    },
+    "itensPlanoPagamento": {
+      "$ref": "PlanoPagamentoForModalDTO.json"
+    },
+    "formaPagamento": {
+      "$ref": "FormaPagamentoRecordCleanDTO.json"
+    },
+    "tipoCobranca": {
+      "$ref": "TipoCobrancaRecordCleanDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "itensFinanceiros": {
+      "type": "array",
+      "items": {
+        "$ref": "ItemFinanceiroRecordCleanDTO.json"
+      }
+    },
+    "erroCartaoRecorrente": {
+      "type": "string"
+    }
+  }
+}

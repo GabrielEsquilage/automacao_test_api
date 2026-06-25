@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordGetAllParam",
+  "type": "object",
+  "properties": {
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disponivel": {
+      "type": "boolean"
+    },
+    "excludeIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRecordForPosDTO",
+  "type": "object",
+  "properties": {
+    "concursoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoCurriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoCurriculoPlanoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ofertaPlanoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorPrimeiraParcela": {
+      "type": "number"
+    },
+    "valorDemaisParcelas": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeCurriculoRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "gradeCurriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "horaAtividadeComplementar": {
+      "type": "number"
+    },
+    "horaAtividadeExtensao": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "gradeDisciplina": {
+      "type": "array",
+      "items": {
+        "$ref": "GradeDisciplinaRecordPutRequestDTO.json"
+      }
+    }
+  }
+}

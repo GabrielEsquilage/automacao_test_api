@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordResponseForProcessoSeletivoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "inep": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "$ref": "AreaConhecimentoRecordCleanDTO.json"
+    },
+    "nivelEnsino": {
+      "$ref": "NivelEnsinoRecordCleanDTO.json"
+    },
+    "tipoCurso": {
+      "$ref": "TipoCursoRecordCleanDTO.json"
+    },
+    "modalidade": {
+      "$ref": "ModalidadeRecordCleanDTO.json"
+    },
+    "segundaGraduacao": {
+      "type": "boolean"
+    },
+    "curriculo": {
+      "$ref": "CurriculoProjectionCleanForProcessoSeletivoDTO.json"
+    }
+  }
+}

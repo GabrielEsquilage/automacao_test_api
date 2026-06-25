@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialAdicionalCriacaoDTO",
+  "required": [
+    "acrescimoPorId",
+    "gruposIds",
+    "nome",
+    "porcentagemAdicional",
+    "receberPorId",
+    "serieInicialId"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "gruposIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "acrescimoPorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "receberPorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serieInicialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serieFinalId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "porcentagemAdicional": {
+      "maximum": 100.0,
+      "exclusiveMaximum": false,
+      "minimum": 1.0,
+      "exclusiveMinimum": false,
+      "type": "number"
+    }
+  }
+}

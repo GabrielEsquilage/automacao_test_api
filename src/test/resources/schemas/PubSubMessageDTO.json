@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PubSubMessageDTO",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "string"
+    },
+    "messageId": {
+      "type": "string"
+    },
+    "message_id": {
+      "type": "string"
+    },
+    "publishTime": {
+      "type": "string"
+    },
+    "publish_time": {
+      "type": "string"
+    }
+  }
+}

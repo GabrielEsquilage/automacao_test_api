@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "HealthResponse",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "latencyMs": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "message": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
+    "host": {
+      "type": "string"
+    },
+    "port": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

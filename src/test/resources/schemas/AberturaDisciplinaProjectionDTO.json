@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AberturaDisciplinaProjectionDTO",
+  "type": "object",
+  "properties": {
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaNome": {
+      "type": "string"
+    },
+    "disciplinaCodigo": {
+      "type": "string"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaNome": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "cursoCodigo": {
+      "type": "string"
+    },
+    "grupoNome": {
+      "type": "string"
+    },
+    "areaConhecimentoNome": {
+      "type": "string"
+    },
+    "statusNome": {
+      "type": "string"
+    }
+  }
+}

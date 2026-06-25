@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialListItemDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeFilial": {
+      "type": "string"
+    },
+    "tipoFilial": {
+      "type": "string"
+    },
+    "cidadeUf": {
+      "type": "string"
+    },
+    "dataAdmissao": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

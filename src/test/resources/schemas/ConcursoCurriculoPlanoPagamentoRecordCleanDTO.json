@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ConcursoCurriculoPlanoPagamentoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "concurso": {
+      "$ref": "ConcursoRecordCleanDTO.json"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordCleanDTO.json"
+    },
+    "planoPagamento": {
+      "$ref": "PlanoPagamentoCleanDTO.json"
+    }
+  }
+}

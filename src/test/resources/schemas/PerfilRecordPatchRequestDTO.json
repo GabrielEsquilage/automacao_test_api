@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfilRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 63,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 20,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

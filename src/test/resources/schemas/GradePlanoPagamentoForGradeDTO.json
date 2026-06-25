@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradePlanoPagamentoForGradeDTO",
+  "type": "object",
+  "properties": {
+    "gradePlanoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "planoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

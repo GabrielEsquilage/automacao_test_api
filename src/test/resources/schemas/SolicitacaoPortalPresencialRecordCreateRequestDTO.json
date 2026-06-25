@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalPresencialRecordCreateRequestDTO",
+  "required": [
+    "requerimentoId"
+  ],
+  "type": "object",
+  "properties": {
+    "login": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "serie": {
+      "type": "string"
+    },
+    "cursoCodigo": {
+      "type": "string"
+    },
+    "periodoLetivo": {
+      "type": "string"
+    },
+    "requerimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dtoEstagioObrigatorio": {
+      "$ref": "CreateSolicitacaoDocumentoEstagioObrigatorio.json"
+    },
+    "dtoEstagioRemunerado": {
+      "$ref": "CreateSolicitacaoDocumentoEstagioRemunerado.json"
+    }
+  }
+}

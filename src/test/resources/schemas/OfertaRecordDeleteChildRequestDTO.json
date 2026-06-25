@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRecordDeleteChildRequestDTO",
+  "required": [
+    "planosPagamentoIds"
+  ],
+  "type": "object",
+  "properties": {
+    "planosPagamentoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "planoPagamentoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

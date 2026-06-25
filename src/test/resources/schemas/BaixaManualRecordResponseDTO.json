@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BaixaManualRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "financeiro": {
+      "$ref": "FinanceiroRecordCleanDTO.json"
+    },
+    "formaPagamento": {
+      "$ref": "FormaPagamentoRecordCleanDTO.json"
+    },
+    "dataPagamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "valorBaixado": {
+      "type": "number"
+    },
+    "justificativa": {
+      "type": "string"
+    },
+    "arquivoLinks": {
+      "type": "array",
+      "items": {
+        "$ref": "BaixaManualLinkRecordResponseDTO.json"
+      }
+    }
+  }
+}

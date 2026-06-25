@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaRecordPutDTO",
+  "type": "object",
+  "properties": {
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "planosCreate": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "planosRemove": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

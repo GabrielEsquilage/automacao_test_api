@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoEtapaRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "etapa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "etapaFinanceiro": {
+      "$ref": "RequerimentoEtapaFinanceiroRecordCleanDTO.json"
+    },
+    "etapaAnexos": {
+      "type": "array",
+      "items": {
+        "$ref": "RequerimentoEtapaAnexoRecordCleanDTO.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialRecordCleanForCandidatoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "nomeTipoPolo": {
+      "type": "string"
+    },
+    "nomeCidade": {
+      "type": "string"
+    },
+    "nomeUf": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CampanhaRecordCreateRequestDTO",
+  "required": [
+    "isentarMultasJuros",
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "desconto": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "isentarMultasJuros": {
+      "type": "boolean"
+    },
+    "valorEntrada": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

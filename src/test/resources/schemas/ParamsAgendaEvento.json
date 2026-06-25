@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ParamsAgendaEvento",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "tipoAgendaEventoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

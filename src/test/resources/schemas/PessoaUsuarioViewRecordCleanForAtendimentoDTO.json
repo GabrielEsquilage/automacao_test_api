@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaUsuarioViewRecordCleanForAtendimentoDTO",
+  "type": "object",
+  "properties": {
+    "usuarioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "dataIngresso": {
+      "type": "string",
+      "format": "date"
+    },
+    "departamento": {
+      "type": "string"
+    }
+  }
+}

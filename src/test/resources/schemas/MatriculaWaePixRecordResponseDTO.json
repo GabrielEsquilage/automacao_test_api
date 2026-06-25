@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaWaePixRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "URL": {
+      "type": "string"
+    },
+    "PixQrCode": {
+      "type": "string"
+    },
+    "vencimentoMinutes": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

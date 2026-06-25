@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PlanoPagamentoForModalDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "taxaMatricula": {
+      "$ref": "PlanoPagamentoValorCleanDTO.json"
+    },
+    "multas": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    },
+    "descontos": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    },
+    "juros": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    }
+  }
+}

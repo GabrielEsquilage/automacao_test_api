@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ColaboradorResendPrimeiroAcessoGestorRequestDTO",
+  "required": [
+    "email"
+  ],
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string"
+    }
+  }
+}

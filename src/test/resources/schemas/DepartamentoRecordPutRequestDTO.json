@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DepartamentoRecordPutRequestDTO",
+  "required": [
+    "nome",
+    "setores",
+    "sigla"
+  ],
+  "type": "object",
+  "properties": {
+    "sigla": {
+      "maxLength": 5,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "setores": {
+      "type": "array",
+      "items": {
+        "$ref": "SetorRecordPutRequestDTO.json"
+      }
+    }
+  }
+}

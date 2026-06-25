@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SalaRecordPutRequestDTO",
+  "required": [
+    "cep",
+    "logradouro",
+    "numero",
+    "vagas"
+  ],
+  "type": "object",
+  "properties": {
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "linkMaps": {
+      "type": "string"
+    }
+  }
+}

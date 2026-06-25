@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaDisciplinaRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "turmaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

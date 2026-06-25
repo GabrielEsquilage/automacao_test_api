@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaCursoDTO",
+  "type": "object",
+  "properties": {
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoNome": {
+      "type": "string"
+    },
+    "curriculoCodigo": {
+      "type": "string"
+    },
+    "jornadaCurso": {
+      "type": "number"
+    },
+    "cargaHorariaTotal": {
+      "type": "number"
+    },
+    "cargaHorariaCursada": {
+      "type": "number"
+    },
+    "cargaHorariaACursar": {
+      "type": "number"
+    }
+  }
+}

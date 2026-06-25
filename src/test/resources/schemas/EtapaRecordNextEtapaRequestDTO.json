@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EtapaRecordNextEtapaRequestDTO",
+  "type": "object",
+  "properties": {
+    "observacao": {
+      "maxLength": 800,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

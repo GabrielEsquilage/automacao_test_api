@@ -1,6 +1,7 @@
 package api.listagens.pessoas;
 
 import static org.hamcrest.Matchers.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -26,14 +27,8 @@ public class ErpPessoasListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                .body(matchesJsonSchemaInClasspath("schemas/PagePessoaRecordResponseDTO.json"))
                 .extract().response();
-
-        System.out.println("Resposta de paginação de pessoas: " + response.asString());
     }
 
     @Test
@@ -45,11 +40,8 @@ public class ErpPessoasListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                // Valida o Contrato exato via JSON Schema
+                .body(matchesJsonSchemaInClasspath("schemas/PagePessoaRecordResponseDTO.json"))
                 .extract().response();
     }
 
@@ -62,14 +54,9 @@ public class ErpPessoasListTest {
             .then()
                 .log().status()
                 .statusCode(200)
-                // Valida a estrutura da paginação
-                .body("$", hasKey("content"))
-                .body("content", isA(java.util.List.class))
-                .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"))
+                // Valida o Contrato exato via JSON Schema
+                .body(matchesJsonSchemaInClasspath("schemas/PageUsuarioRecordResponseDTO.json"))
                 .extract().response();
-
-        System.out.println("Resposta de paginação de usuários: " + response.asString());
     }
 
     @Test

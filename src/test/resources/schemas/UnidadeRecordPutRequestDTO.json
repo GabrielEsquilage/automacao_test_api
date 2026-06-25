@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UnidadeRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "mantenedoraId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "empresa": {
+      "$ref": "EmpresaRecordPutRequestDTO.json"
+    }
+  }
+}

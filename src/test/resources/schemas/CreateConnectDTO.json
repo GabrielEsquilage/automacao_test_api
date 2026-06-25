@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreateConnectDTO",
+  "required": [
+    "concursoCurriculoId",
+    "concursoFilialId",
+    "diaVencimento",
+    "formaPagamentoId",
+    "pessoa"
+  ],
+  "type": "object",
+  "properties": {
+    "pessoa": {
+      "$ref": "CreatePessoaForMatriculaDTO.json"
+    },
+    "concursoCurriculoPlanoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ofertaPlanoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoCurriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "concursoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "diaVencimento": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "formaPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cartao": {
+      "$ref": "CartaoRecordSemEnderecoDTO.json"
+    },
+    "origemId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "poloIndicacao": {
+      "type": "string"
+    },
+    "cupom": {
+      "type": "string"
+    }
+  }
+}

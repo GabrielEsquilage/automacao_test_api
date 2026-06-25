@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtendimentoByResponsavelProjectionDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "possuiTransferencia": {
+      "type": "boolean"
+    },
+    "avaliacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "mensagensNaoVisualizadas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "mensagensNaoVisualizadasPorMatricula": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataUltimaMensagem": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ultimaMensagemIsMatricula": {
+      "type": "boolean"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "setor": {
+      "$ref": "SetorMensageriaProjectionCleanDTO.json"
+    },
+    "matricula": {
+      "$ref": "MatriculaMensageriaProjectionCleanDTO.json"
+    },
+    "assunto": {
+      "$ref": "AssuntoMensageriaProjectionCleanDTO.json"
+    },
+    "responsavel": {
+      "$ref": "UsuarioMensageriaProjectionCleanDTO.json"
+    },
+    "waeMatricula": {
+      "$ref": "WaeMatriculaMensageriaProjectionCleanDTO.json"
+    }
+  }
+}

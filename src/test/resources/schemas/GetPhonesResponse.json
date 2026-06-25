@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GetPhonesResponse",
+  "type": "object",
+  "properties": {
+    "home_phone": {
+      "$ref": "GetPhoneResponse.json"
+    },
+    "mobile_phone": {
+      "$ref": "GetPhoneResponse.json"
+    }
+  }
+}

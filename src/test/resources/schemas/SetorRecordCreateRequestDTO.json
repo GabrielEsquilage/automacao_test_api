@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SetorRecordCreateRequestDTO",
+  "required": [
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "exclusivoCalouros": {
+      "type": "boolean"
+    }
+  }
+}

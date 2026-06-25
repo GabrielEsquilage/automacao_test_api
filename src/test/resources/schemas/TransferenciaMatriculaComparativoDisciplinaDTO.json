@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaComparativoDisciplinaDTO",
+  "type": "object",
+  "properties": {
+    "disciplinaCursoAtual": {
+      "$ref": "TransferenciaMatriculaDisciplinaDTO.json"
+    },
+    "disciplinaCursoNovo": {
+      "$ref": "TransferenciaMatriculaDisciplinaDTO.json"
+    },
+    "comparativo": {
+      "$ref": "TransferenciaMatriculaDisciplinaDTO.json"
+    }
+  }
+}

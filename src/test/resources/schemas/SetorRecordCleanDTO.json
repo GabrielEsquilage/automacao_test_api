@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SetorRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "departamento": {
+      "$ref": "DepartamentoRecordListDTO.json"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "exclusivoCalouros": {
+      "type": "boolean"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

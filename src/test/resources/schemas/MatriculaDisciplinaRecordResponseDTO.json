@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaDisciplinaRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordResponseDTO.json"
+    },
+    "curso": {
+      "$ref": "CursoRecordResponseDTO.json"
+    },
+    "disciplina": {
+      "$ref": "DisciplinaRecordResponseDTO.json"
+    },
+    "turma": {
+      "$ref": "TurmaRecordResponseDTO.json"
+    },
+    "periodoLetivo": {
+      "$ref": "PeriodoLetivoRecordResponseDTO.json"
+    },
+    "serie": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    }
+  }
+}

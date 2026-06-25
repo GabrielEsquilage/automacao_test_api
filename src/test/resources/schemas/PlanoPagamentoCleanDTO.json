@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PlanoPagamentoCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "parcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "valores": {
+      "type": "array",
+      "items": {
+        "$ref": "PlanoPagamentoValorCleanDTO.json"
+      }
+    },
+    "hasTaxa": {
+      "type": "boolean"
+    }
+  }
+}

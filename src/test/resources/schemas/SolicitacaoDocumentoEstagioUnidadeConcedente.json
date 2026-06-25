@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioUnidadeConcedente",
+  "type": "object",
+  "properties": {
+    "razaoSocial": {
+      "type": "string"
+    },
+    "areaAtuacao": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "cnpj": {
+      "type": "string"
+    },
+    "alvara": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "telefoneDois": {
+      "type": "string"
+    },
+    "representante": {
+      "type": "string"
+    },
+    "representanteCargo": {
+      "type": "string"
+    },
+    "representanteEmail": {
+      "type": "string"
+    },
+    "apolice": {
+      "type": "string"
+    },
+    "seguradora": {
+      "type": "string"
+    }
+  }
+}

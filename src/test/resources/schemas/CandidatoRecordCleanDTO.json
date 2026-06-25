@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CandidatoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoa": {
+      "$ref": "PessoaRecordResponseDTO.json"
+    },
+    "ofertaPlanoPagamento": {
+      "$ref": "OfertaPlanoPagamentoResponseDTO.json"
+    },
+    "processoSeletivo": {
+      "$ref": "ProcessoSeletivoRecordCleanDTO.json"
+    },
+    "curso": {
+      "$ref": "CursoRecordCleanDTOForUsuario.json"
+    },
+    "concursoCurriculo": {
+      "$ref": "ConcursoCurriculoRecordCleanDTO.json"
+    },
+    "concursoCurriculoPlanoPagamento": {
+      "$ref": "ConcursoCurriculoPlanoPagamentoRecordCleanDTO.json"
+    },
+    "concursoFilial": {
+      "$ref": "ConcursoFilialRecordCleanDTO.json"
+    }
+  }
+}

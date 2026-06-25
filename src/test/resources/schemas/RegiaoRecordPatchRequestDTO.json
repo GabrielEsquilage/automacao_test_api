@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RegiaoRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "descricao": {
+      "maxLength": 155,
+      "minLength": 0,
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

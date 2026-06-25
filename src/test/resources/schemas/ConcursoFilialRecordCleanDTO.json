@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ConcursoFilialRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "concurso": {
+      "$ref": "ConcursoRecordCleanDTO.json"
+    },
+    "filial": {
+      "$ref": "FilialRecordCleanForCandidatoDTO.json"
+    }
+  }
+}

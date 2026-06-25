@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioRecordCleanWithSetoresMensageriaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoa": {
+      "$ref": "PessoaProjectionCleanDTO.json"
+    },
+    "departamento": {
+      "$ref": "DepartamentoRecordListDTO.json"
+    },
+    "totalSetores": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalAtendimentosAbertos": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "setores": {
+      "type": "array",
+      "items": {
+        "$ref": "UsuarioSetorCleanForUsuarioDTO.json"
+      }
+    },
+    "cursoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

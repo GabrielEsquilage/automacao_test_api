@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaPortalUpdateDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "email": {
+      "$ref": "ContatoRecordPutRequestDTO.json"
+    },
+    "telefone": {
+      "$ref": "ContatoRecordPutRequestDTO.json"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "estadoCivilId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "avatarUrl": {
+      "type": "string"
+    },
+    "generoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "racaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nacionalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "numeroRg": {
+      "type": "string"
+    },
+    "orgaoExpedidorRgId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "endereco": {
+      "$ref": "EnderecoRecordPutRequestDTO.json"
+    }
+  }
+}

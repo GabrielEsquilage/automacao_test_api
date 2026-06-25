@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SalaResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "vagas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "horarioInicio": {
+      "$ref": "LocalTime.json"
+    },
+    "horarioFim": {
+      "$ref": "LocalTime.json"
+    },
+    "inicioIntervalo": {
+      "$ref": "LocalTime.json"
+    },
+    "fimIntervalo": {
+      "$ref": "LocalTime.json"
+    },
+    "status": {
+      "$ref": "StatusRecordCleanForSalaDTO.json"
+    },
+    "filial": {
+      "$ref": "FilialRecordCleanForSalaDTO.json"
+    }
+  }
+}

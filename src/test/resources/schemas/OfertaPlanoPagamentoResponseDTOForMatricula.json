@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaPlanoPagamentoResponseDTOForMatricula",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "oferta": {
+      "$ref": "OfertaRecordCleanDTOForMatricula.json"
+    },
+    "planoPagamento": {
+      "$ref": "PlanoPagamentoCleanDTO.json"
+    }
+  }
+}

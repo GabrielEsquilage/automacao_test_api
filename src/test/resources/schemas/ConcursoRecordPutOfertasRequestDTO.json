@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ConcursoRecordPutOfertasRequestDTO",
+  "type": "object",
+  "properties": {
+    "selectionType": {
+      "type": "string"
+    },
+    "valorCursoPadrao": {
+      "type": "number"
+    },
+    "ativoPadrao": {
+      "type": "boolean"
+    },
+    "ofertas": {
+      "type": "array",
+      "items": {
+        "$ref": "OfertaRecordPutDTO.json"
+      }
+    },
+    "filters": {
+      "$ref": "ConcursoOfertaRequestParamFilter.json"
+    }
+  }
+}

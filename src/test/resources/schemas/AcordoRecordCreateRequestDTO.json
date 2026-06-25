@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AcordoRecordCreateRequestDTO",
+  "required": [
+    "dataVencimentoParcela",
+    "financeirosId",
+    "justificativa",
+    "numeroParcelas",
+    "valorAcordo"
+  ],
+  "type": "object",
+  "properties": {
+    "valorAcordo": {
+      "type": "number"
+    },
+    "numeroParcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVencimentoParcela": {
+      "type": "string",
+      "format": "date"
+    },
+    "justificativa": {
+      "maxLength": 1000,
+      "minLength": 0,
+      "type": "string"
+    },
+    "financeirosId": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

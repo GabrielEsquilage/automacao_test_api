@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaAtividadesComplementaresFilterDTO",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoAtividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "classificacaoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

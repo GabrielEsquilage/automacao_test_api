@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OfertaImportResultDTO",
+  "type": "object",
+  "properties": {
+    "totalRegistros": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalInseridos": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "totalAtualizados": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

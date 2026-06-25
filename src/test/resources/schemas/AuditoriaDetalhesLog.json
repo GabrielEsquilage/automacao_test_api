@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AuditoriaDetalhesLog",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "requisicaoId": {
+      "type": "string"
+    },
+    "diferencas": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "DiferencaCamposDTO.json"
+      }
+    }
+  }
+}

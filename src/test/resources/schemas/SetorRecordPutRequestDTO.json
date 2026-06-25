@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SetorRecordPutRequestDTO",
+  "required": [
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "exclusivoCalouros": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfilDetalheFuncionalidadeProjection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeFuncionalidade": {
+      "type": "string"
+    },
+    "tipoFuncionalidade": {
+      "type": "string"
+    },
+    "idPerfilFuncionalidade": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "inserir": {
+      "type": "boolean"
+    },
+    "visualizar": {
+      "type": "boolean"
+    },
+    "atualizar": {
+      "type": "boolean"
+    },
+    "deletar": {
+      "type": "boolean"
+    }
+  }
+}

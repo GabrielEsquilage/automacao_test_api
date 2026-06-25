@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GeneralRequirementsReportParams",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "requestId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "departmentId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sectorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "courseId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "attendantIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "delayed": {
+      "type": "boolean"
+    }
+  }
+}

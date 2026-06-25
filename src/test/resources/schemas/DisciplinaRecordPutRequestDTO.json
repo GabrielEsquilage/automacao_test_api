@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 200,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 20,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "string"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaAvaliacao": {
+      "type": "array",
+      "items": {
+        "$ref": "DisciplinaAvaliacaoRecordPutRequestDTO.json"
+      }
+    },
+    "disciplinasEquivalentes": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "selectionType": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    }
+  }
+}

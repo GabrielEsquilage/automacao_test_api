@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaMatriculaRecordCreateRequestDTO",
+  "required": [
+    "planoPagamentoId",
+    "turmaId",
+    "valorTotal"
+  ],
+  "type": "object",
+  "properties": {
+    "turmaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "planoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "valorTotal": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialRecordCleanResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cnpj": {
+      "type": "string"
+    },
+    "codigoFilialWae": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigoIbge": {
+      "type": "string"
+    },
+    "nomeSocial": {
+      "type": "string"
+    },
+    "razaoSocial": {
+      "type": "string"
+    },
+    "unidadeEnsino": {
+      "type": "string"
+    },
+    "codigoMecInep": {
+      "type": "string"
+    },
+    "gestorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "gestorNome": {
+      "type": "string"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "metaMatriculasMensais": {
+      "type": "string"
+    },
+    "nomeRegional": {
+      "type": "string"
+    },
+    "codigoRegional": {
+      "type": "string"
+    },
+    "gerenteRegional": {
+      "type": "string"
+    },
+    "modalidade": {
+      "type": "string"
+    },
+    "tipoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoFilialNome": {
+      "type": "string"
+    },
+    "megaPoloResponsavel": {
+      "type": "string"
+    },
+    "disponivelWeb": {
+      "type": "boolean"
+    },
+    "statusNome": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "atendePraticas": {
+      "type": "boolean"
+    },
+    "dataCriacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataAlteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "enderecos": {
+      "type": "array",
+      "items": {
+        "$ref": "EnderecoRecordClenDTO.json"
+      }
+    },
+    "contatos": {
+      "type": "array",
+      "items": {
+        "$ref": "ContatoRecordCleanDTO.json"
+      }
+    },
+    "distratos": {
+      "type": "array",
+      "items": {
+        "$ref": "FilialDistratoCleanDTO.json"
+      }
+    }
+  }
+}

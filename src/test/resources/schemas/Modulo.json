@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Modulo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "criacao": {
+      "type": "string"
+    },
+    "alteracao": {
+      "type": "string"
+    },
+    "exclusao": {
+      "type": ["string", "null"]
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}

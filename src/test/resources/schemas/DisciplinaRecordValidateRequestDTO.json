@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaRecordValidateRequestDTO",
+  "required": [
+    "campo",
+    "valor"
+  ],
+  "type": "object",
+  "properties": {
+    "campo": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

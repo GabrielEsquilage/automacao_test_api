@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WaePagamentoCartaoCreditoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "Unidade": {
+      "type": "number"
+    },
+    "AnoLetivo": {
+      "type": "number"
+    },
+    "PeriodoLetivo": {
+      "type": "number"
+    },
+    "MatriculaDisciplina": {
+      "type": "number"
+    },
+    "Nome": {
+      "type": "string"
+    },
+    "Curso": {
+      "type": "string"
+    },
+    "CursoNome": {
+      "type": "string"
+    },
+    "Lancamento": {
+      "type": "number"
+    },
+    "LancamentoVecto": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "NSU": {
+      "type": "string"
+    },
+    "TID": {
+      "type": "string"
+    },
+    "Situacao": {
+      "type": "string"
+    },
+    "ValorPago": {
+      "type": "number"
+    }
+  }
+}

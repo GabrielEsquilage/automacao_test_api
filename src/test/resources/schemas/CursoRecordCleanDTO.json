@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "$ref": "AreaConhecimentoRecordCleanDTO.json"
+    },
+    "inep": {
+      "type": ["string", "null"]
+    },
+    "nivelEnsino": {
+      "$ref": "NivelEnsinoRecordCleanDTO.json"
+    },
+    "tipoCurso": {
+      "anyOf": [
+        { "$ref": "TipoCursoRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
+    },
+    "grupoCurso": {
+      "$ref": "GrupoCursoRecordCleanDTO.json"
+    },
+    "modalidade": {
+      "anyOf": [
+        { "$ref": "ModalidadeRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
+    },
+    "inicioFuncionamento": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "habilitacaoMasculino": {
+      "type": ["string", "null"]
+    },
+    "habilitacaoFeminino": {
+      "type": ["string", "null"]
+    },
+    "grauConferido": {
+      "type": ["string", "null"]
+    },
+    "vagasAnuais": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "coordenador": {
+      "anyOf": [
+        { "$ref": "ColaboradorRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
+    },
+    "descricaoConhecimento": {
+      "type": ["string", "null"]
+    },
+    "autorizacao": {
+      "type": ["string", "null"]
+    },
+    "credenciamento": {
+      "type": ["string", "null"]
+    },
+    "reconhecimentos": {
+      "type": "array",
+      "items": {
+        "$ref": "CursoReconhecimentoRecordCleanForCursoDTO.json"
+      }
+    },
+    "resolucao": {
+      "type": ["string", "null"]
+    },
+    "segundaGraduacao": {
+      "type": "boolean"
+    }
+  }
+}

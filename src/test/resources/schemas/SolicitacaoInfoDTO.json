@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoInfoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataSolicitacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "statusSolicitacao": {
+      "type": "string"
+    },
+    "matricula": {
+      "$ref": "MatriculaInfoDTO.json"
+    }
+  }
+}

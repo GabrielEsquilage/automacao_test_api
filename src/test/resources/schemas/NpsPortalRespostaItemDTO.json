@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "NpsPortalRespostaItemDTO",
+  "type": "object",
+  "properties": {
+    "perguntaNpsId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nota": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

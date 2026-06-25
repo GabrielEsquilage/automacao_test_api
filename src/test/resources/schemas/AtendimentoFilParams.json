@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtendimentoFilParams",
+  "type": "object",
+  "properties": {
+    "temaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "assuntoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "origemThessie": {
+      "type": "boolean"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

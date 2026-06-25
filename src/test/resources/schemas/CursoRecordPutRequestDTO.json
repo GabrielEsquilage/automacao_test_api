@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRecordPutRequestDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "inep": {
+      "maxLength": 50,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 10,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "grupoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "inicioFuncionamento": {
+      "type": "string",
+      "format": "date"
+    },
+    "habilitacaoMasculino": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "habilitacaoFeminino": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "grauConferido": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "vagasAnuais": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "colaboradorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "descricaoConhecimento": {
+      "type": "string"
+    },
+    "autorizacao": {
+      "type": "string"
+    },
+    "credenciamento": {
+      "type": "string"
+    },
+    "reconhecimento": {
+      "type": "array",
+      "items": {
+        "$ref": "CursoReconhecimentoRecordPutRequestDTO.json"
+      }
+    },
+    "resolucao": {
+      "type": "string"
+    },
+    "isSegundaGraduacao": {
+      "type": "boolean"
+    }
+  }
+}

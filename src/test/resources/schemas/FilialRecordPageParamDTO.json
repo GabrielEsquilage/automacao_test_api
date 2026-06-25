@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialRecordPageParamDTO",
+  "type": "object",
+  "properties": {
+    "cidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "excludeIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

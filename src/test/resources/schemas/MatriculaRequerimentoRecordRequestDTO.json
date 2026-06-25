@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRequerimentoRecordRequestDTO",
+  "required": [
+    "matriculaId",
+    "requerimentoId"
+  ],
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "requerimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "observacao": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

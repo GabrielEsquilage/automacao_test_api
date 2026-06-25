@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ColaboradorPageParams",
+  "type": "object",
+  "properties": {
+    "cargoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoContratacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

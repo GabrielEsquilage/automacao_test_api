@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RenegociacaoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matricula": {
+      "$ref": "MatriculaRecordCleanDTO.json"
+    },
+    "valorTotal": {
+      "type": "number"
+    },
+    "valorRenegociacao": {
+      "type": "number"
+    },
+    "entrada": {
+      "type": "number"
+    },
+    "entradaPercentual": {
+      "type": "boolean"
+    },
+    "numeroParcelas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataVencimentoParcela": {
+      "type": "string",
+      "format": "date"
+    },
+    "isentoMultaJuros": {
+      "type": "boolean"
+    },
+    "descontoAplicado": {
+      "type": "boolean"
+    },
+    "descontoPercentual": {
+      "type": "boolean"
+    },
+    "valorDesconto": {
+      "type": "number"
+    },
+    "justificativa": {
+      "type": "string"
+    }
+  }
+}

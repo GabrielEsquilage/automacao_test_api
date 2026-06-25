@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfilFuncionalidadeRecordSingleCreateRequestDTO",
+  "required": [
+    "atualizar",
+    "deletar",
+    "funcionalidadeId",
+    "inserir",
+    "visualizar"
+  ],
+  "type": "object",
+  "properties": {
+    "funcionalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "visualizar": {
+      "type": "boolean"
+    },
+    "inserir": {
+      "type": "boolean"
+    },
+    "atualizar": {
+      "type": "boolean"
+    },
+    "deletar": {
+      "type": "boolean"
+    }
+  }
+}

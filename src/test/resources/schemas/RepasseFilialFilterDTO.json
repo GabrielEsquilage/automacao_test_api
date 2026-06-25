@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RepasseFilialFilterDTO",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "tipoFilialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

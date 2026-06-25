@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MensagemRecordCreateRequestDTO",
+  "required": [
+    "texto"
+  ],
+  "type": "object",
+  "properties": {
+    "texto": {
+      "maxLength": 4000,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

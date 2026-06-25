@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "StudentsByCourseReportParams",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "admissionProcessIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "contestIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "educationLevelId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "courseIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "admissionProcessSelectionType": {
+      "type": "string"
+    },
+    "contestSelectionType": {
+      "type": "string"
+    },
+    "courseSelectionType": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EtapaRecordResponseDTOForSolicitacao",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "etapa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "responsavel": {
+      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "etapaAnexos": {
+      "type": "array",
+      "items": {
+        "$ref": "EtapaAnexoRecordCleanDTO.json"
+      }
+    },
+    "devolutivas": {
+      "type": "array",
+      "items": {
+        "$ref": "DevolutivaRecordCleanDTO.json"
+      }
+    },
+    "etapaFinanceiro": {
+      "$ref": "EtapaFinanceiroRecordCleanDTO.json"
+    },
+    "nivelEnsino": {
+      "$ref": "NivelEnsinoRecordCleanDTO.json"
+    }
+  }
+}

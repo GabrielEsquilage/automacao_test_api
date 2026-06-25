@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TurmaGeralRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "processoSeletivo": {
+      "$ref": "ProcessoSeletivoRecordCleanForTurmaDTO.json"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordCleanForTurmaDTO.json"
+    },
+    "nrMatriculas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "statusMoodle": {
+      "type": "string"
+    },
+    "nrDisciplinasNaoSincronizadas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nrDisciplinasSincronizadas": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nrDisciplinasAguardandoSincronizacao": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

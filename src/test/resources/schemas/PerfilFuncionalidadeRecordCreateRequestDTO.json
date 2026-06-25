@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PerfilFuncionalidadeRecordCreateRequestDTO",
+  "required": [
+    "funcionalidades",
+    "perfilId"
+  ],
+  "type": "object",
+  "properties": {
+    "perfilId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "funcionalidades": {
+      "type": "array",
+      "items": {
+        "$ref": "PerfilFuncionalidadeRecordSingleCreateRequestDTO.json"
+      }
+    }
+  }
+}

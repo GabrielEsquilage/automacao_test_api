@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaRecordResumoForPeriodoLetivoDTO",
+  "type": "object",
+  "properties": {
+    "totalDisciplinas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalAtividades": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalMatriculas": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

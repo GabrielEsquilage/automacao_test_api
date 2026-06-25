@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AssuntoRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "tema": {
+      "$ref": "TemaRecordCleanForAssuntoDTO.json"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "isN1": {
+      "type": "boolean"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "nivelEnsino": {
+      "type": "array",
+      "items": {
+        "$ref": "AssuntoNivelEnsinoRecordCleanForAssuntoDTO.json"
+      }
+    }
+  }
+}

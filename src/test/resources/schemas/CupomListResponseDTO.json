@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CupomListResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string"
+    },
+    "dataExpiracao": {
+      "type": "string"
+    },
+    "limiteUso": {
+      "type": ["integer", "null"],
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    },
+    "valorMensalidade": {
+      "type": ["number", "null"]
+    },
+    "valorTaxa": {
+      "type": ["number", "null"]
+    },
+    "limiteUsoFormatado": {
+      "type": "string"
+    }
+  }
+}

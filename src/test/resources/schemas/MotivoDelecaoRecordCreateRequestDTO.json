@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MotivoDelecaoRecordCreateRequestDTO",
+  "required": [
+    "motivo"
+  ],
+  "type": "object",
+  "properties": {
+    "motivo": {
+      "maxLength": 2000,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

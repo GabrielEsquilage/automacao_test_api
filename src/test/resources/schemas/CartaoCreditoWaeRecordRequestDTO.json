@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CartaoCreditoWaeRecordRequestDTO",
+  "required": [
+    "cartaoAno",
+    "cartaoCodigoSeguranca",
+    "cartaoMes",
+    "cartaoNumero",
+    "cartaoPortador",
+    "financeiroId",
+    "meioPagamento",
+    "valor"
+  ],
+  "type": "object",
+  "properties": {
+    "financeiroId": {
+      "type": "number"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "cartaoMes": {
+      "type": "number"
+    },
+    "meioPagamento": {
+      "type": "number"
+    },
+    "cartaoNumero": {
+      "type": "string"
+    },
+    "cartaoPortador": {
+      "type": "string"
+    },
+    "cartaoAno": {
+      "type": "number"
+    },
+    "cartaoCodigoSeguranca": {
+      "type": "string"
+    }
+  }
+}

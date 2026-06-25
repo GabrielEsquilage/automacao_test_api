@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalPresencialByIdResponseDTO",
+  "type": "object",
+  "properties": {
+    "protocolo": {
+      "type": "string"
+    },
+    "resposta": {
+      "type": "string"
+    },
+    "etapa": {
+      "type": "array",
+      "items": {
+        "$ref": "EtapaRecordResponseDTOForSolicitacao.json"
+      }
+    },
+    "requerimento": {
+      "$ref": "RequerimentoRecordCleanForSolicitacaoDTO.json"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DisciplinaEmentaProjection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "string"
+    },
+    "cargaHoraria": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PoloTipoRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

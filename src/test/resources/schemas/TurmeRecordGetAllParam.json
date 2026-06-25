@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TurmeRecordGetAllParam",
+  "type": "object",
+  "properties": {
+    "processoSeletivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ofertado": {
+      "type": "boolean"
+    }
+  }
+}

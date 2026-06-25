@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeComplementarHorasTotaisRecordDTO",
+  "type": "object",
+  "properties": {
+    "horasDeferidas": {
+      "type": "number"
+    },
+    "horasEmAnalise": {
+      "type": "number"
+    },
+    "horasRestante": {
+      "type": "number"
+    },
+    "horasCumpridas": {
+      "type": "number"
+    },
+    "totalHoras": {
+      "type": "number"
+    }
+  }
+}

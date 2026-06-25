@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AtividadeComplementarPageParamsDTO",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "classificacaoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

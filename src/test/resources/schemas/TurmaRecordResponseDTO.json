@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TurmaRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "curriculo": {
+      "$ref": "CurriculoRecordResponseDTO.json"
+    },
+    "processoSeletivo": {
+      "$ref": "ProcessoSeletivoRecordCleanDTO.json"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

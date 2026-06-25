@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TransferenciaAssuntoRecordCreateRequestDTO",
+  "required": [
+    "assuntoId"
+  ],
+  "type": "object",
+  "properties": {
+    "assuntoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "observacao": {
+      "maxLength": 500,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EnderecoRecordPatchRequestDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "logradouro": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cep": {
+      "maxLength": 9,
+      "minLength": 0,
+      "type": "string"
+    },
+    "bairro": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "numero": {
+      "maxLength": 6,
+      "minLength": 0,
+      "type": "string"
+    },
+    "complemento": {
+      "maxLength": 20,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ufId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "paisId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoEnderecoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

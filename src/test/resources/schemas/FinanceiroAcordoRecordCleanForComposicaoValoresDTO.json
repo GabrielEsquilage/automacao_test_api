@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroAcordoRecordCleanForComposicaoValoresDTO",
+  "type": "object",
+  "properties": {
+    "valorSomaParcelas": {
+      "type": "number"
+    },
+    "valorMulta": {
+      "type": "number"
+    },
+    "valorJuros": {
+      "type": "number"
+    },
+    "valorTotal": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseCursosSemAtendentesDTO",
+  "type": "object",
+  "properties": {
+    "cursos": {
+      "type": "array",
+      "items": {
+        "$ref": "CursoRecordFilterCleanDTO.json"
+      }
+    },
+    "usuario": {
+      "type": "array",
+      "items": {
+        "$ref": "UsuarioSimpleForCursoDTO.json"
+      }
+    }
+  }
+}

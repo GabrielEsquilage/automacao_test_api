@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoProjectionCleanForProcessoSeletivoDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinas": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoDisciplinaProjectionDTO.json"
+      }
+    },
+    "planosPagamento": {
+      "type": "array",
+      "items": {
+        "$ref": "CurriculoPlanoPagamentoProjectionDTO.json"
+      }
+    }
+  }
+}

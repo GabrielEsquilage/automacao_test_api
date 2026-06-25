@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CursoRequestParamFilTer",
+  "type": "object",
+  "properties": {
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "grupoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "usuarioId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "modalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "keyword": {
+      "type": "string"
+    }
+  }
+}

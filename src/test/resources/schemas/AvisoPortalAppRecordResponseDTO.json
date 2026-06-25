@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AvisoPortalAppRecordResponseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "dataEnvio": {
+      "type": "string",
+      "format": "date"
+    },
+    "horaEnvio": {
+      "$ref": "LocalTime.json"
+    },
+    "enviado": {
+      "type": "boolean"
+    },
+    "mensagem": {
+      "type": "string"
+    }
+  }
+}

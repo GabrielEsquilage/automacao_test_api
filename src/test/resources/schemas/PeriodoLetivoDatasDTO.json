@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PeriodoLetivoDatasDTO",
+  "type": "object",
+  "properties": {
+    "periodoAbertura": {
+      "$ref": "PeriodoLetivoRecordDatasDTO.json"
+    },
+    "periodoAtual": {
+      "$ref": "PeriodoLetivoRecordDatasDTO.json"
+    }
+  }
+}

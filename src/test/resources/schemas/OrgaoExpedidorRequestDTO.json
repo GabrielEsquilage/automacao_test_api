@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OrgaoExpedidorRequestDTO",
+  "required": [
+    "nome",
+    "sigla"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "sigla": {
+      "maxLength": 15,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

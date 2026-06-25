@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "IdiomaRecordCreateRequestDTO",
+  "required": [
+    "codigo",
+    "nome"
+  ],
+  "type": "object",
+  "properties": {
+    "nome": {
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "codigo": {
+      "maxLength": 10,
+      "minLength": 0,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DocumentoParticipanteResponseLinkDTO",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "identificador": {
+      "type": "string"
+    },
+    "equivalente": {
+      "type": "boolean"
+    }
+  }
+}

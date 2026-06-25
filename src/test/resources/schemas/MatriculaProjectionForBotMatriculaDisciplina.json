@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaProjectionForBotMatriculaDisciplina",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "pessoaNome": {
+      "type": "string"
+    },
+    "pessoaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

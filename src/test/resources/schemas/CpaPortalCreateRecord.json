@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CpaPortalCreateRecord",
+  "type": "object",
+  "properties": {
+    "respostas": {
+      "type": "array",
+      "items": {
+        "$ref": "RespostaCpaCreateRecord.json"
+      }
+    },
+    "observacao": {
+      "$ref": "ObservacaoCpaCreateRecord.json"
+    }
+  }
+}

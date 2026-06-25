@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PorcentagemDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "porcentagem": {
+      "type": "number"
+    },
+    "mesInicial": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "mesFinal": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

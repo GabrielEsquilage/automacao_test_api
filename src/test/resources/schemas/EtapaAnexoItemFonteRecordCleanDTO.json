@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EtapaAnexoItemFonteRecordCleanDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parametroFonte": {
+      "$ref": "ParametroFonteRecordDTO.json"
+    },
+    "itemId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "itemNome": {
+      "type": "string"
+    }
+  }
+}

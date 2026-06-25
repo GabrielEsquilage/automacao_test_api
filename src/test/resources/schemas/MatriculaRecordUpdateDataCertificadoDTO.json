@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaRecordUpdateDataCertificadoDTO",
+  "required": [
+    "date",
+    "documentoId"
+  ],
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "documentoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

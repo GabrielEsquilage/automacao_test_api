@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AlunoCleanDTO",
+  "type": "object",
+  "properties": {
+    "matricula": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cursoCodigo": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "polo": {
+      "type": "string"
+    },
+    "poloCodigo": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

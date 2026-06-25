@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RatingRecordRequestDTO",
+  "type": "object",
+  "properties": {
+    "avaliacao": {
+      "maximum": 10,
+      "minimum": 0,
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ResultadoDocumentoParticipanteRecordDTO",
+  "type": "object",
+  "properties": {
+    "documentoParticipanteId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "string"
+    },
+    "equivalente": {
+      "type": "boolean"
+    }
+  }
+}

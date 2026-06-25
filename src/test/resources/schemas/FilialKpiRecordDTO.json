@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FilialKpiRecordDTO",
+  "type": "object",
+  "properties": {
+    "matriculasCaptacao": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "matriculasPraticas": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "totalMatriculas": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

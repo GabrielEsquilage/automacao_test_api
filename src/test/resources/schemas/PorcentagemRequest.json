@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PorcentagemRequest",
+  "required": [
+    "mesInicial",
+    "porcentagem"
+  ],
+  "type": "object",
+  "properties": {
+    "porcentagem": {
+      "maximum": 100.0,
+      "exclusiveMaximum": false,
+      "minimum": 1.0,
+      "exclusiveMinimum": false,
+      "type": "number"
+    },
+    "mesInicial": {
+      "minimum": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "mesFinal": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

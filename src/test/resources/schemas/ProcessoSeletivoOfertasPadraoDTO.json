@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ProcessoSeletivoOfertasPadraoDTO",
+  "type": "object",
+  "properties": {
+    "curriculoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "tipoSelecaoCurriculo": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    },
+    "filialIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "tipoSelecaoFilial": {
+      "type": "string",
+      "enum": [
+        "IN",
+        "ALL",
+        "NOT_IN"
+      ]
+    }
+  }
+}

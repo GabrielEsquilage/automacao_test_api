@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRecordResponseForPainelAnaliseDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "dataCriacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataAbertura": {
+      "type": "string",
+      "format": "date"
+    },
+    "ultimaInteracao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataPrimeiroContato": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataResolucao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataFinalizacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "avaliacao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setor": {
+      "$ref": "SetorRecordCleanDTO.json"
+    },
+    "assunto": {
+      "$ref": "AssuntoRecordCleanDTO.json"
+    },
+    "atendente": {
+      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+    },
+    "matricula": {
+      "$ref": "MatriculaMensageriaRecordCleanDTO.json"
+    },
+    "waeMatricula": {
+      "$ref": "WaeMatriculaRecordCleanDTO.json"
+    },
+    "sla": {
+      "type": "number"
+    },
+    "status": {
+      "$ref": "StatusCleanDTO.json"
+    },
+    "curso": {
+      "$ref": "CursoRecordCleanDTO.json"
+    },
+    "transferencia": {
+      "type": "string"
+    }
+  }
+}

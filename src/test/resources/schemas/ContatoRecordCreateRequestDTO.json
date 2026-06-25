@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ContatoRecordCreateRequestDTO",
+  "required": [
+    "tipoContatoId",
+    "valor"
+  ],
+  "type": "object",
+  "properties": {
+    "valor": {
+      "maxLength": 255,
+      "minLength": 0,
+      "type": "string"
+    },
+    "nomeResponsavel": {
+      "maxLength": 200,
+      "minLength": 0,
+      "type": "string"
+    },
+    "cargoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoContatoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

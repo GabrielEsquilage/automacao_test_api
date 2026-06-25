@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseRecordForUsuarioMensageriaDTO",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "kpi": {
+      "$ref": "PainelAnaliseRecordPainelAnaliseKpiDTO.json"
+    },
+    "dadosGerais": {
+      "$ref": "PainelAnaliseRecordDadosGeraisDTO.json"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "departamento": {
+      "type": "string"
+    },
+    "totalCursos": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}
