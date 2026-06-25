@@ -17,17 +17,17 @@
       "type": "string"
     },
     "limiteUso": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "status": {
       "type": "string"
     },
     "valorMensalidade": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "valorTaxa": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "limiteUsoFormatado": {
       "type": "string"

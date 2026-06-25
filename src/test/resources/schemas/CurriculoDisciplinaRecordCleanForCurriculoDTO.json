@@ -14,7 +14,10 @@
       "$ref": "CurriculoRecordCleanForTurmaDTO.json"
     },
     "turma": {
-      "$ref": "TurmaRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "TurmaRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "serie": {
       "$ref": "SerieRecordCleanDTO.json"
@@ -26,11 +29,11 @@
       "$ref": "TipoNotaRecordCleanResponseDTO.json"
     },
     "diasLiberacao": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "diasRealizacao": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "faltaDiaria": {
@@ -40,42 +43,45 @@
       "type": "boolean"
     },
     "ementaDisciplina": {
-      "$ref": "EmentaDisciplinaResponseCleanDTO.json"
+      "anyOf": [
+        { "$ref": "EmentaDisciplinaResponseCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "valorDisciplina": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "observacao": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "cargaHoraria": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "totalCreditos": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "notaMinimaAprovacao": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "tipoDisciplina": {
       "$ref": "TipoDisciplinaRecordCleanResponseDTO.json"
     },
     "codigoDependencia": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "diasRealizacaoDependencia": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "notaDispensa": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "diasImportacaoNota": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "colaborador": {

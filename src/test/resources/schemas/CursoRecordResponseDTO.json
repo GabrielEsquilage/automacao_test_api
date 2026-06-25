@@ -28,45 +28,54 @@
       "$ref": "AreaConhecimentoRecordCleanDTO.json"
     },
     "inep": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "nivelEnsino": {
       "$ref": "NivelEnsinoRecordCleanDTO.json"
     },
     "tipoCurso": {
-      "$ref": "TipoCursoRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "TipoCursoRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "grupoCurso": {
       "$ref": "GrupoCursoRecordCleanDTO.json"
     },
     "modalidade": {
-      "$ref": "ModalidadeRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "ModalidadeRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "inicioFuncionamento": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date"
     },
     "habilitacaoMasculino": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "habilitacaoFeminino": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "grauConferido": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "vagasAnuais": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "coordenador": {
-      "$ref": "ColaboradorRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "ColaboradorRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "segundaGraduacao": {
       "type": "boolean"
     },
     "ra": {
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }

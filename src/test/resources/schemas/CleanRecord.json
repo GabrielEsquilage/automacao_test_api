@@ -32,7 +32,10 @@
       "format": "int32"
     },
     "turma": {
-      "$ref": "TurmaRecordResponseDTO.json"
+      "anyOf": [
+        { "$ref": "TurmaRecordResponseDTO.json" },
+        { "type": "null" }
+      ]
     },
     "colaborador": {
       "$ref": "ColaboradorRecordCleanDTO.json"

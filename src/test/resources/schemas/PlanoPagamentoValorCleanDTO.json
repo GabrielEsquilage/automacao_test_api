@@ -20,15 +20,15 @@
       "$ref": "TipoParametroCleanDTO.json"
     },
     "parcelaInicial": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "parcelaFinal": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "hasApplied": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     }
   }
 }

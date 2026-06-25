@@ -12,51 +12,20 @@
       "format": "int32"
     },
     "competencia": {
-      "type": "object",
-      "properties": {
-        "year": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "month": {
-          "type": "string",
-          "enum": [
-            "JANUARY",
-            "FEBRUARY",
-            "MARCH",
-            "APRIL",
-            "MAY",
-            "JUNE",
-            "JULY",
-            "AUGUST",
-            "SEPTEMBER",
-            "OCTOBER",
-            "NOVEMBER",
-            "DECEMBER"
-          ]
-        },
-        "monthValue": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "leapYear": {
-          "type": "boolean"
-        }
-      }
+      "type": ["object", "string", "null"]
     },
     "dataVencimento": {
       "type": "string",
       "format": "date"
     },
     "valorAteVencimento": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "dataPagamento": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "valorPago": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "matricula": {
       "type": "string"

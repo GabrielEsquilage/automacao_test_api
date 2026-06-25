@@ -4,8 +4,7 @@
   "type": "object",
   "properties": {
     "dataUso": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "nomeCandidato": {
       "type": "string"

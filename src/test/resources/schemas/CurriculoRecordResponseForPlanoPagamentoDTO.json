@@ -26,7 +26,7 @@
       "type": "string"
     },
     "modalidade": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "valorCurriculo": {
       "type": "number"

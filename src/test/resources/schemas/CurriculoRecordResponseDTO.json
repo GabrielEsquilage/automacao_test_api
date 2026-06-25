@@ -29,25 +29,28 @@
       "type": "string"
     },
     "horaAtividadeComplementar": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "horaAtividadeExtensao": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "curso": {
       "$ref": "CursoRecordCleanDTO.json"
     },
     "valorCurso": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "observacao": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "modulo": {
-      "$ref": "Modulo.json"
+      "anyOf": [
+        { "$ref": "Modulo.json" },
+        { "type": "null" }
+      ]
     },
     "moduloId": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "serieIngresso": {
