@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "HomePhone",
+  "type": "object",
+  "properties": {
+    "country_code": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    }
+  }
+}

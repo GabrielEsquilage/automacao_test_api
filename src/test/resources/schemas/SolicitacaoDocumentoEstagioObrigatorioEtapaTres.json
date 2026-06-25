@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioObrigatorioEtapaTres",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "formacaoAcademica": {
+      "type": "string"
+    },
+    "numeroConselho": {
+      "type": "string"
+    },
+    "registro": {
+      "type": "string"
+    }
+  }
+}

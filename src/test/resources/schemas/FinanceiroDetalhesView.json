@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroDetalhesView",
+  "type": "object",
+  "properties": {
+    "matricula": {
+      "type": "string"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "numeroParcela": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCobranca": {
+      "type": "string"
+    },
+    "competencia": {
+      "type": "string"
+    },
+    "dataVencimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataPagamento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valorOriginal": {
+      "type": "number"
+    },
+    "valorPago": {
+      "type": "number"
+    },
+    "valorAteVencimento": {
+      "type": "number"
+    },
+    "formaPagamento": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusNome": {
+      "type": "string"
+    },
+    "tipoAcao": {
+      "type": "string"
+    },
+    "justificativa": {
+      "type": "string"
+    },
+    "dataAcao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nomeUsuario": {
+      "type": "string"
+    },
+    "planoPagamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "arquivoNome": {
+      "type": "string"
+    },
+    "arquivoLink": {
+      "type": "string"
+    },
+    "erroCartaoRecorrente": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

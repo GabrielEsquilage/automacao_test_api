@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Aceite",
+  "required": [
+    "matriculaId",
+    "termoId"
+  ],
+  "type": "object",
+  "properties": {
+    "termoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EmentaDisciplinaRequestParam",
+  "type": "object",
+  "properties": {
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ementaId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TermoAdesaoMatriculaProjection",
+  "type": "object",
+  "properties": {
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "termoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "conteudo": {
+      "type": "string"
+    },
+    "conteudoUrl": {
+      "type": "string"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "dataAceite": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AllAppliedCandidatesRegistrationsReportParams",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "studentName": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "billingTypeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "courseId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "campusId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

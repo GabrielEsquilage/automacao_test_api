@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PainelAnaliseCursosSemAtendentesParam",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "departamentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "setorId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

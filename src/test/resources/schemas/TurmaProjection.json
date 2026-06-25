@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TurmaProjection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "turma": {
+      "type": "string"
+    },
+    "periodoLetivo": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "curriculo": {
+      "type": "string"
+    },
+    "processoSeletivo": {
+      "type": "string"
+    },
+    "valorCurso": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

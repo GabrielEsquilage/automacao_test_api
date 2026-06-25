@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaAtividadeProjection",
+  "type": "object",
+  "properties": {
+    "atividadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "sincronizacao": {
+      "type": "boolean"
+    },
+    "mensagemSincronizacao": {
+      "type": "string"
+    }
+  }
+}

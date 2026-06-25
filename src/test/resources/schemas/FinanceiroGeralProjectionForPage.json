@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroGeralProjectionForPage",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "numeroParcela": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "competencia": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "month": {
+          "type": "string",
+          "enum": [
+            "JANUARY",
+            "FEBRUARY",
+            "MARCH",
+            "APRIL",
+            "MAY",
+            "JUNE",
+            "JULY",
+            "AUGUST",
+            "SEPTEMBER",
+            "OCTOBER",
+            "NOVEMBER",
+            "DECEMBER"
+          ]
+        },
+        "monthValue": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "leapYear": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dataVencimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "valorAteVencimento": {
+      "type": "number"
+    },
+    "dataPagamento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valorPago": {
+      "type": "number"
+    },
+    "matricula": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "polo": {
+      "type": "string"
+    },
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "statusNome": {
+      "type": "string"
+    },
+    "tipoCobrancaNome": {
+      "type": "string"
+    },
+    "tipoCobrancaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cupomAplicado": {
+      "type": "boolean"
+    }
+  }
+}

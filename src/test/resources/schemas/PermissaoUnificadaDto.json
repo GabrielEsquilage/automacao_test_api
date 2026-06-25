@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PermissaoUnificadaDto",
+  "type": "object",
+  "properties": {
+    "nomeRecursoChave": {
+      "type": "string"
+    },
+    "nomeAcaoChave": {
+      "type": "string"
+    }
+  }
+}

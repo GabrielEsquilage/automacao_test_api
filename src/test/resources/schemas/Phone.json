@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Phone",
+  "type": "object",
+  "properties": {
+    "home_phone": {
+      "$ref": "HomePhone.json"
+    }
+  }
+}

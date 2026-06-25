@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreateSolicitacaoDocumentoEstagioObrigatorio",
+  "type": "object",
+  "properties": {
+    "etapaUm": {
+      "$ref": "SolicitacaoDocumentoEstagioObrigatorioEtapaUm.json"
+    },
+    "etapaDois": {
+      "$ref": "SolicitacaoDocumentoEstagioObrigatorioEtapaDois.json"
+    },
+    "etapaTres": {
+      "$ref": "SolicitacaoDocumentoEstagioObrigatorioEtapaTres.json"
+    },
+    "etapaQuatro": {
+      "$ref": "SolicitacaoDocumentoEstagioObrigatorioEtapaQuatro.json"
+    },
+    "etapaCinco": {
+      "$ref": "SolicitacaoDocumentoEstagioObrigatorioEtapaCinco.json"
+    }
+  }
+}

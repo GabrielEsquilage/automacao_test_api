@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GradeDisciplinaPeriodoLetivoProjection",
+  "type": "object",
+  "properties": {
+    "periodoLetivoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDisciplinaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "disciplinaNome": {
+      "type": "string"
+    },
+    "disciplinaCodigo": {
+      "type": "string"
+    },
+    "codigoMoodle": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoNome": {
+      "type": "string"
+    },
+    "tipoDisciplinaNome": {
+      "type": "string"
+    },
+    "grupo": {
+      "type": "string"
+    },
+    "areaConhecimento": {
+      "type": "string"
+    },
+    "disciplinaMoodleId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "dataFim": {
+      "type": "string",
+      "format": "date"
+    },
+    "statusDisciplina": {
+      "type": "string"
+    },
+    "sincronizacao": {
+      "type": "boolean"
+    },
+    "mensagemSincronizacao": {
+      "type": "string"
+    },
+    "totalAtividades": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

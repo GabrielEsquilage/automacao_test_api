@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoDocumentoEstagioObrigatorioTabelaHorarios",
+  "type": "object",
+  "properties": {
+    "segunda": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioDia.json"
+    },
+    "terca": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioDia.json"
+    },
+    "quarta": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioDia.json"
+    },
+    "quinta": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioDia.json"
+    },
+    "sexta": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioDia.json"
+    },
+    "sabado": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioDia.json"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GetChargeResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "gateway_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "due_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_transaction": {
+      "$ref": "GetTransactionResponse.json"
+    },
+    "order": {
+      "$ref": "GetOrderResponse.json"
+    },
+    "customer": {
+      "$ref": "GetCustomerResponse.json"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "paid_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "canceled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "canceled_amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "paid_amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "interest_and_fine_paid": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "recurrency_cycle": {
+      "type": "string"
+    }
+  }
+}

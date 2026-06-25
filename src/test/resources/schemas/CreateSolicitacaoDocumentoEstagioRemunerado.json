@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CreateSolicitacaoDocumentoEstagioRemunerado",
+  "type": "object",
+  "properties": {
+    "etapaUm": {
+      "$ref": "SolicitacaoDocumentoEstagioEstudante.json"
+    },
+    "etapaDois": {
+      "$ref": "SolicitacaoDocumentoEstagioUnidadeConcedente.json"
+    },
+    "etapaTres": {
+      "$ref": "SolicitacaoDocumentoEstagioSupervisorRemunerado.json"
+    },
+    "etapaQuatro": {
+      "$ref": "SolicitacaoDocumentoEstagioAtividadesRemunerado.json"
+    },
+    "etapaCinco": {
+      "$ref": "SolicitacaoDocumentoEstagioHorarioRemunerado.json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequestAtendimentosByResponsavel",
+  "type": "object",
+  "properties": {
+    "statusId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notAnswered": {
+      "type": "boolean"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "orderByLatest": {
+      "type": "boolean"
+    },
+    "inDelay": {
+      "type": "boolean"
+    }
+  }
+}

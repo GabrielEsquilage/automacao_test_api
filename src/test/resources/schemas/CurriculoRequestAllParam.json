@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CurriculoRequestAllParam",
+  "type": "object",
+  "properties": {
+    "areaConhecimentoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nivelEnsinoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoCursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "isSegundaGraduacao": {
+      "type": "boolean"
+    }
+  }
+}

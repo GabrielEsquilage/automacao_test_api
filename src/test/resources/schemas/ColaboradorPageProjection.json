@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ColaboradorPageProjection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tipoContratacao": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

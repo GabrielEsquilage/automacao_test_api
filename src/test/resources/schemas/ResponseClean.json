@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ResponseClean",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "termoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "candidatoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ip": {
+      "type": "object",
+      "properties": {
+        "hostAddress": {
+          "type": "string"
+        },
+        "address": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "byte"
+          }
+        },
+        "hostName": {
+          "type": "string"
+        },
+        "linkLocalAddress": {
+          "type": "boolean"
+        },
+        "multicastAddress": {
+          "type": "boolean"
+        },
+        "anyLocalAddress": {
+          "type": "boolean"
+        },
+        "loopbackAddress": {
+          "type": "boolean"
+        },
+        "siteLocalAddress": {
+          "type": "boolean"
+        },
+        "mcglobal": {
+          "type": "boolean"
+        },
+        "mcnodeLocal": {
+          "type": "boolean"
+        },
+        "mclinkLocal": {
+          "type": "boolean"
+        },
+        "mcsiteLocal": {
+          "type": "boolean"
+        },
+        "mcorgLocal": {
+          "type": "boolean"
+        },
+        "canonicalHostName": {
+          "type": "string"
+        }
+      }
+    },
+    "dataAceite": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agenteUsuario": {
+      "type": "string"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

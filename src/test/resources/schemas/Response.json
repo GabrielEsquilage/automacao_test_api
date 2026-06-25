@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "validadeInicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "validadeFinal": {
+      "type": "string",
+      "format": "date"
+    },
+    "conteudo": {
+      "type": "string"
+    },
+    "conteudoUrl": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "criacao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "alteracao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

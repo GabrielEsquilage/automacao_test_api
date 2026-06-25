@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaVerifyHashDocument",
+  "type": "object",
+  "properties": {
+    "matriculaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "curso": {
+      "type": "string"
+    },
+    "ra": {
+      "type": "string"
+    },
+    "filial": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "dataEmissao": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

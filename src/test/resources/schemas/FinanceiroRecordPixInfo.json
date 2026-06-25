@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FinanceiroRecordPixInfo",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "number"
+    },
+    "key": {
+      "type": "string"
+    },
+    "qrCodeUrl": {
+      "type": "string"
+    },
+    "expirationDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

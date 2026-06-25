@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GetOrderResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "closed": {
+      "type": "boolean"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "GetOrderItemResponse.json"
+      }
+    },
+    "customer": {
+      "$ref": "GetCustomerResponse.json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "paid_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "charges": {
+      "type": "array",
+      "items": {
+        "$ref": "GetChargeResponse.json"
+      }
+    },
+    "invoice_url": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "ip": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

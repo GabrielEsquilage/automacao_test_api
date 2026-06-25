@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoRequestAllParam",
+  "type": "object",
+  "properties": {
+    "nivelEnsinoIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "tipoAprovacaoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoDiasId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "requerimentoInternoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "possuiTaxa": {
+      "type": "boolean"
+    },
+    "possuiDisponibilidadeEspecifica": {
+      "type": "boolean"
+    },
+    "repetirSolicitacao": {
+      "type": "boolean"
+    }
+  }
+}

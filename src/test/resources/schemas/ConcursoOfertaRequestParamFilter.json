@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ConcursoOfertaRequestParamFilter",
+  "type": "object",
+  "properties": {
+    "nameCurso": {
+      "type": "string"
+    },
+    "nameFilial": {
+      "type": "string"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "filialId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "planoPagamentoPadrao": {
+      "type": "boolean"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

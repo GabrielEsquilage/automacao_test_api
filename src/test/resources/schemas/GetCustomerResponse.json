@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GetCustomerResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "delinquent": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "document": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "fb_access_token": {
+      "type": "string"
+    },
+    "address": {
+      "$ref": "GetAddressResponse.json"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "phones": {
+      "$ref": "GetPhonesResponse.json"
+    },
+    "fb_id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "code": {
+      "type": "string"
+    },
+    "document_type": {
+      "type": "string"
+    }
+  }
+}

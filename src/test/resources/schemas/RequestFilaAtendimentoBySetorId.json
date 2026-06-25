@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequestFilaAtendimentoBySetorId",
+  "type": "object",
+  "properties": {
+    "assuntoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "temaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "endDateAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "startDateAbertura": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "orderBySla": {
+      "type": "boolean"
+    },
+    "orderByDataAbertura": {
+      "type": "boolean"
+    },
+    "origemThessie": {
+      "type": "boolean"
+    },
+    "keyword": {
+      "type": "string"
+    }
+  }
+}

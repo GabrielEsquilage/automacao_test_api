@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FuncionalidadeProjection",
+  "type": "object",
+  "properties": {
+    "funcionalidadeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "nomeFuncionalidade": {
+      "type": "string"
+    },
+    "nomeTipoFuncionalidade": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

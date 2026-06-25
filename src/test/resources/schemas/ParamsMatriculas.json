@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ParamsMatriculas",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string"
+    },
+    "turmaId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "cursoId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "curriculoId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "LastTransaction",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "transaction_type": {
+      "type": "string"
+    },
+    "gateway_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "pdf": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "qr_code": {
+      "type": "string"
+    },
+    "installments": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "acquirer_name": {
+      "type": "string"
+    },
+    "acquirer_affiliation_code": {
+      "type": "string"
+    },
+    "acquirer_tid": {
+      "type": "string"
+    },
+    "acquirer_nsu": {
+      "type": "string"
+    },
+    "acquirer_auth_code": {
+      "type": "string"
+    },
+    "acquirer_return_code": {
+      "type": "string"
+    },
+    "operation_type": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

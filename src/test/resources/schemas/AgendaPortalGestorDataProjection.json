@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AgendaPortalGestorDataProjection",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
