@@ -24,7 +24,10 @@
       "format": "int32"
     },
     "turma": {
-      "$ref": "TurmaRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "TurmaRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "colaborador": {
       "$ref": "ColaboradorRecordCleanDTO.json"
