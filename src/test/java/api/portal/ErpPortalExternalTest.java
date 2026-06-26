@@ -59,4 +59,43 @@ public class ErpPortalExternalTest {
                 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/MatriculasForPortalLoginDTO.json"));
     }
 
+    private Integer getMatriculaIdValida() {
+        // Tenta buscar o primeiro ID de matrícula de pós-graduação, se não achar, pega de graduação
+        io.restassured.response.Response response = PortalApiClient.request()
+            .get("/api-external/v1/portal/matricula/matricula-disciplina");
+            
+        Integer id = response.jsonPath().get("cursosPos[0].id");
+        if (id == null) {
+            id = response.jsonPath().get("cursosGrad[0].id");
+        }
+        return id;
+    }
+
+    @Test
+    @DisplayName("Valida contrato do financeiro paginado do portal (/api-external/v1/portal/financeiro)")
+    void testPortalFinanceiro() {
+        Integer matriculaId = getMatriculaIdValida();
+        
+        PortalApiClient.request()
+            .header("matriculaId", matriculaId)
+            .when()
+                .get("/api-external/v1/portal/financeiro")
+            .then()
+                .statusCode(200)
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageFinanceiroByMatriculaIdPortalProjectionDTO.json"));
+    }
+
+    @Test
+    @DisplayName("Valida comportamento de fatura inexistente (Teste Negativo) (/api-external/v1/portal/financeiro/{etapaFinanceiroId})")
+    void testPortalFinanceiroNotFound() {
+        Integer matriculaId = getMatriculaIdValida();
+
+        PortalApiClient.request()
+            .header("matriculaId", matriculaId)
+            .pathParam("etapaFinanceiroId", 99999999)
+            .when()
+                .get("/api-external/v1/portal/financeiro/{etapaFinanceiroId}")
+            .then()
+                .statusCode(404);
+    }
 }

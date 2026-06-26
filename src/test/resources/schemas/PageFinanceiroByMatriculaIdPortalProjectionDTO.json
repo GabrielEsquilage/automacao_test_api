@@ -10,7 +10,7 @@
       "format": "int32"
     },
     "pageable": {
-      "$ref": "#/components/schemas/PageableObject"
+      "$ref": "PageableObject.json"
     },
     "first": {
       "type": "boolean"
@@ -25,7 +25,7 @@
     "content": {
       "type": "array",
       "items": {
-        "$ref": "#/components/schemas/FinanceiroByMatriculaIdPortalProjectionDTO"
+        "$ref": "FinanceiroByMatriculaIdPortalProjectionDTO.json"
       }
     },
     "number": {
@@ -33,7 +33,7 @@
       "format": "int32"
     },
     "sort": {
-      "$ref": "#/components/schemas/SortObject"
+      "$ref": "SortObject.json"
     },
     "numberOfElements": {
       "type": "integer",

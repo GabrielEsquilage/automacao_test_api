@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "SortObject",
   "type": "object",
   "properties": {
     "sorted": {
@@ -12,5 +10,7 @@
     "unsorted": {
       "type": "boolean"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SortObject"
 }
