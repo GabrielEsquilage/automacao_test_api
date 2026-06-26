@@ -4,11 +4,11 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "nome": {
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }
