@@ -13,7 +13,7 @@ Este projeto usa Maven, JUnit 5 e RestAssured para executar testes de API e gera
 O arquivo `src/test/resources/environments/local.properties` guarda configuracoes nao sensiveis do ambiente:
 
 ```properties
-api.baseUri=https://erp-api-prod-964330493122.southamerica-east1.run.app
+api.baseUri=url_base_api (dev ou prod)
 api.report.maxBodyChars=6000
 ```
 
