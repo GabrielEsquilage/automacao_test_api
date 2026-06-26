@@ -22,7 +22,10 @@
       "type": "string"
     },
     "orgaoExpedidorRg": {
-      "$ref": "OrgaoExpedidorResponseDTO.json"
+      "anyOf": [
+        { "$ref": "OrgaoExpedidorResponseDTO.json" },
+        { "type": "null" }
+      ]
     },
     "tipoDocumento": {
       "$ref": "TipoDocumentoRecordCleanResponseDTO.json"

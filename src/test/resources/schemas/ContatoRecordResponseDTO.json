@@ -22,10 +22,13 @@
       "type": "string"
     },
     "nomeResponsavel": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "cargo": {
-      "$ref": "CargoRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "CargoRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "tipoContato": {
       "$ref": "TipoContatoRecordCleanResponseDTO.json"

@@ -18,14 +18,14 @@
       "type": "string"
     },
     "vagas": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "status": {
       "$ref": "StatusCleanDTO.json"
     },
     "candidatoId": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     }
   }

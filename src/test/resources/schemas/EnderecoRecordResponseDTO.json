@@ -34,7 +34,7 @@
       "type": "string"
     },
     "complemento": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "uf": {
       "$ref": "UfRecordCleanDTO.json"

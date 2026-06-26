@@ -14,16 +14,19 @@
       "type": "string"
     },
     "setor": {
-      "$ref": "SetorRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "SetorRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "sla": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "isN1": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "descricao": {
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }

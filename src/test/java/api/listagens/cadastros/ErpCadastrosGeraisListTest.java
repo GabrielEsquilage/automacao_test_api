@@ -9,10 +9,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import api.support.ApiReportExtension;
 import api.support.ErpApiClient;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Listagem (Cadastros Gerais: Cargos, Colaboradores, Órgãos)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpCadastrosGeraisListTest {
@@ -31,6 +33,7 @@ public class ErpCadastrosGeraisListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageCargoRecordResponseDTO.json"))
                 .extract().response();
 
         System.out.println("Resposta de paginação de cargos: " + response.asString());
@@ -49,6 +52,7 @@ public class ErpCadastrosGeraisListTest {
                 .body("$", isA(java.util.List.class))
                 .body("size()", greaterThan(0))
                 .body("[0]", hasKey("id"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/CargoListResponseDTO.json"))
                 .extract().response();
 
         try {
@@ -73,6 +77,7 @@ public class ErpCadastrosGeraisListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageColaboradorPageProjection.json"))
                 .extract().response();
 
         System.out.println("Resposta de paginação de colaboradores: " + response.asString());

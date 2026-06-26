@@ -9,10 +9,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import api.support.ApiReportExtension;
 import api.support.ErpApiClient;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Listagem (Ofertas, Processos Seletivos e Concursos)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpOfertasListTest {
@@ -31,6 +33,7 @@ public class ErpOfertasListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageProcessoSeletivoRecordCleanDTO.json"))
                 .extract().response();
 
         System.out.println("Resposta de processos seletivos: " + response.asString());
@@ -77,6 +80,7 @@ public class ErpOfertasListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageConcursoRecordCleanDTO.json"))
                 .extract().response();
 
         System.out.println("Resposta de paginação de concursos: " + response.asString());

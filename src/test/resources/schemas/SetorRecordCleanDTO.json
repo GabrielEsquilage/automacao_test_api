@@ -8,16 +8,19 @@
       "format": "int32"
     },
     "departamento": {
-      "$ref": "DepartamentoRecordListDTO.json"
+      "anyOf": [
+        { "$ref": "DepartamentoRecordListDTO.json" },
+        { "type": "null" }
+      ]
     },
     "nome": {
       "type": "string"
     },
     "exclusivoCalouros": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "ativo": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     }
   }
 }

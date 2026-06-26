@@ -9,9 +9,11 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import api.support.ApiReportExtension;
 import api.support.ErpApiClient;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Certificados (Leitura e Ações Críticas)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpCertificadosTest {
@@ -35,7 +37,8 @@ public class ErpCertificadosTest {
                 .body("$", hasKey("content"))
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"));
+                .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageSolicitacaoCertificadoListResponseDTO.json"));
     }
 
     @Test
@@ -48,7 +51,8 @@ public class ErpCertificadosTest {
                 .log().status()
                 .statusCode(200)
                 // Geralmente retorna um Array ou objeto com os status
-                .body("$", notNullValue());
+                .body("$", notNullValue())
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/StatusListResponseDTO.json"));
     }
 
     // ==========================================

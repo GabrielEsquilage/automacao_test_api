@@ -17,8 +17,7 @@
       "type": "string"
     },
     "ultimaAlteracao": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "status": {
       "type": "string"

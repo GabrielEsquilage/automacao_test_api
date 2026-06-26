@@ -1,8 +1,6 @@
 package api.listagens.financeiro;
 
-import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.*;
-import static org.hamcrest.Matchers.is;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.jupiter.api.DisplayName;
@@ -16,6 +14,7 @@ import io.restassured.response.Response;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Listagem (Financeiro e Cupons)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpFinanceiroListTest {

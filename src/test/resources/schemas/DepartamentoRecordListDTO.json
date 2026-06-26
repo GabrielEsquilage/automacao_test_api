@@ -8,13 +8,13 @@
       "format": "int32"
     },
     "sigla": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "nome": {
       "type": "string"
     },
     "ativo": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     }
   }
 }

@@ -27,15 +27,13 @@
       "format": "date-time"
     },
     "dataResolucao": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "dataFinalizacao": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "avaliacao": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "setor": {
@@ -51,7 +49,10 @@
       "$ref": "MatriculaMensageriaRecordCleanDTO.json"
     },
     "waeMatricula": {
-      "$ref": "WaeMatriculaRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "WaeMatriculaRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "sla": {
       "type": "number"
