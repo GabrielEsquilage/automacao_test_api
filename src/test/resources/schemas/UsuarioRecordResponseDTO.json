@@ -40,7 +40,7 @@
       }
     },
     "totalSetores": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int64"
     }
   }

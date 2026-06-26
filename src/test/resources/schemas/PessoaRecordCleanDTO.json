@@ -25,8 +25,7 @@
       "type": "string"
     },
     "nascimento": {
-      "type": "string",
-      "format": "date"
+      "type": ["string", "null"]
     },
     "genero": {
       "type": "string"
@@ -35,13 +34,13 @@
       "type": "string"
     },
     "telefone": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "cpf": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "participanteId": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     }
   }

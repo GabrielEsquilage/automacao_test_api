@@ -25,11 +25,10 @@
       "type": "string"
     },
     "nascimento": {
-      "type": "string",
-      "format": "date"
+      "type": ["string", "null"]
     },
     "participanteId": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "genero": {
@@ -39,7 +38,10 @@
       "$ref": "RacaRecordCleanDTO.json"
     },
     "orgaoExpedidorRg": {
-      "$ref": "OrgaoExpedidorResponseDTO.json"
+      "anyOf": [
+        { "$ref": "OrgaoExpedidorResponseDTO.json" },
+        { "type": "null" }
+      ]
     },
     "enderecos": {
       "type": "array",
@@ -60,10 +62,16 @@
       }
     },
     "nacionalidade": {
-      "$ref": "NacionalidadeRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "NacionalidadeRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "usuario": {
-      "$ref": "UsuarioRecordCleanWithoutPessoaDTO.json"
+      "anyOf": [
+        { "$ref": "UsuarioRecordCleanWithoutPessoaDTO.json" },
+        { "type": "null" }
+      ]
     }
   }
 }
