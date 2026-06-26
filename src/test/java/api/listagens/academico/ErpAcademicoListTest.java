@@ -14,6 +14,7 @@ import io.restassured.response.Response;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Listagem (Acadêmico/Oferta)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpAcademicoListTest {
