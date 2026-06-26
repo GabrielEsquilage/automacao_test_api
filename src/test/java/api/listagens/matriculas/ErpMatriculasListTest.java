@@ -9,10 +9,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import api.support.ApiReportExtension;
 import api.support.ErpApiClient;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Listagem (Matrículas)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpMatriculasListTest {
@@ -31,6 +33,7 @@ public class ErpMatriculasListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageMatriculaProcessoSeletivoRecordCleanDTO.json"))
                 .extract().response();
 
         System.out.println("Resposta de paginação de matrículas: " + response.asString());
@@ -50,6 +53,7 @@ public class ErpMatriculasListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageMatriculaCleanProjection.json"))
                 .extract().response();
 
         System.out.println("Resposta de paginação clean de matrículas: " + response.asString());
@@ -69,6 +73,7 @@ public class ErpMatriculasListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageMatriculaRaCleanProjection.json"))
                 .extract().response();
     }
 
@@ -86,6 +91,7 @@ public class ErpMatriculasListTest {
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
                 .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageRematriculaPeriodoLetivoDTO.json"))
                 .extract().response();
                 
         try {
