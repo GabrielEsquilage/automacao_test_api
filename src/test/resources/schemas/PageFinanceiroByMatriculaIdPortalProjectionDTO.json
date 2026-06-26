@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "PageFinanceiroByMatriculaIdPortalProjectionDTO",
   "type": "object",
   "properties": {
     "totalElements": {
@@ -12,7 +10,7 @@
       "format": "int32"
     },
     "pageable": {
-      "$ref": "PageableObject.json"
+      "$ref": "#/components/schemas/PageableObject"
     },
     "first": {
       "type": "boolean"
@@ -27,7 +25,7 @@
     "content": {
       "type": "array",
       "items": {
-        "$ref": "FinanceiroByMatriculaIdPortalProjectionDTO.json"
+        "$ref": "#/components/schemas/FinanceiroByMatriculaIdPortalProjectionDTO"
       }
     },
     "number": {
@@ -35,7 +33,7 @@
       "format": "int32"
     },
     "sort": {
-      "$ref": "SortObject.json"
+      "$ref": "#/components/schemas/SortObject"
     },
     "numberOfElements": {
       "type": "integer",
@@ -44,5 +42,7 @@
     "empty": {
       "type": "boolean"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PageFinanceiroByMatriculaIdPortalProjectionDTO"
 }

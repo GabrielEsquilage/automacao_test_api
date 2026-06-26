@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "MatriculaMatriculaDisciplinaModalRecordResponseDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -36,5 +34,7 @@
       "type": "integer",
       "format": "int32"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaMatriculaDisciplinaModalRecordResponseDTO"
 }

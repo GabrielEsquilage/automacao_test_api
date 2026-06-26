@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "StatusCleanDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -11,7 +9,9 @@
       "type": "string"
     },
     "codigoStatusWae": {
-      "type": ["string", "null"]
+      "type": "string"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "StatusCleanDTO"
 }

@@ -1,14 +1,14 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "TipoCertificadoRecordCleanDTO",
   "type": "object",
   "properties": {
     "id": {
-      "type": ["integer", "null"],
+      "type": "integer",
       "format": "int32"
     },
     "nome": {
-      "type": ["string", "null"]
+      "type": "string"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TipoCertificadoRecordCleanDTO"
 }

@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "PrincipalRecordResponseDTO",
   "type": "object",
   "properties": {
     "pessoaId": {
@@ -8,10 +6,15 @@
       "format": "int32"
     },
     "avatarUrl": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "nome": {
       "type": "string"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PrincipalRecordResponseDTO"
 }
