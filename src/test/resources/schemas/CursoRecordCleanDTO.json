@@ -8,30 +8,34 @@
       "format": "int32"
     },
     "criacao": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "alteracao": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "ativo": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "nome": {
       "type": "string"
     },
     "codigo": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "areaConhecimento": {
-      "$ref": "AreaConhecimentoRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "AreaConhecimentoRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "inep": {
       "type": ["string", "null"]
     },
     "nivelEnsino": {
-      "$ref": "NivelEnsinoRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "NivelEnsinoRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "tipoCurso": {
       "anyOf": [
@@ -40,7 +44,10 @@
       ]
     },
     "grupoCurso": {
-      "$ref": "GrupoCursoRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "GrupoCursoRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "modalidade": {
       "anyOf": [
@@ -81,16 +88,21 @@
       "type": ["string", "null"]
     },
     "reconhecimentos": {
-      "type": "array",
-      "items": {
-        "$ref": "CursoReconhecimentoRecordCleanForCursoDTO.json"
-      }
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "CursoReconhecimentoRecordCleanForCursoDTO.json"
+          }
+        },
+        { "type": "null" }
+      ]
     },
     "resolucao": {
       "type": ["string", "null"]
     },
     "segundaGraduacao": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     }
   }
 }

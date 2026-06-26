@@ -8,13 +8,16 @@
       "format": "int32"
     },
     "login": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "pessoa": {
       "$ref": "PessoaRecordCleanForMensageriaDTO.json"
     },
     "departamento": {
-      "$ref": "DepartamentoRecordListDTO.json"
+      "anyOf": [
+        { "$ref": "DepartamentoRecordListDTO.json" },
+        { "type": "null" }
+      ]
     }
   }
 }

@@ -4,24 +4,29 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "nome": {
       "type": "string"
     },
     "nomeSocial": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "nascimento": {
-      "type": "string",
-      "format": "date"
+      "type": ["string", "null"]
     },
     "genero": {
-      "$ref": "GeneroRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "GeneroRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "raca": {
-      "$ref": "RacaRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "RacaRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     }
   }
 }
