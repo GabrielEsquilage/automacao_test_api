@@ -30,7 +30,7 @@
       "type": "string"
     },
     "matriculaWae": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "pessoa": {
       "$ref": "PessoaRecordCleanForMensageriaDTO.json"

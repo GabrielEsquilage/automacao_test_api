@@ -27,7 +27,7 @@
       "type": "boolean"
     },
     "valorTaxa": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "isRequerimentoInterno": {
       "type": "boolean"

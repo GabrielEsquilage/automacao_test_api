@@ -9,9 +9,11 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import api.support.ApiReportExtension;
 import api.support.ErpApiClient;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
 @Tag("api")
 @Tag("erp")
+@Tag("contrato")
 @DisplayName("ERP - Testes de Solicitações (Leitura e Ações Críticas)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpSolicitacoesGeraisTest {
@@ -35,7 +37,8 @@ public class ErpSolicitacoesGeraisTest {
                 .body("$", hasKey("content"))
                 .body("content", isA(java.util.List.class))
                 .body("$", hasKey("totalElements"))
-                .body("$", hasKey("totalPages"));
+                .body("$", hasKey("totalPages"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageSolicitacaoRecordCleanDTO.json"));
     }
 
     @Test
@@ -48,7 +51,8 @@ public class ErpSolicitacoesGeraisTest {
                 .log().status()
                 .statusCode(200)
                 // Valida que retorna um Array de objetos
-                .body("$", isA(java.util.List.class));
+                .body("$", isA(java.util.List.class))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/SolicitacaoListResponseDTO.json"));
     }
 
     // ==========================================

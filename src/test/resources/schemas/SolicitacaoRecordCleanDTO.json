@@ -11,7 +11,10 @@
       "$ref": "MatriculaMensageriaRecordCleanDTO.json"
     },
     "waeMatricula": {
-      "$ref": "WaeMatriculaRecordCleanDTO.json"
+      "anyOf": [
+        { "$ref": "WaeMatriculaRecordCleanDTO.json" },
+        { "type": "null" }
+      ]
     },
     "requerimento": {
       "$ref": "RequerimentoRecordCleanForSolicitacaoDTO.json"
@@ -38,14 +41,16 @@
       "format": "int64"
     },
     "resposta": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "dataFinalizacao": {
-      "type": "string",
-      "format": "date-time"
+      "type": ["string", "null"]
     },
     "responsavel": {
-      "$ref": "UsuarioRecordCleanForMensageriaDTO.json"
+      "anyOf": [
+        { "$ref": "UsuarioRecordCleanForMensageriaDTO.json" },
+        { "type": "null" }
+      ]
     },
     "slaSolicitacao": {
       "type": "number"

@@ -14,7 +14,7 @@
       "type": "string"
     },
     "exclusivoCalouros": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "ativo": {
       "type": "boolean"
