@@ -122,4 +122,18 @@ public class ErpPortalExternalTest {
             .then()
                 .statusCode(404);
     }
+
+    @Test
+    @DisplayName("Valida contrato do quadro de disciplinas do portal (/api-external/v1/portal/matricula/disciplina-list/{matriculaId})")
+    void testPortalQuadroDisciplinas() {
+        Integer matriculaId = getMatriculaIdValida();
+
+        PortalApiClient.request()
+            .pathParam("matriculaId", matriculaId)
+            .when()
+                .get("/api-external/v1/portal/matricula/disciplina-list/{matriculaId}")
+            .then()
+                .statusCode(200)
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/DisciplinaListDTO.json"));
+    }
 }
