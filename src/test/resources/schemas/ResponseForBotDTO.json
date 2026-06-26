@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "ResponseForBotDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -13,5 +11,7 @@
     "descricao": {
       "type": "string"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ResponseForBotDTO"
 }

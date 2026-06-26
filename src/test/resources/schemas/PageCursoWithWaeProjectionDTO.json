@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "PageCursoWithWaeProjectionDTO",
   "type": "object",
   "properties": {
     "totalElements": {
@@ -44,5 +42,7 @@
     "empty": {
       "type": "boolean"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PageCursoWithWaeProjectionDTO"
 }

@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "items": {
+    "$ref": "ResponseForBotDTO.json"
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ArrayResponseForBotDTO"
+}

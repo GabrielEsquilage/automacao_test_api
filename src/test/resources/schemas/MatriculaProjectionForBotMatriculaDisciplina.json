@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "MatriculaProjectionForBotMatriculaDisciplina",
   "type": "object",
   "properties": {
     "id": {
@@ -8,13 +6,22 @@
       "format": "int32"
     },
     "telefone": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "pessoaNome": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "pessoaId": {
-      "type": "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "format": "int32"
     },
     "cursoNome": {
@@ -24,8 +31,9 @@
       "type": "string"
     },
     "criacao": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MatriculaProjectionForBotMatriculaDisciplina"
 }
