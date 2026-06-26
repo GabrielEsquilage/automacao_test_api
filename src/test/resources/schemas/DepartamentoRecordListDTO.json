@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "DepartamentoRecordListDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -8,13 +6,15 @@
       "format": "int32"
     },
     "sigla": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "nome": {
       "type": "string"
     },
     "ativo": {
-      "type": ["boolean", "null"]
+      "type": "boolean"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DepartamentoRecordListDTO"
 }

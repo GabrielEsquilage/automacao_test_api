@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "UsuarioRecordCleanForMensageriaDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -8,16 +6,15 @@
       "format": "int32"
     },
     "login": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "pessoa": {
       "$ref": "PessoaRecordCleanForMensageriaDTO.json"
     },
     "departamento": {
-      "anyOf": [
-        { "$ref": "DepartamentoRecordListDTO.json" },
-        { "type": "null" }
-      ]
+      "$ref": "DepartamentoRecordListDTO.json"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsuarioRecordCleanForMensageriaDTO"
 }

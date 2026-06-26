@@ -1,32 +1,27 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "PessoaRecordCleanForMensageriaDTO",
   "type": "object",
   "properties": {
     "id": {
-      "type": ["integer", "null"],
+      "type": "integer",
       "format": "int32"
     },
     "nome": {
       "type": "string"
     },
     "nomeSocial": {
-      "type": ["string", "null"]
+      "type": "string"
     },
     "nascimento": {
-      "type": ["string", "null"]
+      "type": "string",
+      "format": "date"
     },
     "genero": {
-      "anyOf": [
-        { "$ref": "GeneroRecordCleanDTO.json" },
-        { "type": "null" }
-      ]
+      "$ref": "GeneroRecordCleanDTO.json"
     },
     "raca": {
-      "anyOf": [
-        { "$ref": "RacaRecordCleanDTO.json" },
-        { "type": "null" }
-      ]
+      "$ref": "RacaRecordCleanDTO.json"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PessoaRecordCleanForMensageriaDTO"
 }

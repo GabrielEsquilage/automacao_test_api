@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "SolicitacaoPortalRecordCleanForMatriculaDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -43,5 +41,7 @@
     "valorTaxa": {
       "type": "number"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SolicitacaoPortalRecordCleanForMatriculaDTO"
 }

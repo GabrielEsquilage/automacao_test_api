@@ -98,4 +98,28 @@ public class ErpPortalExternalTest {
             .then()
                 .statusCode(404);
     }
+    @Test
+    @DisplayName("Valida contrato da listagem de solicitações do portal (/api-external/v1/portal/solicitacao)")
+    void testPortalSolicitacao() {
+        Integer matriculaId = getMatriculaIdValida();
+
+        PortalApiClient.request()
+            .header("matriculaId", matriculaId)
+            .when()
+                .get("/api-external/v1/portal/solicitacao")
+            .then()
+                .statusCode(200)
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageSolicitacaoPortalRecordCleanForMatriculaDTO.json"));
+    }
+
+    @Test
+    @DisplayName("Valida comportamento de certificado inexistente (Teste Negativo) (/api-external/v1/portal/solicitacao-certificado/{id})")
+    void testPortalSolicitacaoCertificadoNotFound() {
+        PortalApiClient.request()
+            .pathParam("id", 99999999)
+            .when()
+                .get("/api-external/v1/portal/solicitacao-certificado/{id}")
+            .then()
+                .statusCode(404);
+    }
 }

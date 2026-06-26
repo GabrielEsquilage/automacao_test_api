@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "RequerimentoRecordCleanForSolicitacaoDTO",
   "type": "object",
   "properties": {
     "id": {
@@ -27,10 +25,12 @@
       "type": "boolean"
     },
     "valorTaxa": {
-      "type": ["number", "null"]
+      "type": "number"
     },
     "isRequerimentoInterno": {
       "type": "boolean"
     }
-  }
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequerimentoRecordCleanForSolicitacaoDTO"
 }
