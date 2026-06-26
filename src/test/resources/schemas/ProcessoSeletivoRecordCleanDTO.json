@@ -14,7 +14,7 @@
       "type": "string"
     },
     "vagas": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "format": "int32"
     },
     "ativo": {
