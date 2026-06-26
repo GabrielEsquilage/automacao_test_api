@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - name: Checkout do código
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup do Java 17
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
@@ -26,9 +26,11 @@ jobs:
       run: mvn clean test
       continue-on-error: true # Permite gerar o relatório mesmo se algum teste falhar
 
-    - name: Fazer Upload do Relatório Surefire (HTML/XML)
-      uses: actions/upload-artifact@v3
+    - name: Fazer Upload do Relatório Surefire e HTML
+      uses: actions/upload-artifact@v4
       with:
         name: relatorio-testes
-        path: target/surefire-reports/
+        path: |
+          target/surefire-reports/
+          target/api-report/
         retention-days: 7
