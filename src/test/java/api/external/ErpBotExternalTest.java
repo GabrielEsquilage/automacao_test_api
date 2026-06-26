@@ -38,7 +38,26 @@ public class ErpBotExternalTest {
                 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageCursoWithWaeProjectionDTO.json"));
     }
 
+    @Test
+    @DisplayName("Valida comportamento da carteirinha do Bot sem informar RA (Teste Negativo)")
+    void testBotCarteirinhaSemRa() {
+        ErpApiClient.request()
+            .when()
+                .get("/api-external/v1/bot/carteirinha")
+            .then()
+                .statusCode(404);
+    }
 
+    @Test
+    @DisplayName("Valida comportamento da carteirinha do Bot com RA inválido (Teste Negativo)")
+    void testBotCarteirinhaRaInvalido() {
+        ErpApiClient.request()
+            .queryParam("ra", "RA_INEXISTENTE_999999")
+            .when()
+                .get("/api-external/v1/bot/carteirinha")
+            .then()
+                .statusCode(404);
+    }
 
     @Test
     @DisplayName("Valida contrato dos assuntos de mensageria do Bot")
