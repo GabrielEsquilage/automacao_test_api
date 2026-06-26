@@ -2,17 +2,26 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "format": "int32"
     },
     "nome": {
       "type": "string"
     },
     "nomeSocial": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "nascimento": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "date"
     },
     "genero": {

@@ -5,17 +5,29 @@
   ],
   "properties": {
     "id": {
-      "type": "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "format": "int32"
     },
     "sigla": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "nome": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ativo": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   },
   "$schema": "http://json-schema.org/draft-04/schema#",
