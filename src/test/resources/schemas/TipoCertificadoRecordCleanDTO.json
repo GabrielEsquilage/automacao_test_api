@@ -2,11 +2,17 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "format": "int32"
     },
     "nome": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "$schema": "http://json-schema.org/draft-04/schema#",

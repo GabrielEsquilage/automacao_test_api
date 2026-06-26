@@ -9,7 +9,10 @@
       "type": "string"
     },
     "codigoStatusWae": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "$schema": "http://json-schema.org/draft-04/schema#",
