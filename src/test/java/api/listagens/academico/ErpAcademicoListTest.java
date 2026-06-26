@@ -1,6 +1,5 @@
 package api.listagens.academico;
 
-import static org.hamcrest.Matchers.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.jupiter.api.DisplayName;

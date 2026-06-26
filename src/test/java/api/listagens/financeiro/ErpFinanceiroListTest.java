@@ -1,8 +1,6 @@
 package api.listagens.financeiro;
 
-import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.*;
-import static org.hamcrest.Matchers.is;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.jupiter.api.DisplayName;

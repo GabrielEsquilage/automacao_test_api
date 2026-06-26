@@ -54,4 +54,25 @@ public class ErpMensageriaTest {
                 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PageAtendimentoRecordCleanDTO.json"))
                 .extract().response();
     }
+
+    @Test
+    @DisplayName("Deve retornar o Painel de Análise com filtros complexos garantindo contrato (/api/v1/atendimento/painel-analise/page)")
+    public void testPainelAnalisePage() {
+        Response response = ErpApiClient.request()
+            .queryParam("filterEmAtraso", "false")
+            .queryParam("filterEmAtendimentoMatricula", "true")
+            .queryParam("page", "0")
+            .queryParam("size", "20")
+            .when()
+                .get("/api/v1/atendimento/painel-analise/page")
+            .then()
+                .log().status()
+                .statusCode(200)
+                // O retorno é um Wrapper que contem 'atendimentos' (paginado) e 'cursosSemAtendente'
+                .body("$", hasKey("atendimentos"))
+                .body("$", hasKey("cursosSemAtendente"))
+                .body("atendimentos", hasKey("content"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/PainelAnaliseRecordResponseForPainelAnaliseDetailDTO.json"))
+                .extract().response();
+    }
 }
