@@ -59,6 +59,6 @@ Durante a validação de Certificados, dois ofensores principais foram neutraliz
 
 ## 📈 Conclusão do Módulo
 
-O módulo de **Solicitações** provou ser um verdadeiro teste de fogo para a Automação de Contratos. Revelou-se que a documentação (Swagger) descreve um "Caminho Feliz Perfeito" de uma Solicitação Deferida, ignorando completamente os estados intermediários (nulos) e as isenções do banco de dados real.
+O módulo de **Solicitações**:  Revelou-se que a documentação (Swagger) descreve um "Caminho Feliz Perfeito" de uma Solicitação Deferida, ignorando completamente os estados intermediários (nulos) e as isenções do banco de dados real.
 
-A suíte agora está impermeável a essas falhas de consistência, entregando relatórios verdes (BUILD SUCCESS) e assinalando corretamente as proteções com a **`@Tag("contrato")`** no pipeline de CI/CD.
+

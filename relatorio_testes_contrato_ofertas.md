@@ -35,5 +35,3 @@ Durante a execução contra a base real de dados, os seguintes campos quebraram 
 ## 📈 Conclusão do Módulo
 
 O módulo de **Ofertas** demonstrou alta consistência de dados em comparação a outros módulos. Apenas o conceito de "Vagas Ilimitadas" (salvas como nulas) havia escapado do desenho original da API, mas foi facilmente encapsulado. 
-
-Os testes estão recebendo selo verde (BUILD SUCCESS) e devidamente demarcados com a **`@Tag("contrato")`** para visibilidade no relatório HTML da esteira de CI/CD.
