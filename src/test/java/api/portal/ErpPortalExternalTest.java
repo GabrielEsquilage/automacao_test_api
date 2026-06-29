@@ -136,4 +136,32 @@ public class ErpPortalExternalTest {
                 .statusCode(200)
                 .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/DisciplinaListDTO.json"));
     }
+
+    @Test
+    @DisplayName("Valida contrato do histórico completo do aluno (/api-external/v1/portal/matricula/historico-completo)")
+    void testPortalHistoricoCompleto() {
+        Integer matriculaId = getMatriculaIdValida();
+
+        PortalApiClient.request()
+            .header("matriculaId", matriculaId)
+            .when()
+                .get("/api-external/v1/portal/matricula/historico-completo")
+            .then()
+                .statusCode(200)
+                .contentType("application/octet-stream");
+    }
+
+    @Test
+    @DisplayName("Valida contrato do coeficiente de rendimento do aluno (/api-external/v1/portal/matricula/coeficiente-rendimento)")
+    void testPortalCoeficienteRendimento() {
+        Integer matriculaId = getMatriculaIdValida();
+
+        PortalApiClient.request()
+            .header("matriculaId", matriculaId)
+            .when()
+                .get("/api-external/v1/portal/matricula/coeficiente-rendimento")
+            .then()
+                .statusCode(200)
+                .contentType("application/octet-stream");
+    }
 }
