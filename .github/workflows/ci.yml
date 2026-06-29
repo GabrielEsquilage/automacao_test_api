@@ -23,6 +23,12 @@ jobs:
         cache: maven
 
     - name: Executar Bateria de Testes (Maven)
+      env:
+        PORTAL_LOGIN: ${{ secrets.PORTAL_LOGIN }}
+        PORTAL_SENHA: ${{ secrets.PORTAL_SENHA }}
+        LOGIN: ${{ secrets.LOGIN }}
+        SENHA: ${{ secrets.SENHA }}
+        API_ENVIRONMENT: ${{ secrets.API_ENVIRONMENT }}
       run: mvn clean test
       continue-on-error: true # Permite gerar o relatório mesmo se algum teste falhar
 
