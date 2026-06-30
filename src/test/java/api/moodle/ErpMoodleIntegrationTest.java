@@ -9,7 +9,7 @@ import api.support.ApiReportExtension;
 import api.support.ErpApiClient;
 
 @Tag("api")
-@Tag("erp_moodle")
+@Tag("moodle")
 @DisplayName("ERP -> Moodle: Testes de Integração e Orquestração (Negativos)")
 @ExtendWith(ApiReportExtension.class)
 public class ErpMoodleIntegrationTest {
