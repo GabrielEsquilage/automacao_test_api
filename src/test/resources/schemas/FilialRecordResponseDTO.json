@@ -16,7 +16,10 @@
       "format": "date-time"
     },
     "exclusao": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "date-time"
     },
     "ativo": {

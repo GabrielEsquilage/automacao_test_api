@@ -1,7 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "FilialRecordCleanDTO",
-  "type": "object",
+  "type": [
+    "object",
+    "null"
+  ],
   "properties": {
     "id": {
       "type": "integer",
