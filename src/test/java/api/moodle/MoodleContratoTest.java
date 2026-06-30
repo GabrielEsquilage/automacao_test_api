@@ -85,4 +85,58 @@ public class MoodleContratoTest {
                 .body("exception", containsString("invalid_parameter_exception"))
                 .body("errorcode", equalTo("invalidparameter"));
     }
+
+    @Test
+    @DisplayName("Teste Negativo: Realizar matrícula de usuário sem informar array obrigatório (enrol_manual_enrol_users)")
+    void testEnrolUserMissingParamsError() {
+        MoodleApiClient.request()
+            .queryParam("wsfunction", "enrol_manual_enrol_users")
+            .when()
+                .post("/webservice/rest/server.php")
+            .then()
+                .statusCode(200)
+                .body("exception", containsString("invalid_parameter_exception"))
+                .body("errorcode", equalTo("invalidparameter"));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Buscar cursos por campo inexistente deve retornar array vazio em vez de erro (core_course_get_courses_by_field)")
+    void testGetCoursesByFieldNotFound() {
+        MoodleApiClient.request()
+            .queryParam("wsfunction", "core_course_get_courses_by_field")
+            .queryParam("field", "idnumber")
+            .queryParam("value", "curso_inexistente_qa")
+            .when()
+                .post("/webservice/rest/server.php")
+            .then()
+                .statusCode(200)
+                .body("$", not(hasKey("exception")))
+                .body("courses", empty());
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Buscar matrículas de usuário sem informar userid (core_enrol_get_users_courses)")
+    void testGetUsersCoursesMissingParamsError() {
+        MoodleApiClient.request()
+            .queryParam("wsfunction", "core_enrol_get_users_courses")
+            .when()
+                .post("/webservice/rest/server.php")
+            .then()
+                .statusCode(200)
+                .body("exception", containsString("invalid_parameter_exception"))
+                .body("errorcode", equalTo("invalidparameter"));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Criar categoria sem array obrigatório (core_course_create_categories)")
+    void testCreateCategoriesMissingParamsError() {
+        MoodleApiClient.request()
+            .queryParam("wsfunction", "core_course_create_categories")
+            .when()
+                .post("/webservice/rest/server.php")
+            .then()
+                .statusCode(200)
+                .body("exception", containsString("invalid_parameter_exception"))
+                .body("errorcode", equalTo("invalidparameter"));
+    }
 }

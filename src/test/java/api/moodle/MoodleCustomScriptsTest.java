@@ -49,8 +49,62 @@ public class MoodleCustomScriptsTest {
                 .get("/arq/disponivel/retorna_agenda_url.php")
             .then()
                 .statusCode(200)
-                // O script rejeita o wstoken do Moodle ou requer outro parametro de seguranca
                 .body(containsString("Token de seguran\\u00e7a inv\\u00e1lido."))
                 .body(containsString("\"status\":\"erro\""));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Acesso ao atualiza_data_atividades.php sem parâmetros (POST)")
+    void testAtualizaDataAtividadesMissingParams() {
+        MoodleApiClient.request()
+            .when()
+                .post("/arq/disponivel/atualiza_data_atividades.php")
+            .then()
+                .statusCode(200)
+                .body("error", equalTo("Parâmetros incompletos."));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Acesso ao atualiza_data_inicio_fim_atividade.php sem parâmetros (POST)")
+    void testAtualizaDataInicioFimAtividadeMissingParams() {
+        MoodleApiClient.request()
+            .when()
+                .post("/arq/disponivel/atualiza_data_inicio_fim_atividade.php")
+            .then()
+                .statusCode(200)
+                .body("error", equalTo("Parâmetros incompletos ou token inválido."));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Acesso ao sobrepoe_atualiza_data_atividade_tarefa.php sem parâmetros (POST)")
+    void testSobrepoeAtualizaDataAtividadeTarefaMissingParams() {
+        MoodleApiClient.request()
+            .when()
+                .post("/arq/disponivel/sobrepoe_atualiza_data_atividade_tarefa.php")
+            .then()
+                .statusCode(200)
+                .body("error", equalTo("Parâmetros incompletos ou token inválido."));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Acesso ao oculta_atividade.php sem parâmetros (POST)")
+    void testOcultaAtividadeMissingParams() {
+        MoodleApiClient.request()
+            .when()
+                .post("/arq/disponivel/oculta_atividade.php")
+            .then()
+                .statusCode(200)
+                .body("error", equalTo("Parâmetros incompletos ou token inválido. Verifique: disciplina, visivel, atividade e token."));
+    }
+
+    @Test
+    @DisplayName("Teste Negativo: Acesso ao oculta_rotulo.php sem parâmetros (POST)")
+    void testOcultaRotuloMissingParams() {
+        MoodleApiClient.request()
+            .when()
+                .post("/arq/disponivel/oculta_rotulo.php")
+            .then()
+                .statusCode(200)
+                .body("error", equalTo("Parâmetros incompletos ou token inválido. Verifique: disciplina, visivel, atividade e token."));
     }
 }
