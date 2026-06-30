@@ -60,6 +60,18 @@ public final class ApiConfig {
         return erpLogin().isPresent() && erpSenha().isPresent();
     }
 
+    public String moodleBaseUrl() {
+        return value("moodle.baseUrl", "MOODLE_BASE_URL")
+                .orElseThrow(() -> new IllegalStateException(
+                        "Configure moodle.baseUrl, MOODLE_BASE_URL ou .env"));
+    }
+
+    public String moodleToken() {
+        return value("moodle.token", "MOODLE_TOKEN")
+                .orElseThrow(() -> new IllegalStateException(
+                        "Configure moodle.token, MOODLE_TOKEN ou .env"));
+    }
+
     public int reportMaxBodyChars() {
         return value("api.report.maxBodyChars", "API_REPORT_MAX_BODY_CHARS")
                 .map(ApiConfig::parsePositiveInt)
