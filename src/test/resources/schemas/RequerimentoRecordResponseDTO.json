@@ -41,7 +41,10 @@
       "type": "boolean"
     },
     "valorTaxa": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "podeSolicitarNovamente": {
       "type": "boolean"

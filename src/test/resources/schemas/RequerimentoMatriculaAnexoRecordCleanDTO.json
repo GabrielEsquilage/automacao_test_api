@@ -17,7 +17,14 @@
       "$ref": "TipoObrigatoriedadeRecordCleanDTO.json"
     },
     "parametroFonte": {
-      "$ref": "ParametroFonteRecordCleanDTO.json"
+      "anyOf": [
+        {
+          "$ref": "ParametroFonteRecordCleanDTO.json"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   }
 }
