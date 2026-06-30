@@ -9,18 +9,28 @@
     },
     "departamento": {
       "anyOf": [
-        { "$ref": "DepartamentoRecordListDTO.json" },
-        { "type": "null" }
+        {
+          "$ref": "DepartamentoRecordListDTO.json"
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "nome": {
       "type": "string"
     },
     "exclusivoCalouros": {
-      "type": ["boolean", "null"]
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "ativo": {
-      "type": ["boolean", "null"]
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   }
 }

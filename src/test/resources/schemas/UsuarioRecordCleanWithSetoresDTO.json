@@ -14,7 +14,10 @@
       "$ref": "DepartamentoRecordListDTO.json"
     },
     "totalSetores": {
-      "type": "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "format": "int64"
     },
     "setores": {

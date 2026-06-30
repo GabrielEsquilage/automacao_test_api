@@ -7,7 +7,10 @@
       "$ref": "SetorRecordCleanDTO.json"
     },
     "hasAtendimento": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   }
 }
