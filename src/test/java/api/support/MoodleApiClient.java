@@ -14,11 +14,11 @@ public class MoodleApiClient {
         ApiConfig config = ApiConfig.get();
         return RestAssured.given()
             .filter(ApiReportFilter.INSTANCE)
-            .filter(new ResponseTimeLoggingFilter()) // Filtro customizado para medir tempo no console/log
+            .filter(new ResponseTimeLoggingFilter())
             .baseUri(config.moodleBaseUrl())
             .queryParam("wstoken", config.moodleToken())
             .queryParam("moodlewsrestformat", "json")
-            .contentType("application/x-www-form-urlencoded"); // Padrão Moodle para POST
+            .contentType("application/x-www-form-urlencoded");
     }
 
     private static class ResponseTimeLoggingFilter implements Filter {
@@ -30,7 +30,7 @@ public class MoodleApiClient {
             
             String function = requestSpec.getQueryParams().get("wsfunction");
             if (function == null) {
-                function = requestSpec.getURI(); // fallback para scripts em /arq/disponivel
+                function = requestSpec.getURI();
             }
             
             System.out.println("⏱️ [MOODLE PERF] Função/Rota: " + function + " -> Tempo de Resposta: " + timeInMs + " ms");

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação de Integração Moodle - ERP Acadêmico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 1200px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .note {
+            padding: 15px;
+            background-color: whitesmoke;
+            margin: 15px 0;
+            border-left: 8px solid dimgray;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: dimgray;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: whitesmoke;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .btn-top {
+            font-size: 0.8em;
+            background-color: dimgray;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="indice">Índice</h1>
+    <ol style="line-height: 25px">
+        <li><a href="#apis-desenvolvidas">API's Desenvolvidas</a></li>
+        <li><a href="#functions">Funções / Métodos disponíveis para o serviço "erp_academico"</a></li>
+        <li><a href="#plugins">Plugins adicionais</a></li>
+    </ol>
+
+    <hr>
+
+    <h1 id="functions">Funções / Métodos disponíveis para o serviço "erp_academico"</h1>
+
+    <div class="note">
+        As informações sobre as funções/métodos disponíveis foram extraídas do próprio Moodle, as chamadas no ERP foram verificadas diretamente no código.
+        <br /><br />
+        <strong>Caminho no Moodle:</strong> Moodle > Administração do site > Servidor > Web Services > Serviços externos > Serviços personalizados > erp_academico
+    </div>
+
+    <table>
+        <tr>
+            <th>Função / Método</th>
+            <th>Descrição</th>
+            <th>Capacidades exigidas (Pré-requisitos)</th>
+            <th>Chamadas no ERP (Backend Java)</th>
+        </tr>
+        <tr>
+            <td><b>auth_userkey_request_login_url</b></td>
+            <td>Return one time key based login URL</td>
+            <td>auth/userkey:generatekey</td>
+            <td><b>getMoodleAccess()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_calendar_get_calendar_events</b></td>
+            <td>Get calendar events</td>
+            <td>moodle/calendar:manageentries<br>moodle/calendar:manageownentries<br>moodle/calendar:managegroupentries</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_completion_get_activities_completion_status</b></td>
+            <td>Return the activities completion status for a user in a course</td>
+            <td>--</td>
+            <td><b>getActivitiesByDiscipline()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_course_create_categories</b></td>
+            <td>Create course categories</td>
+            <td>moodle/category:manage</td>
+            <td><b>createCategories()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_course_create_courses</b></td>
+            <td>Create new courses</td>
+            <td>moodle/course:create<br>moodle/course:visibility</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_course_duplicate_course</b></td>
+            <td>Duplicate an existing course (creating a new one)</td>
+            <td>moodle/backup:backupcourse<br>moodle/restore:restorecourse<br>moodle/course:create</td>
+            <td><b>duplicateCourse()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_course_edit_module</b></td>
+            <td>Performs an action on course module (change visibility, duplicate, delete, etc.)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_course_edit_section</b></td>
+            <td>Performs an action on course section (change visibility, set marker, delete)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_course_get_contents</b></td>
+            <td>Get course contents</td>
+            <td>moodle/course:update<br>moodle/course:viewhiddencourses</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_course_get_course_module</b></td>
+            <td>Return information about a course module</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_course_get_courses</b></td>
+            <td>Return course details</td>
+            <td>moodle/course:view<br>moodle/course:update<br>moodle/course:viewhiddencourses</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_course_get_courses_by_field</b></td>
+            <td>Get courses matching a specific field (id/s, shortname, idnumber, category)</td>
+            <td>--</td>
+            <td><b>courseMoodleIdByIdNumber()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_course_update_courses</b></td>
+            <td>Update courses</td>
+            <td>moodle/course:update<br>moodle/course:changecategory<br>moodle/course:changefullname<br>moodle/course:changeshortname<br>moodle/course:changeidnumber<br>moodle/course:changesummary<br>moodle/course:visibility</td>
+            <td><b>updateIdNumber()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java<br><br><b>updateCourse()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java<br><br><b>updateNameCourse()</b><br><br>RestClientMoodlePos.java<br><br><b>updateCourseList()</b><br><br>RestClientMoodlePos.java</td>
+        </tr>
+        <tr>
+            <td><b>core_enrol_get_users_courses</b></td>
+            <td>Get the list of courses where a user is enrolled in</td>
+            <td>moodle/course:viewparticipants</td>
+            <td><b>findCoursesByUserMoodleId()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_get_string</b></td>
+            <td>Return a translated string - similar to core get_string(), call</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_group_add_group_members</b></td>
+            <td>Adds group members</td>
+            <td>moodle/course:managegroups</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_group_create_groups</b></td>
+            <td>Creates new groups</td>
+            <td>moodle/course:managegroups</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_group_delete_groups</b></td>
+            <td>Deletes all specified groups</td>
+            <td>moodle/course:managegroups</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_group_get_course_groups</b></td>
+            <td>Returns all groups in specified course</td>
+            <td>moodle/course:managegroups</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_message_send_instant_messages</b></td>
+            <td>Send instant messages</td>
+            <td>moodle/site:sendmessage</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_user_create_users</b></td>
+            <td>Create users</td>
+            <td>moodle/user:create</td>
+            <td><b>createUser()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_user_delete_users</b></td>
+            <td>Delete users</td>
+            <td>moodle/user:delete</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>core_user_get_users_by_field</b></td>
+            <td>Retrieve users' information for a specified unique field</td>
+            <td>moodle/user:viewdetails<br>moodle/user:viewhiddendetails<br>moodle/course:useremail<br>moodle/user:update</td>
+            <td><b>getUserMoodle()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_user_update_users</b></td>
+            <td>Update users</td>
+            <td>moodle/user:update</td>
+            <td><b>updateUser()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>core_webservice_get_site_info</b></td>
+            <td>Return some site info / user info / list web service functions</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>enrol_manual_enrol_users</b></td>
+            <td>Manual enrol users</td>
+            <td>enrol/manual:enrol</td>
+            <td><b>enrollUser()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java<br><br><b>enrollUserList()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>enrol_manual_unenrol_users</b></td>
+            <td>Manual unenrol users</td>
+            <td>enrol/manual:unenrol</td>
+            <td><b>unEnrollUser()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java<br><br><b>unEnrollUserList()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>gradereport_overview_get_course_grades</b></td>
+            <td>Get the given user courses final</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>gradereport_user_get_grade_items</b></td>
+            <td>Returns the complete list of grade items for users in a course</td>
+            <td>gradereport/user:view</td>
+            <td><b>getGradeReportByDiscipline()</b><br><br>RestClientMoodlePos.java<br>RestClientMoodleGraduacaoWae.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>mod_assign_get_assignments</b></td>
+            <td>Returns the courses and assignments for the users capability</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>mod_assign_save_grade</b></td>
+            <td>Save a grade update for a single student</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>mod_assign_save_grades</b></td>
+            <td>Save multiple grade updates for an assignment</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>mod_quiz_save_overrides</b></td>
+            <td>Update or insert quiz overrides</td>
+            <td>mod/quiz:manageoverrides</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/integra_sso.php</b></td>
+            <td>Link de acesso a um course (disciplina)</td>
+            <td>--</td>
+            <td>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java<br>RestClientMoodleGraduacaoWae.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/atualiza_status_disciplina.php</b></td>
+            <td>Atualiza o status do course</td>
+            <td>--</td>
+            <td>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/atualiza_data_atividades.php</b></td>
+            <td>Atualiza todas as datas das atividades de um course</td>
+            <td>--</td>
+            <td>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/atualiza_data_inicio_fim_atividade.php</b></td>
+            <td>Atualiza datas de cada atividade de um course</td>
+            <td>--</td>
+            <td>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/sobrepoe_atualiza_data_atividade_tarefa.php</b></td>
+            <td>Criar sobreposição de datas para uma atividade</td>
+            <td>--</td>
+            <td>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/oculta_atividade.php</b></td>
+            <td>Defini a visibilidade de uma atividade</td>
+            <td>--</td>
+            <td>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/oculta_rotulo.php</b></td>
+            <td>Defini a visibilidade de um rotulo da atividade</td>
+            <td>--</td>
+            <td>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java</td>
+        </tr>
+        <tr>
+            <td><b>arq/disponivel/retorna_agenda_url.php</b></td>
+            <td>Retorna os eventos do calendario</td>
+            <td>--</td>
+            <td>RestClientMoodlePos.java<br>RestClientMoodleGraduacao.java<br>RestClientMoodleGraduacaoWae.java</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1 id="plugins">Plugins adicionais</h1>
+    
+    <div class="note">
+        A lista de plugins adicionais foi extraída do próprio Moodle, mas ainda precisamos verificar quais deles foram desenvolvidos especificamente para a nossa plataforma.
+        <br /><br />
+        <strong>Caminho no Moodle:</strong> Moodle > Administração do site > Plugins > Plugins > Visão geral dos Plugins > Plugins adicionais
+    </div>
+
+    <table>
+        <tr>
+            <th>Nome do plugin</th>
+            <th>Tipo de plugin</th>
+            <th>Disponibilidade</th>
+        </tr>
+        <tr>
+            <td>Dashboard de Notificações</td>
+            <td>Blocos</td>
+            <td>Habilitado</td>
+        </tr>
+        <tr>
+            <td>Envio de Notificações</td>
+            <td>Blocos</td>
+            <td>Habilitado</td>
+        </tr>
+        <tr>
+            <td>Filtro de Ícones FontAwesome</td>
+            <td>Filtros de texto</td>
+            <td>Habilitado</td>
+        </tr>
+        <tr>
+            <td>User key authentication</td>
+            <td>Plugins de autenticação</td>
+            <td>Habilitado</td>
+        </tr>
+        <tr>
+            <td>Excimer profiler</td>
+            <td>Ferramentas de administração</td>
+            <td>Habilitado</td>
+        </tr>
+        <tr>
+            <td>Relatórios</td>
+            <td>Moodle Benchmark</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Moove</td>
+            <td>Temas</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Moodle Adminer</td>
+            <td>Plugins locais</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>iCode - Envio de Notificações</td>
+            <td>Plugins locais</td>
+            <td>--</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1 id="apis-desenvolvidas">
+        API's Desenvolvidas 
+        <a href="#indice" class="btn-top" title="Voltar ao topo">&uArr; Topo</a>
+    </h1>
+    
+    <ul>
+        <li><a href="https://dev.azure.com/unifatecie/Zeus/_wiki/wikis/Zeus.wiki/119/apaga_disciplina.php" target="_blank">apaga_disciplina.php</a></li>
+        <li><a href="https://dev.azure.com/unifatecie/Zeus/_wiki/wikis/Zeus.wiki/115/retorna_nota.php" target="_blank">retorna_nota.php</a></li>
+        <li><a href="https://dev.azure.com/unifatecie/Zeus/_wiki/wikis/Zeus.wiki/117/retorna_cursos.php" target="_blank">retorna_cursos.php</a></li>
+    </ul>
+
+</body>
+</html>
