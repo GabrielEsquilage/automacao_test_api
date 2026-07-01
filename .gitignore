@@ -6,3 +6,5 @@ bin/
 .env
 *.local.properties
 scripts/
+trash/
+
