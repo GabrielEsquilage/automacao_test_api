@@ -1,3 +1,4 @@
+
 # Automacao de API com JUnit
 
 Este projeto usa Maven, JUnit 5 e RestAssured para executar testes de API e gerar um relatorio HTML local com visao geral e detalhes por teste.
