@@ -35,7 +35,6 @@ steps:
     sonarQubeRunAnalysis: false
   displayName: 'Executar Bateria de Testes (Maven)'
   env:
-    # Lembre-se de mapear essas variáveis no painel "Variables" da Azure Pipeline (marcando as senhas como "secret")
     PORTAL_LOGIN: $(PORTAL_LOGIN)
     PORTAL_SENHA: $(PORTAL_SENHA)
     LOGIN: $(LOGIN)
