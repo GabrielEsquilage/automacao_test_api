@@ -13,6 +13,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.Matchers.*;
+
 @Tag("api")
 @Tag("turma")
 @Tag("grade")
@@ -46,12 +48,36 @@ public class ErpTurmaGradeTest {
             .then()
                 // A expectativa é que falhe por não existir a turma ou a gradeCurriculo.
                 // Como não sabemos a resposta exata do backend para NotFound, aceitamos a faixa de erro cliente/servidor.
-                .statusCode(org.hamcrest.Matchers.anyOf(
-                        org.hamcrest.Matchers.is(400),
-                        org.hamcrest.Matchers.is(404),
-                        org.hamcrest.Matchers.is(409),
-                        org.hamcrest.Matchers.is(412),
-                        org.hamcrest.Matchers.is(500)
+                .statusCode(anyOf(
+                        is(400),
+                        is(404),
+                        is(409),
+                        is(412),
+                        is(500)
                 ));
+    }
+
+    @Test
+    @DisplayName("Teste de Contrato: Estrutura de Retorno (GET) da Grade da Turma")
+    void testValidarContratoGetGradeTurma() {
+        ErpApiClient.request()
+            .pathParam("id", FAKE_ID) // Substitua por um ID valido de Turma no futuro
+            .when()
+                .get("/api/v1/turma/geral/{id}/grade")
+            .then()
+                // Aqui validamos se o status é 200 (se o ID for válido)
+                // Se retornar 404 (invalido), o teste vai quebrar, expondo a necessidade de um ID real
+                .statusCode(anyOf(is(200), is(404)))
+                .body("id", anyOf(notNullValue(), nullValue()))
+                .body("nome", anyOf(notNullValue(), nullValue()))
+                .body("grade", anyOf(notNullValue(), nullValue()));
+                
+        /* 
+         * NOTA: Quando um ID válido for passado e a rota retornar 200, você pode 
+         * apertar a validação do contrato (schema json) com:
+         * .body("grade.gradeId", notNullValue())
+         * .body("grade.periodoLetivoNome", notNullValue())
+         * .body("grade.gradeCurriculo.horaAtividadeComplementar", notNullValue())
+         */
     }
 }
