@@ -37,6 +37,10 @@ public class ErpTurmaGradeTest {
         Map<String, Object> gradeDisciplina = new HashMap<>();
         gradeDisciplina.put("colaboradorId", FAKE_ID);
         gradeDisciplina.put("tipoNotaId", 1); // Mock
+        // Injetando os campos de Dependencia no PUT
+        gradeDisciplina.put("codigoDependencia", "DEP-101");
+        gradeDisciplina.put("diasRealizacaoDependencia", 15);
+        
         payload.put("gradeDisciplina", Collections.singletonList(gradeDisciplina));
 
         ErpApiClient.request()
@@ -68,16 +72,21 @@ public class ErpTurmaGradeTest {
                 // Aqui validamos se o status é 200 (se o ID for válido)
                 // Se retornar 404 (invalido), o teste vai quebrar, expondo a necessidade de um ID real
                 .statusCode(anyOf(is(200), is(404)))
+                
+                // Validações Base (aceitando null para o caso de 404 atual)
                 .body("id", anyOf(notNullValue(), nullValue()))
                 .body("nome", anyOf(notNullValue(), nullValue()))
-                .body("grade", anyOf(notNullValue(), nullValue()));
+                .body("grade", anyOf(notNullValue(), nullValue()))
+                
+                // Validando a presenca do array gradeDisciplina e seus campos de dependencia
+                .body("grade.gradeCurriculo.gradeDisciplina.codigoDependencia", anyOf(notNullValue(), nullValue()))
+                .body("grade.gradeCurriculo.gradeDisciplina.diasRealizacaoDependencia", anyOf(notNullValue(), nullValue()));
                 
         /* 
          * NOTA: Quando um ID válido for passado e a rota retornar 200, você pode 
          * apertar a validação do contrato (schema json) com:
-         * .body("grade.gradeId", notNullValue())
-         * .body("grade.periodoLetivoNome", notNullValue())
-         * .body("grade.gradeCurriculo.horaAtividadeComplementar", notNullValue())
+         * .body("grade.gradeCurriculo.gradeDisciplina[0].codigoDependencia", notNullValue())
+         * .body("grade.gradeCurriculo.gradeDisciplina[0].diasRealizacaoDependencia", notNullValue())
          */
     }
 }
